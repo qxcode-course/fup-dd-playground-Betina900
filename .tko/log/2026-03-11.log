@@ -1,0 +1,11 @@
+2026-03-11 15:55:26, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-11 15:55:35, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-11 15:56:29, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-11 15:56:30, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-11 15:58:02, SELF, v:1, k:fup@resto, self:1, rate:100, study:6, friend:Nao, guided:1
+2026-03-11 15:58:09, MOVE, v:1, k:fup@media, mode:PICK
+2026-03-11 15:58:15, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:7
+2026-03-11 15:58:16, EXEC, v:1, k:fup@media, mode:FULL, rate:0
+2026-03-11 16:08:28, EXEC, v:1, k:fup@media, mode:FULL, rate:100, size:7
+2026-03-11 16:08:47, MOVE, v:1, k:fup@media, mode:BACK
+2026-03-11 16:09:23, SELF, v:1, k:fup@media, self:1, rate:100, study:15, friend:Nao

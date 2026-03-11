@@ -32,7 +32,17 @@
         },
         {
             "label": "2026-03-10_18-25-37",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b float64\n    fmt.Scan (&a, &b)\n    fmt.Println( (%.1f \\n), (a + b) / 2)\n}\n",
+            "content": "@@ -96,17 +96,18 @@\n tln(\n-%22\n+ (\n %25.1f %5Cn\n-%22\n+)\n , (a\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-11_15-58-15",
+            "content": "@@ -93,15 +93,17 @@\n rint\n-f\n+ln\n (%22%25.1f\n+ \n %5Cn%22,\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-11_16-08-28",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b float64\n    fmt.Scan (&a, &b)\n    fmt.Printf(\"%.1f\\n\", (a + b) / 2)\n}\n",
             "lines": "7"
         }
     ]
