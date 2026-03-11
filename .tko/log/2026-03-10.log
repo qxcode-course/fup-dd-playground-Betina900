@@ -1,0 +1,52 @@
+2026-03-10 17:10:32, MOVE, v:1, k:sandbox@user_000, mode:PICK
+2026-03-10 17:10:46, EXEC, v:1, k:sandbox@user_000, mode:LOCK, rate:0
+2026-03-10 17:10:47, EXEC, v:1, k:sandbox@user_000, mode:LOCK, rate:0
+2026-03-10 17:11:36, MOVE, v:1, k:sandbox@user_000, mode:BACK
+2026-03-10 17:13:55, MOVE, v:1, k:sandbox@user_001, mode:PICK
+2026-03-10 17:13:59, EXEC, v:1, k:sandbox@user_001, mode:LOCK, rate:0, size:5
+2026-03-10 17:14:20, EXEC, v:1, k:sandbox@user_001, mode:LOCK, rate:0
+2026-03-10 17:14:22, EXEC, v:1, k:sandbox@user_001, mode:LOCK, rate:0
+2026-03-10 17:14:50, MOVE, v:1, k:sandbox@user_001, mode:BACK
+2026-03-10 17:14:54, MOVE, v:1, k:sandbox@user_001, mode:PICK
+2026-03-10 17:15:03, EXEC, v:1, k:sandbox@user_001, mode:LOCK, rate:0
+2026-03-10 17:16:42, EXEC, v:1, k:sandbox@user_001, mode:LOCK, rate:0, size:5
+2026-03-10 17:19:29, EXEC, v:1, k:sandbox@user_001, mode:FULL, rate:0
+2026-03-10 17:28:57, EXEC, v:1, k:sandbox@user_001, mode:FULL, rate:0, size:9
+2026-03-10 17:40:10, EXEC, v:1, k:sandbox@user_001, mode:FULL, rate:0, size:10
+2026-03-10 17:43:39, EXEC, v:1, k:sandbox@user_001, mode:FULL, rate:0, size:11
+2026-03-10 17:46:48, EXEC, v:1, k:sandbox@user_001, mode:FULL, rate:0, size:12
+2026-03-10 17:51:52, EXEC, v:1, k:sandbox@user_001, mode:FULL, rate:0, size:12
+2026-03-10 17:53:24, EXEC, v:1, k:sandbox@user_001, mode:FULL, size:15, fail:COMP
+2026-03-10 17:53:38, EXEC, v:1, k:sandbox@user_001, mode:FULL, rate:0, size:13
+2026-03-10 17:53:51, EXEC, v:1, k:sandbox@user_001, mode:FULL, size:13, fail:COMP
+2026-03-10 17:55:02, MOVE, v:1, k:sandbox@user_001, mode:PICK
+2026-03-10 17:55:07, EXEC, v:1, k:sandbox@user_001, mode:FULL, rate:0, size:12
+2026-03-10 17:55:11, EXEC, v:1, k:sandbox@user_001, mode:FULL, rate:0
+2026-03-10 17:55:36, EXEC, v:1, k:sandbox@user_001, mode:FULL, rate:0, size:13
+2026-03-10 17:58:34, MOVE, v:1, k:sandbox@user_001, mode:BACK
+2026-03-10 18:04:12, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-10 18:04:14, MOVE, v:1, k:fup@tres, mode:PICK
+2026-03-10 18:04:17, EXEC, v:1, k:fup@tres, mode:FULL, rate:0, size:5
+2026-03-10 18:12:16, EXEC, v:1, k:fup@tres, mode:FULL, rate:100, size:7
+2026-03-10 18:12:19, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-10 18:12:21, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-10 18:12:22, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-10 18:12:37, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-10 18:12:37, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-10 18:13:07, MOVE, v:1, k:fup@tres, mode:BACK
+2026-03-10 18:13:15, MOVE, v:1, k:fup@resto, mode:DOWN
+2026-03-10 18:13:17, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-10 18:13:19, EXEC, v:1, k:fup@resto, mode:FULL, rate:0, size:5
+2026-03-10 18:20:24, EXEC, v:1, k:fup@resto, mode:FULL, rate:0, size:7
+2026-03-10 18:20:49, EXEC, v:1, k:fup@resto, mode:FULL, rate:100, size:7
+2026-03-10 18:21:00, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-10 18:21:02, MOVE, v:1, k:fup@media, mode:DOWN
+2026-03-10 18:21:05, MOVE, v:1, k:fup@media, mode:PICK
+2026-03-10 18:21:06, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:5
+2026-03-10 18:24:32, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:7
+2026-03-10 18:24:40, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:7
+2026-03-10 18:24:51, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:7
+2026-03-10 18:24:56, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:7
+2026-03-10 18:25:19, EXEC, v:1, k:fup@media, mode:FULL, size:7, fail:COMP
+2026-03-10 18:25:37, EXEC, v:1, k:fup@media, mode:FULL, size:7, fail:COMP
+2026-03-10 18:31:27, SELF, v:1, k:fup@tres, self:1, rate:100, study:8, friend:Nao, guided:1

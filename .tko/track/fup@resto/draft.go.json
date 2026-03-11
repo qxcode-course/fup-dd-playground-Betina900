@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_18-13-19",
+            "content": "@@ -41,95 +41,28 @@\n     \n-var valor1, valor2 int%0A    fmt.Scan (&valor1, &valor2)%0A    fmt.Println (valor1 / valor2\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_18-20-24",
+            "content": "@@ -121,25 +121,8 @@\n r1 /\n- valor2, valor1 %25\n  val\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-20-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valor1, valor2 int\n    fmt.Scan (&valor1, &valor2)\n    fmt.Println (valor1 / valor2, valor1 % valor2)\n}\n",
+            "lines": "7"
+        }
+    ]
+}

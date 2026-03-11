@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_18-21-06",
+            "content": "@@ -41,84 +41,28 @@\n     \n-var a, b float64%0A    fmt.Scan (&a, &b)%0A    fmt.Println(%22%25.1f%5Cn%22, (a + b) / 2\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_18-24-32",
+            "content": "@@ -97,17 +97,16 @@\n ln(%22%25.1f\n- \n %5Cn%22, (a \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-24-40",
+            "content": "@@ -114,9 +114,11 @@\n + b)\n-/\n+ / \n 2)%0A%7D\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-24-51",
+            "content": "@@ -114,11 +114,9 @@\n + b)\n- / \n+/\n 2)%0A%7D\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-24-56",
+            "content": "@@ -96,16 +96,17 @@\n tln(\n- \n+%22\n %25.1f %5Cn\n+%22\n , (a\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-25-19",
+            "content": "@@ -97,17 +97,15 @@\n ln( \n-(\n %25.1f %5Cn\n-)\n , (a\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-25-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b float64\n    fmt.Scan (&a, &b)\n    fmt.Println( (%.1f \\n), (a + b) / 2)\n}\n",
+            "lines": "7"
+        }
+    ]
+}
