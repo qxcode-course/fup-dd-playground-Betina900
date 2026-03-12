@@ -22,13 +22,13 @@ tasks:
   fup@tres: '{self:1, rate:100, study:8, friend:Nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:6, friend:Nao, guided:1}'
   fup@media: '{self:1, rate:100, study:15, friend:Nao}'
-  fup@sobrou: '{rate:100}'
+  fup@sobrou: '{self:1, rate:100, study:36, friend:Sim, Pompeu}'
 flags:
   painel: 2
   quests: 2
   tracks: 0
-  tasks: 0
+  tasks: 1
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@sobrou
+selected: fup@segundos
