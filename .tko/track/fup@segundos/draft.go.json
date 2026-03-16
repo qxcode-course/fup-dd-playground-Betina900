@@ -1,0 +1,209 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_17-49-32",
+            "content": "@@ -101,24 +101,16 @@\n mpo/3600\n- float64\n %0A    fmt\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_17-50-10",
+            "content": "@@ -129,13 +129,7 @@\n ntln\n-(hora)\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_17-50-39",
+            "content": "@@ -67,17 +67,16 @@\n fmt.Scan\n- \n (&tempo)\n@@ -125,17 +125,16 @@\n .Println\n- \n (hora)%0A%7D\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_17-51-19",
+            "content": "@@ -111,10 +111,33 @@\n float64%0A\n+    fmt.Println (hora)%0A\n %7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_17-52-16",
+            "content": "@@ -77,10 +77,44 @@\n &tempo)%0A\n+    var hora = tempo/3600 float64%0A\n %7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_17-52-29",
+            "content": "@@ -81,30 +81,6 @@\n po)%0A\n-    fmt.Println (tempo)%0A\n %7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-16_17-52-59",
+            "content": "@@ -103,13 +103,8 @@\n empo\n-/3600\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_17-53-27",
+            "content": "@@ -50,33 +50,8 @@\n empo\n-, hora, minutos, segundos\n  flo\n@@ -79,36 +79,8 @@\n empo\n-, &hora, &minutos, &segundos\n )%0A  \n@@ -99,12 +99,17 @@\n n (tempo\n+/3600\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_17-57-19",
+            "content": "@@ -46,16 +46,41 @@\n ar tempo\n+, hora, minutos, segundos\n  float64\n@@ -111,35 +111,30 @@\n hora\n-)%0A    var hora = tempo/3600\n+, &minutos, &segundos)\n %0A   \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_18-00-17",
+            "content": "@@ -127,16 +127,17 @@\n rintln (\n-hora\n+tempo\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-00-28",
+            "content": "@@ -109,24 +109,16 @@\n mpo/3600\n- float64\n %0A    fmt\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-00-37",
+            "content": "@@ -47,19 +47,23 @@\n r tempo \n-int\n+float64\n %0A    fmt\n@@ -109,16 +109,24 @@\n mpo/3600\n+ float64\n %0A    fmt\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-02-44",
+            "content": "@@ -71,16 +71,23 @@\n  (&tempo\n+, &hora\n )%0A    va\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-03-17",
+            "content": "@@ -103,42 +103,8 @@\n 600%0A\n-    var minutos = (tempo%253600)/60%0A\n     \n@@ -124,22 +124,8 @@\n hora\n-, %22:%22, minutos\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-06-24",
+            "content": "@@ -158,11 +158,15 @@\n hora\n+, \n %22:%22\n+, \n minu\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-06-36",
+            "content": "@@ -158,13 +158,11 @@\n hora\n-,\n %22:%22\n-,\n minu\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-06-45",
+            "content": "@@ -117,16 +117,17 @@\n nutos = \n+(\n tempo%2536\n@@ -128,16 +128,17 @@\n mpo%253600\n+)\n /60%0A    \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-07-07",
+            "content": "@@ -153,17 +153,20 @@\n n (hora,\n- \n+%22:%22,\n minutos)\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-07-18",
+            "content": "@@ -157,12 +157,9 @@\n ora,\n-%22:%22,\n+ \n minu\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-07-34",
+            "content": "@@ -135,43 +135,8 @@\n /60%0A\n-    var segundos = minutos%253600/60%0A\n     \n@@ -168,21 +168,8 @@\n utos\n-,%22:%22,segundos\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-09-37",
+            "content": "@@ -187,16 +187,17 @@\n ln (hora\n+,\n %22:%22,minu\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_18-10-13",
+            "content": "@@ -187,17 +187,16 @@\n ln (hora\n-,\n %22:%22,minu\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_18-10-19",
+            "content": "@@ -117,20 +117,21 @@\n nutos = \n-hora\n+tempo\n %253600/60\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_18-11-02",
+            "content": "@@ -121,20 +121,52 @@\n s = \n-(tempo\n+hora%253600/60%0A    var segundos = minutos\n %253600\n-)\n /60%0A\n@@ -198,12 +198,25 @@\n ,minutos\n+,%22:%22,segundos\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_18-12-13",
+            "content": "@@ -159,14 +159,12 @@\n ora,\n- \n %22:%22,\n- \n minu\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-12-25",
+            "content": "@@ -129,16 +129,19 @@\n po%253600)\n+/60\n %0A    fmt\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-13-15",
+            "content": "@@ -133,11 +133,8 @@\n 600)\n-/60\n %0A   \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-13-29",
+            "content": "@@ -159,12 +159,14 @@\n ora,\n+ \n %22:%22,\n+ \n minu\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-14-03",
+            "content": "@@ -146,17 +146,18 @@\n mt.Print\n-f\n+ln\n  (hora,%22\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-14-17",
+            "content": "@@ -147,16 +147,17 @@\n t.Printf\n+ \n (hora,%22:\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-14-24",
+            "content": "@@ -150,11 +150,9 @@\n rint\n-ln \n+f\n (hor\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-14-37",
+            "content": "@@ -146,17 +146,18 @@\n mt.Print\n-f\n+ln\n  (hora,%22\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-14-46",
+            "content": "@@ -150,9 +150,9 @@\n rint\n-l\n+f\n  (ho\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-14-54",
+            "content": "@@ -147,17 +147,17 @@\n t.Printl\n-n\n+ \n (hora,%22:\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-15-02",
+            "content": "@@ -63,16 +63,17 @@\n fmt.Scan\n+ \n (&tempo)\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-15-09",
+            "content": "@@ -149,20 +149,11 @@\n rint\n-f(%22%25d:d%5Cn%22, \n+ln(\n hora\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-19-07",
+            "content": "@@ -150,16 +150,18 @@\n intf(%22%25d\n+:d\n %5Cn%22, hor\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-19-34",
+            "content": "@@ -154,11 +154,8 @@\n (%22%25d\n-:%25d\n %5Cn%22,\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-20-15",
+            "content": "@@ -163,17 +163,20 @@\n %22, hora,\n- \n+%22:%22,\n minutos)\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-20-42",
+            "content": "@@ -136,47 +136,8 @@\n /60%0A\n-    var segundo = ((tempo%253600)/60)/60%0A\n     \n@@ -153,19 +153,16 @@\n f(%22%25d:%25d\n-:%25d\n %5Cn%22, hor\n@@ -175,16 +175,8 @@\n utos\n-,segundo\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-26-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var tempo int\n    fmt.Scan(&tempo)\n    var hora = tempo/3600\n    var minutos = (tempo%3600)/60\n    var segundo = ((tempo%3600)/60)/60\n    fmt.Printf(\"%d:%d:%d\\n\", hora, minutos,segundo)\n}\n",
+            "lines": "10"
+        }
+    ]
+}
