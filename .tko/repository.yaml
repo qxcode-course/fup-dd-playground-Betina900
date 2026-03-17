@@ -23,6 +23,7 @@ tasks:
   fup@media: '{self:1, rate:100, study:15, friend:Nao}'
   fup@sobrou: '{self:1, rate:100, study:36, friend:Sim}'
   fup@segundos: '{self:1, rate:100, study:60, friend:Sim, Hanna, guided:1, debug:1}'
+  fup@celsius: '{self:1, rate:100, study:12, friend:Nao, guided:1}'
 flags:
   painel: 2
   quests: 2
@@ -31,4 +32,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@celsius
+selected: sandbox@student_sandbox_alias

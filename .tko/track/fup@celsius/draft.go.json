@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2026-03-17_14-16-00",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -41,147 +41,28 @@\n     \n-var temp_celsius double%0A    fmt.Scan(&temp_celsius)%0A%0A    var temp_fahrenheit = (1.8*temp_celsius)+32%0A    fmt.Printf(%22%25.6f%22, temp_fahrenheit\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-17_14-25-59",
+            "content": "@@ -162,10 +162,8 @@\n %25.6f\n-%5Cn\n %22, t\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_14-26-40",
+            "content": "@@ -153,12 +153,37 @@\n .Printf(\n+%22%25.6f%5Cn%22, temp_fahrenheit\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_14-27-52",
+            "content": "@@ -54,19 +54,22 @@\n celsius \n-int\n+double\n %0A    fmt\n@@ -157,33 +157,8 @@\n ntf(\n-%22%25.6f%5Cn%22, temp_fahrenheit\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_14-28-23",
+            "content": "@@ -58,15 +58,11 @@\n ius \n-float64\n+int\n %0A   \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_14-28-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var temp_celsius float64\n    fmt.Scan(&temp_celsius)\n\n    var temp_fahrenheit = (1.8*temp_celsius)+32\n    fmt.Printf(\"%.6f\\n\", temp_fahrenheit)\n}\n",
+            "lines": "9"
         }
     ]
 }
