@@ -2,10 +2,12 @@ package main
 
 import "fmt"
 
-
-
 func main() {
-    var num1, num2 float64
-    fmt.Scan (&num1, &num2)
+    var dia string = "seg"
+    if dia == "seg" || dia == "ter" || dia == "qua"{
+        fmt.Println("aula")
+    } else if dia == "sab" || dia == "dom" {
+        fmt.Println("final de semana")
+    }
 
 }

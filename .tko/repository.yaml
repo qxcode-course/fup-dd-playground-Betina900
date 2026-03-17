@@ -13,7 +13,7 @@ sources:
   quests: null
   tasks: null
 expanded:
-- sandbox@student_sandbox_alias:00_rascunhos
+- fup@campanha-principal
 - fup@missão-operações
 tasks:
   fup@tres: '{self:1, rate:100, study:8, friend:Nao, guided:1}'
@@ -30,4 +30,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@campanha-principal
+selected: fup@pintando

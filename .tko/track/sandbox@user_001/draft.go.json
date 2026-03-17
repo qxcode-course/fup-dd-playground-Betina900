@@ -57,7 +57,17 @@
         },
         {
             "label": "2026-03-10_17-55-36",
-            "content": "package main\n\nimport \"fmt\"\n\n\n\nfunc main() {\n    var num1, num2 float64\n    fmt.Scan (&num1)\n    fmt.Scan (&num2)\n    fmt.Println (num1,)\n    fmt.Println (num2)\n}",
+            "content": "@@ -87,15 +87,75 @@\n num1\n-, &num2)%0A\n+)%0A    fmt.Scan (&num2)%0A    fmt.Println (num1,)%0A    fmt.Println (num2)\n %0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-17_17-33-44",
+            "content": "@@ -21,16 +21,18 @@\n  %22fmt%22%0A%0A\n+%0A%0A\n func mai\n@@ -49,196 +49,53 @@\n var \n-dia string = %22seg%22%0A    if dia == %22seg%22 %7C%7C dia == %22ter%22 %7C%7C dia == %22qua%22%7B%0A        fmt.Println(%22aula%22)%0A    %7D else if dia == %22sab%22 %7C%7C dia == %22dom%22 %7B%0A        fmt.Println(%22final de semana%22)%0A    %7D\n+num1, num2 float64%0A    fmt.Scan (&num1, &num2)\n %0A%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-37-59",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var dia string = \"seg\"\n    if dia == \"seg\" || dia == \"ter\" || dia == \"qua\"{\n        fmt.Println(\"aula\")\n    } else if dia == \"sab\" || dia == \"dom\" {\n        fmt.Println(\"final de semana\")\n    }\n\n}",
             "lines": "13"
         }
     ]
