@@ -1,0 +1,17 @@
+2026-03-17 13:53:56, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-03-17 13:54:04, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0
+2026-03-17 13:54:04, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0
+2026-03-17 14:02:05, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0, size:10
+2026-03-17 14:06:50, EXEC, v:1, k:fup@segundos, mode:FULL, rate:6, size:10
+2026-03-17 14:07:38, EXEC, v:1, k:fup@segundos, mode:FULL, rate:6, size:10
+2026-03-17 14:09:29, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0, size:10
+2026-03-17 14:10:04, EXEC, v:1, k:fup@segundos, mode:FULL, rate:20, size:11
+2026-03-17 14:10:22, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0, size:11
+2026-03-17 14:10:51, EXEC, v:1, k:fup@segundos, mode:FULL, rate:6, size:11
+2026-03-17 14:11:05, EXEC, v:1, k:fup@segundos, mode:FULL, rate:100, size:11
+2026-03-17 14:11:28, MOVE, v:1, k:fup@segundos, mode:BACK
+2026-03-17 14:14:49, SELF, v:1, k:fup@segundos, self:1, rate:100, study:60, friend:Sim, Hanna, guided:1, debug:1
+2026-03-17 14:15:23, SELF, v:1, k:fup@segundos, self:1, rate:100, study:60, friend:Sim, Hanna, guided:1, debug:1
+2026-03-17 14:15:56, MOVE, v:1, k:fup@celsius, mode:DOWN
+2026-03-17 14:15:59, MOVE, v:1, k:fup@celsius, mode:PICK
+2026-03-17 14:16:00, EXEC, v:1, k:fup@celsius, mode:FULL, rate:0, size:5

@@ -14,20 +14,21 @@ sources:
   tasks: null
 expanded:
 - fup@campanha-principal
-- sandbox@student_sandbox_alias:00_rascunhos
-- fup@missão-operações
 - sandbox@student_sandbox_alias
+- fup@missão-operações
+- sandbox@student_sandbox_alias:00_rascunhos
 tasks:
   fup@tres: '{self:1, rate:100, study:8, friend:Nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:6, friend:Nao, guided:1}'
   fup@media: '{self:1, rate:100, study:15, friend:Nao}'
   fup@sobrou: '{self:1, rate:100, study:36, friend:Sim}'
+  fup@segundos: '{self:1, rate:100, study:60, friend:Sim, Hanna, guided:1, debug:1}'
 flags:
   painel: 2
   quests: 2
   tracks: 0
-  tasks: 1
+  tasks: 2
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@segundos
+selected: fup@celsius

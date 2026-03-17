@@ -202,8 +202,48 @@
         },
         {
             "label": "2026-03-16_18-26-12",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var tempo int\n    fmt.Scan(&tempo)\n    var hora = tempo/3600\n    var minutos = (tempo%3600)/60\n    var segundo = ((tempo%3600)/60)/60\n    fmt.Printf(\"%d:%d:%d\\n\", hora, minutos,segundo)\n}\n",
+            "content": "@@ -150,23 +150,33 @@\n gundo = \n-minutos\n+((tempo%253600)/60)\n /60%0A    \n@@ -214,17 +214,16 @@\n minutos,\n- \n segundo)\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-03-17_14-02-05",
+            "content": "@@ -150,25 +150,25 @@\n gundo = \n-tempo%25360\n+minutos/6\n 0%0A    fm\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_14-06-50",
+            "content": "@@ -150,16 +150,26 @@\n gundo = \n+tempo%253600\n %0A    fmt\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_14-07-38",
+            "content": "@@ -154,21 +154,8 @@\n o = \n-tempo%25minutos\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_14-09-29",
+            "content": "@@ -160,17 +160,15 @@\n mpo%25\n-hora%0A    \n+minutos\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_14-10-04",
+            "content": "@@ -160,16 +160,17 @@\n mpo%25\n-minutos%0A\n+hora%0A    \n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_14-10-22",
+            "content": "@@ -156,20 +156,23 @@\n = tempo%25\n-3600\n+minutos\n %0A%0A    fm\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_14-10-51",
+            "content": "@@ -156,17 +156,19 @@\n = tempo%25\n-6\n+360\n 0%0A%0A    f\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_14-11-05",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var tempo int\n    fmt.Scan(&tempo)\n    var hora = tempo/3600\n    var minutos = (tempo%3600)/60\n    var segundo = tempo%60\n\n    fmt.Printf(\"%d:%d:%d\\n\", hora, minutos, segundo)\n}\n",
+            "lines": "11"
         }
     ]
 }
