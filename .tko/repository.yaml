@@ -13,8 +13,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@missão-operações
 - fup@campanha-principal
+- fup@missão-seleção-1
 tasks:
   fup@tres: '{self:1, rate:100, study:8, friend:Nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:6, friend:Nao, guided:1}'
@@ -23,12 +23,13 @@ tasks:
   fup@segundos: '{self:1, rate:100, study:60, friend:Sim, guided:1, debug:1}'
   fup@celsius: '{self:1, rate:100, study:12, friend:Nao, guided:1}'
   fup@pintando: '{self:1, rate:100, study:25, friend:Nao}'
+  fup@bala: '{self:1, rate:100, study:52, friend:Nao, concept:1}'
 flags:
   painel: 2
   quests: 2
   tracks: 0
-  tasks: 2
+  tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@bala
+selected: fup@abs

@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2026-03-18_01-05-21",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -1,49 +1,73 @@\n-package main%0Aimport (%0A    %22fmt%22%0A\n+@@ -17,208 +17,51 @@%0A ort %0A-(%250A    %2522fmt%2522%250A\n     \n-%22\n+%2522\n math\n-%22%0A)%0A\n+%2522%250A)%250A\n func\n@@ -78,10 +78,14 @@\n n() \n-%7B%0A\n+%257B%250A\n     \n@@ -110,17 +110,19 @@\n  float64\n-%0A\n+%250A\n     fmt.\n@@ -149,10 +149,14 @@\n &y2)\n-%0A%0A\n+%250A%250A\n     \n@@ -200,17 +200,19 @@\n (y2-y1))\n-%0A\n+%250A\n     var \n@@ -232,17 +232,19 @@\n qrt(dab)\n-%0A\n+%250A\n     fmt.\n@@ -254,22 +254,77 @@\n ntf(\n-%22%25.2f%5Cn%22, raiz)%0A%7D\n+%2522%0A+%2522fmt%2522%250Afunc main() %257B%250A    fmt.Println(%2522qxcode%0A %2522)%250A%257D\n %0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-18_01-22-43",
+            "content": "@@ -148,16 +148,34 @@\n (x2-x1))\n++((y2-y1)*(y2-y1))\n %0A    var\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-18_13-07-17",
+            "content": "@@ -152,26 +152,8 @@\n x1))\n-+((y2-y1)*(y2-y1))\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-18_13-33-05",
+            "content": "@@ -67,19 +67,19 @@\n  x1,\n- y1,\n  x2, y1\n+, y2\n  flo\n@@ -106,15 +106,15 @@\n 1, &\n-y1, &x2\n+x2, &y1\n , &y\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-18_13-39-17",
+            "content": "@@ -73,17 +73,17 @@\n 1, x2, y\n-2\n+1\n  float64\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-18_13-39-55",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"math\"\n)\nfunc main() {\n    var x1, y1, x2, y2 float64\n    fmt.Scan(&x1, &y1, &x2, &y2)\n\n    var dab = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1))\n    var raiz = math.Sqrt(dab)\n    fmt.Printf(\"%.2f\\n\", raiz)\n}\n",
+            "lines": "13"
         }
     ]
 }
