@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-18_17-40-04",
+            "content": "@@ -41,140 +41,28 @@\n     \n-var numero int%0A    fmt.Scan(&numero)%0A%0A    if (numero%257==0) %7B%0A        fmt.Println(%22SIM%22)%0A    %7D else %7B%0A        fmt.Println(%22NAO%22)%0A    %7D\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-18_17-44-51",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numero int\n    fmt.Scan(&numero)\n\n    if (numero%7==0) {\n        fmt.Println(\"SIM\")\n    } else {\n        fmt.Println(\"NAO\")\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}

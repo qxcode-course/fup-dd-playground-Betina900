@@ -13,8 +13,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@campanha-principal
 - fup@missão-seleção-1
+- fup@campanha-principal
 tasks:
   fup@tres: '{self:1, rate:100, study:8, friend:Nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:6, friend:Nao, guided:1}'
@@ -26,13 +26,15 @@ tasks:
   fup@bala: '{self:1, rate:100, study:52, friend:Nao, concept:1}'
   fup@abs: '{self:1, rate:100, study:57, friend:Nao, concept:1}'
   fup@max: '{self:1, rate:100, study:21, friend:Nao}'
-  fup@ou: '{rate:100}'
+  fup@ou: '{self:1, rate:100, study:5, friend:Nao}'
+  fup@positivo: '{self:1, rate:100, study:14, friend:Nao}'
+  fup@multiplo: '{self:1, rate:100, study:5, friend:Nao}'
 flags:
   painel: 2
   quests: 2
   tracks: 0
-  tasks: 1
+  tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@ou
+selected: fup@calc
