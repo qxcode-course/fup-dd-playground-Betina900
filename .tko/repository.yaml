@@ -24,12 +24,15 @@ tasks:
   fup@celsius: '{self:1, rate:100, study:12, friend:Nao, guided:1}'
   fup@pintando: '{self:1, rate:100, study:25, friend:Nao}'
   fup@bala: '{self:1, rate:100, study:52, friend:Nao, concept:1}'
+  fup@abs: '{self:1, rate:100, study:57, friend:Nao, concept:1}'
+  fup@max: '{self:1, rate:100, study:21, friend:Nao}'
+  fup@ou: '{rate:100}'
 flags:
   painel: 2
   quests: 2
   tracks: 0
-  tasks: 0
+  tasks: 1
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@abs
+selected: fup@ou

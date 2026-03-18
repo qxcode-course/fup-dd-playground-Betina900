@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2026-03-18_13-42-03",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -17,168 +17,52 @@\n ort \n-(%0A    %22fmt%22%0A    %22math%22%0A)%0Afunc main() %7B%0A    var valor1, valor2 float64%0A    fmt.Scan(&valor1, &valor2)%0A%0A    math.Abs(valor1, valor2)%0A    fmt.Println(valor1-valor2\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-18_13-56-56",
+            "content": "@@ -123,20 +123,8 @@\n     \n-fmt.Println(\n math\n@@ -138,19 +138,41 @@\n lor1\n-)-math.Abs(\n+, valor2)%0A    fmt.Println(valor1-\n valo\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-18_13-59-01",
+            "content": "@@ -147,12 +147,28 @@\n (valor1)\n+-math.Abs(valor2\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-18_13-59-34",
+            "content": "@@ -1,8 +1,28 @@\n+@@ -1,142 +1,62 @@%0A-\n package \n@@ -29,17 +29,19 @@\n main\n-%0A\n+%250A\n import (\n %0A   \n@@ -40,32 +40,48 @@\n rt (\n-%0A\n+%250A\n     \n-%22fmt%22%0A\n+%2522fmt%2522%250A\n     \n-%22\n+%2522\n math\n-%22%0A)%0A\n+%2522%250A)%250A\n func\n@@ -92,10 +92,14 @@\n n() \n-%7B%0A\n+%257B%250A\n     \n@@ -124,17 +124,19 @@\n  float64\n-%0A\n+%250A\n     fmt.\n@@ -161,10 +161,14 @@\n or2)\n-%0A%0A\n+%250A%250A\n     \n@@ -184,7 +184,91 @@\n ln()\n-%0A%7D\n+%250A%257D%0A+@@ -131,12 +131,28 @@%250A Println(%250A+math.Abs(valor1)%250A )%25250A%25257D%25250A%0A %250A\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-03-18_14-02-00",
+            "content": "@@ -119,51 +119,8 @@\n 2)%0A%0A\n-    diferenca := math.Abs(valor1 - valor2)%0A\n     \n@@ -135,17 +135,8 @@\n tln(\n-diferenca\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-18_15-40-34",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"math\"\n)\nfunc main() {\n    var valor1, valor2 float64\n    fmt.Scan(&valor1, &valor2)\n\n    diferenca := math.Abs(valor1 - valor2)\n    fmt.Println(diferenca)\n}\n",
+            "lines": "12"
         }
     ]
 }
