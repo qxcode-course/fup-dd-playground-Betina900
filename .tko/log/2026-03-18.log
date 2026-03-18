@@ -1,0 +1,15 @@
+2026-03-18 00:48:51, MOVE, v:1, k:fup@pintando, mode:PICK
+2026-03-18 00:48:58, EXEC, v:1, k:fup@pintando, mode:FULL, fail:COMP
+2026-03-18 00:48:58, EXEC, v:1, k:fup@pintando, mode:FULL, fail:COMP
+2026-03-18 00:49:00, EXEC, v:1, k:fup@pintando, mode:FULL, fail:COMP
+2026-03-18 00:53:20, EXEC, v:1, k:fup@pintando, mode:FULL, rate:0, size:10
+2026-03-18 00:55:33, EXEC, v:1, k:fup@pintando, mode:FULL, rate:25, size:10
+2026-03-18 00:58:15, EXEC, v:1, k:fup@pintando, mode:FULL, size:10, fail:COMP
+2026-03-18 01:02:50, EXEC, v:1, k:fup@pintando, mode:FULL, size:14, fail:COMP
+2026-03-18 01:03:08, EXEC, v:1, k:fup@pintando, mode:FULL, rate:100, size:14
+2026-03-18 01:03:40, MOVE, v:1, k:fup@pintando, mode:BACK
+2026-03-18 01:04:33, SELF, v:1, k:fup@pintando, self:1, rate:100, study:25, friend:Nao
+2026-03-18 01:05:17, MOVE, v:1, k:fup@bala, mode:DOWN
+2026-03-18 01:05:20, MOVE, v:1, k:fup@bala, mode:PICK
+2026-03-18 01:05:21, EXEC, v:1, k:fup@bala, mode:FULL, rate:0, size:5
+2026-03-18 01:05:26, MOVE, v:1, k:fup@bala, mode:BACK
