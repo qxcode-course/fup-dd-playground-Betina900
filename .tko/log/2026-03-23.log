@@ -1,0 +1,24 @@
+2026-03-23 17:00:19, MOVE, v:1, k:fup@guarda, mode:PICK
+2026-03-23 17:00:25, EXEC, v:1, k:fup@guarda, mode:FULL, fail:COMP
+2026-03-23 17:03:31, EXEC, v:1, k:fup@guarda, mode:FULL, fail:COMP
+2026-03-23 17:04:18, EXEC, v:1, k:fup@guarda, mode:FULL, size:19, fail:COMP
+2026-03-23 17:06:59, EXEC, v:1, k:fup@guarda, mode:FULL, size:21, fail:COMP
+2026-03-23 17:10:02, EXEC, v:1, k:fup@guarda, mode:FULL, size:21, fail:COMP
+2026-03-23 17:14:04, EXEC, v:1, k:fup@guarda, mode:FULL, fail:COMP
+2026-03-23 17:16:13, EXEC, v:1, k:fup@guarda, mode:FULL, size:21, fail:COMP
+2026-03-23 17:17:01, EXEC, v:1, k:fup@guarda, mode:FULL, rate:85, size:19
+2026-03-23 17:20:19, EXEC, v:1, k:fup@guarda, mode:FULL, rate:42, size:19
+2026-03-23 17:21:22, EXEC, v:1, k:fup@guarda, mode:FULL, rate:42, size:17
+2026-03-23 17:30:49, EXEC, v:1, k:fup@guarda, mode:FULL, size:16, fail:COMP
+2026-03-23 17:31:44, EXEC, v:1, k:fup@guarda, mode:FULL, rate:85, size:16
+2026-03-23 17:33:42, EXEC, v:1, k:fup@guarda, mode:FULL, rate:42, size:18
+2026-03-23 17:34:12, EXEC, v:1, k:fup@guarda, mode:FULL, rate:42, size:16
+2026-03-23 17:35:07, EXEC, v:1, k:fup@guarda, mode:FULL, rate:57, size:16
+2026-03-23 17:43:29, EXEC, v:1, k:fup@guarda, mode:FULL, size:16, fail:COMP
+2026-03-23 17:45:05, EXEC, v:1, k:fup@guarda, mode:FULL, rate:85, size:16
+2026-03-23 17:45:27, EXEC, v:1, k:fup@guarda, mode:FULL, rate:57, size:16
+2026-03-23 17:45:38, EXEC, v:1, k:fup@guarda, mode:FULL, rate:57
+2026-03-23 17:49:43, EXEC, v:1, k:fup@guarda, mode:FULL, rate:85, size:16
+2026-03-23 17:50:08, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100, size:16
+2026-03-23 17:52:59, MOVE, v:1, k:fup@guarda, mode:BACK
+2026-03-23 17:53:39, SELF, v:1, k:fup@guarda, self:1, rate:100, study:71

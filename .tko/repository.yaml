@@ -13,9 +13,9 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@missão-seleção-1
 - fup@jogos-em-modo-texto
 - fup@campanha-principal
-- fup@missão-seleção-1
 tasks:
   fup@tres: '{self:1, rate:100, study:8, friend:Nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:6, friend:Nao, guided:1}'
@@ -31,12 +31,13 @@ tasks:
   fup@positivo: '{self:1, rate:100, study:14, friend:Nao}'
   fup@multiplo: '{self:1, rate:100, study:5, friend:Nao}'
   fup@calc: '{self:1, rate:100, study:13, friend:Nao}'
+  fup@guarda: '{self:1, rate:100, study:71}'
 flags:
   painel: 2
   quests: 2
   tracks: 0
-  tasks: 1
+  tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@guarda
+selected: fup@quantos
