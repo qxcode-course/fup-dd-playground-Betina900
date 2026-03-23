@@ -111,3 +111,7 @@
 2026-03-18 18:00:41, EXEC, v:1, k:fup@calc, mode:FULL, rate:100, size:17
 2026-03-18 18:00:55, MOVE, v:1, k:fup@calc, mode:BACK
 2026-03-18 18:01:17, SELF, v:1, k:fup@calc, self:1, rate:100, study:13, friend:Nao
+2026-03-18 18:06:47, MOVE, v:1, k:fup@guarda, mode:DOWN
+2026-03-18 18:06:51, MOVE, v:1, k:fup@guarda, mode:PICK
+2026-03-18 18:06:52, EXEC, v:1, k:fup@guarda, mode:FULL, rate:0, size:5
+2026-03-18 18:25:57, EXEC, v:1, k:fup@guarda, mode:FULL, size:21, fail:COMP

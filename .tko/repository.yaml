@@ -13,8 +13,9 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@missão-seleção-1
+- fup@jogos-em-modo-texto
 - fup@campanha-principal
+- fup@missão-seleção-1
 tasks:
   fup@tres: '{self:1, rate:100, study:8, friend:Nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:6, friend:Nao, guided:1}'
@@ -38,4 +39,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: sandbox@student_sandbox_alias
+selected: fup@guarda
