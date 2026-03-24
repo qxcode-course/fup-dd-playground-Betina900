@@ -1,0 +1,164 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_16-59-52",
+            "content": "@@ -41,112 +41,35 @@\n     \n-var hora, minuto, dia, mes, ano int%0A    fmt.Scan(&hora, &minuto, &dia, &mes, &ano)%0A%0A    fmt.Printn(%220%22,4\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-24_17-05-54",
+            "content": "@@ -138,9 +138,8 @@\n rint\n-l\n n(%220\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_17-06-08",
+            "content": "@@ -134,16 +134,18 @@\n mt.Print\n+ln\n (%220%22,4)%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_17-06-17",
+            "content": "@@ -144,19 +144,8 @@\n 0%22,4\n-,%22:%22,minuto\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_17-07-23",
+            "content": "@@ -155,20 +155,8 @@\n nuto\n-,%22 %22,dia,%22/%22\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_17-08-00",
+            "content": "@@ -167,20 +167,8 @@\n ,%22/%22\n-,mes,%22/%22,ano\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_17-08-29",
+            "content": "@@ -162,17 +162,16 @@\n %22,dia,%22/\n-0\n %22,mes,%22/\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_17-08-43",
+            "content": "@@ -172,12 +172,16 @@\n ,mes,%22/%22\n+,ano\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_17-09-07",
+            "content": "@@ -125,25 +125,8 @@\n o)%0A%0A\n-    ano=ano-2026%0A\n     \n@@ -176,12 +176,8 @@\n ,%22/%22\n-,ano\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_17-10-04",
+            "content": "@@ -121,16 +121,33 @@\n  &ano)%0A%0A\n+    ano=ano-2026%0A\n     fmt.\n@@ -189,12 +189,16 @@\n ,mes,%22/%22\n+,ano\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-10-20",
+            "content": "@@ -178,25 +178,6 @@\n /%22)%0A\n-    fmt.Print(ano)%0A\n %7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_17-14-37",
+            "content": "@@ -192,15 +192,8 @@\n int(\n-%22%25d%5Cn%22,\n ano)\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-15-26",
+            "content": "@@ -187,17 +187,16 @@\n mt.Print\n-f\n (%22%25d%5Cn%22,\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-15-37",
+            "content": "@@ -195,10 +195,8 @@\n f(%22%25\n-.2\n d%5Cn%22\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-15-52",
+            "content": "@@ -193,17 +193,17 @@\n ntf(%22%25.2\n-f\n+d\n %5Cn%22,ano)\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-16-02",
+            "content": "@@ -17,32 +17,13 @@\n ort \n-(%0A    %22fmt%22%0A    %22math%22%0A)\n+%22fmt%22\n %0Afun\n@@ -125,57 +125,8 @@\n o)%0A%0A\n-    ultimosDois:=int(math.Abs(float64(ano)))%25100%0A\n     \n@@ -195,26 +195,18 @@\n f(%22%25\n-02d\n+.2f\n %5Cn%22,\n-ultimosDois\n+ano\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-22-54",
+            "content": "@@ -148,105 +148,105 @@\n     \n-fmt.Print(%220%22,4,%22:%22,minuto,%22 %22,dia,%22/0%22,mes,%22/%22)%0A    ultimosDois:=int(math.Abs(float64(ano)))%25100\n+ultimosDois:=int(math.Abs(float64(ano)))%25100%0A    fmt.Print(%220%22,4,%22:%22,minuto,%22 %22,dia,%22/0%22,mes,%22/%22)\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_17-23-14",
+            "content": "@@ -17,14 +17,32 @@\n ort \n-%22fmt%22%0A\n+(%0A    %22fmt%22%0A    %22math%22%0A)\n %0Afun\n@@ -193,10 +193,96 @@\n es,%22/%22)%0A\n+    ultimosDois:=int(math.Abs(float64(ano)))%25100%0A    fmt.Printf(%22%2502d%5Cn%22,ultimosDois)%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_17-24-29",
+            "content": "@@ -17,32 +17,13 @@\n ort \n-(%0A    %22fmt%22%0A    %22math%22%0A)\n+%22fmt%22\n %0A%0Afu\n@@ -126,52 +126,8 @@\n o)%0A%0A\n-    ultimosDois:=math.Abs(float64(ano))%25100%0A\n     \n@@ -134,17 +134,17 @@\n fmt.Prin\n-f\n+t\n (%220%22,4,%22\n@@ -177,29 +177,8 @@\n ,%22/%22\n-,%22%2502d%5Cn%22,ultimosDois\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-42-44",
+            "content": "@@ -160,13 +160,10 @@\n Dois\n- \n :=\n- (\n math\n@@ -184,17 +184,16 @@\n no))%25100\n-)\n %0A    fmt\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_17-43-21",
+            "content": "@@ -160,19 +160,16 @@\n Dois := \n-int\n (math.Ab\n@@ -187,13 +187,13 @@\n no))\n-)\n %25100\n+)\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_17-44-04",
+            "content": "@@ -204,17 +204,16 @@\n fmt.Prin\n-t\n f(%220%22,4,\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_17-44-13",
+            "content": "@@ -212,17 +212,8 @@\n tf(%22\n-%2502d%5Cn%22,%22\n 0%22,4\n@@ -245,16 +245,25 @@\n mes,%22/%22,\n+%22%2502d%5Cn%22,\n ultimosD\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_17-44-38",
+            "content": "@@ -208,16 +208,25 @@\n Printf(%22\n+%2502d%5Cn%22,%22\n 0%22,4,%22:%22\n@@ -253,12 +253,24 @@\n ,mes,%22/%22\n+,ultimosDois\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_17-45-24",
+            "content": "@@ -141,16 +141,67 @@\n  &ano)%0A%0A\n+    ultimosDois := int(math.Abs(float64(ano)))%25100%0A\n     fmt.\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_17-45-36",
+            "content": "@@ -17,13 +17,32 @@\n ort \n-%22fmt%22\n+(%0A    %22fmt%22%0A    %22math%22%0A)\n %0A%0Afu\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_17-45-50",
+            "content": "@@ -135,16 +135,17 @@\n mt.Print\n+f\n (%220%22,4,%22\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-46-16",
+            "content": "@@ -176,10 +176,8 @@\n s,%22/\n-88\n %22)%0A%7D\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-46-24",
+            "content": "@@ -172,13 +172,15 @@\n %22,mes,%22/\n+88\n %22)%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-52-48",
+            "content": "@@ -126,35 +126,8 @@\n o)%0A%0A\n-    ultimosDois := ano%25100%0A\n     \n@@ -177,20 +177,8 @@\n ,%22/%22\n-,ultimosDois\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-56-46",
+            "content": "@@ -216,13 +216,8 @@\n Dois\n-,%22%5Cn%22\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-24_18-04-13",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var hora, minuto, dia, mes, ano int\n    fmt.Scan(&hora, &minuto, &dia, &mes, &ano)\n\n    ultimosDois := ano%100\n    fmt.Print(\"0\",4,\":\",minuto,\" \",dia,\"/0\",mes,\"/\",ultimosDois,\"\\n\")\n}\n",
+            "lines": "10"
+        }
+    ]
+}
