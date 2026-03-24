@@ -112,8 +112,28 @@
         },
         {
             "label": "2026-03-24_14-39-18",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numero1, numero2 int\n    fmt.Scan(&numero1, &numero2)\n\n    divisao_inteira := numero1/numero2\n    fmt.Println(divisao_inteira)\n    resto_divisao := numero1%numero2\n    fmt.Println(resto_divisao)\n    var nun1, nun2 float64\n    nun1 = numero1\n    nun2 = numero2\n    fmt.Printf(\"%.2f\\n\", nun1/nun2)\n}\n",
+            "content": "@@ -240,13 +240,8 @@\n ao)%0A\n-    %0A\n     \n",
             "lines": "15"
+        },
+        {
+            "label": "2026-03-24_15-52-46",
+            "content": "@@ -244,31 +244,108 @@\n     \n+%0A\n     \n-                    \n+var nun1, nun2 float64%0A    nun1 = numero1%0A    nun2 = numero2%0A    fmt.Printf(%22%25.2f%5Cn%22, nun1/nun2)\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_16-07-52",
+            "content": "@@ -244,90 +244,31 @@\n     \n-resultado = float64(numero1) / float64(numero2)%0A    fmt.Printf(%22%25.2f%5Cn%22, resultado)\n+                        \n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-11-09",
+            "content": "@@ -250,17 +250,16 @@\n sultado \n-:\n = float6\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_16-11-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numero1, numero2 int\n    fmt.Scan(&numero1, &numero2)\n\n    divisao_inteira := numero1/numero2\n    fmt.Println(divisao_inteira)\n    resto_divisao := numero1%numero2\n    fmt.Println(resto_divisao)\n    resultado := float64(numero1) / float64(numero2)\n    fmt.Printf(\"%.2f\\n\", resultado)\n}\n",
+            "lines": "13"
         }
     ]
 }

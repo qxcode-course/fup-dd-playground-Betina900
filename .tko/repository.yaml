@@ -16,7 +16,6 @@ expanded:
 - sandbox@student_sandbox_alias:00_rascunhos
 - '@fup@operacoes-basic-base_sem_quest'
 - '@fup@selecao-1-if_else-if1-base_sem_quest'
-- fup@operacoes-basic-base
 tasks:
   fup@tres: '{self:1, rate:100, study:8, friend:Nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:6, friend:Nao, guided:1}'
@@ -26,6 +25,7 @@ tasks:
   fup@celsius: '{self:1, rate:100, study:12, friend:Nao, guided:1}'
   fup@pintando: '{self:1, rate:100, study:25, friend:Nao}'
   fup@bala: '{self:1, rate:100, study:52, friend:Nao, concept:1}'
+  fup@quebrada: '{self:1, rate:100, study:61, friend:Sim, Pompeu, debug:1}'
   fup@abs: '{self:1, rate:100, study:57, friend:Nao, concept:1}'
   fup@max: '{self:1, rate:100, study:21, friend:Nao}'
   fup@ou: '{self:1, rate:100, study:5, friend:Nao}'
@@ -42,4 +42,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@quebrada
+selected: sandbox@student_sandbox_alias

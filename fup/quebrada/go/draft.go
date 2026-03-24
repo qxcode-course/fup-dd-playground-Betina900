@@ -8,9 +8,6 @@ func main() {
     fmt.Println(divisao_inteira)
     resto_divisao := numero1%numero2
     fmt.Println(resto_divisao)
-    
-    var nun1, nun2 float64
-    nun1 = numero1
-    nun2 = numero2
-    fmt.Printf("%.2f\n", nun1/nun2)
+    resultado := float64(numero1) / float64(numero2)
+    fmt.Printf("%.2f\n", resultado)
 }
