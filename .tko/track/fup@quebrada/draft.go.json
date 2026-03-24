@@ -1,0 +1,119 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_13-59-21",
+            "content": "@@ -41,137 +41,35 @@\n     \n-var numero1, numero2 int%0A    fmt.Scan(&numero1, &numero2)%0A%0A    divisao_inteira := numero1/numero2%0A    fmt.Println(divisao_inteira\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-24_14-04-02",
+            "content": "@@ -172,74 +172,6 @@\n ra)%0A\n-    resto_divisao := numero1%25numero2%0A    fmt.Println(resto_divisao)%0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_14-04-43",
+            "content": "@@ -62,15 +62,11 @@\n ro2 \n-float64\n+int\n %0A   \n@@ -236,11 +236,10 @@\n ivisao)%0A\n-%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-24_14-05-36",
+            "content": "@@ -58,19 +58,23 @@\n numero2 \n-int\n+float64\n %0A    fmt\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_14-05-47",
+            "content": "@@ -1,285 +1,71 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var numero1, numero2 int%0A    fmt.Scan(&numero1, &numero2)%0A%0A    divisao_inteira := numero1/numero2%0A    fmt.Println(divisao_inteira)%0A    resto_divisao := numero1%25numero2%0A    fmt.Println(resto_divisao)%0A    fmt.Printf(%22%25.2f%22, divisao_inteira)%0A%7D\n+@@ -240,30 +240,7 @@%0A ao)%250A%0A-    fmt.Printf(%2522%2525.2f%2522,)%0A %250A%257D%250A\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-03-24_14-11-15",
+            "content": "@@ -260,10 +260,8 @@\n %25.2f\n-%5Cn\n %22, d\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_14-11-34",
+            "content": "@@ -240,55 +240,8 @@\n ao)%0A\n-    ponto_flutuante := numero1)numero2 float64%0A\n     \n@@ -265,23 +265,23 @@\n n%22, \n-ponto_flutuante\n+divisao_inteira\n )%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_14-13-04",
+            "content": "@@ -262,25 +262,25 @@\n e := numero1\n-/\n+)\n numero2 floa\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_14-13-24",
+            "content": "@@ -62,15 +62,11 @@\n ro2 \n-float64\n+int\n %0A   \n@@ -266,32 +266,40 @@\n  numero1/numero2\n+ float64\n %0A    fmt.Printf(\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_14-13-42",
+            "content": "@@ -58,19 +58,23 @@\n numero2 \n-int\n+float64\n %0A    fmt\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_14-15-04",
+            "content": "@@ -290,16 +290,26 @@\n .Printf(\n+%22%25.2f%5Cn%22, \n ponto_fl\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_14-16-38",
+            "content": "@@ -288,18 +288,17 @@\n mt.Print\n-ln\n+f\n (ponto_f\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_14-16-49",
+            "content": "@@ -295,18 +295,8 @@\n tln(\n-%22%25.2f%5Cn%22, \n pont\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_14-17-19",
+            "content": "@@ -288,17 +288,18 @@\n mt.Print\n-f\n+ln\n (%22%25.2f%5Cn\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_14-17-34",
+            "content": "@@ -62,15 +62,11 @@\n ro2 \n-float32\n+int\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_14-18-10",
+            "content": "@@ -67,10 +67,10 @@\n loat\n-64\n+32\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_14-18-35",
+            "content": "@@ -52,24 +52,9 @@\n ero1\n- float64%0A    var\n+,\n  num\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_14-18-50",
+            "content": "@@ -48,17 +48,32 @@\n  numero1\n-,\n+ float64%0A    var\n  numero2\n@@ -73,19 +73,23 @@\n numero2 \n-int\n+float64\n %0A    fmt\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-24_14-19-28",
+            "content": "@@ -66,40 +66,8 @@\n int%0A\n-    var ponto_flutuante float64%0A\n     \n@@ -256,16 +256,17 @@\n utuante \n+:\n = numero\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_14-28-22",
+            "content": "@@ -62,15 +62,43 @@\n ro2 \n+int%0A    var ponto_flutuante \n float\n-32\n+64\n %0A   \n@@ -288,17 +288,16 @@\n utuante \n-:\n = numero\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-24_14-35-45",
+            "content": "@@ -58,19 +58,23 @@\n numero2 \n-int\n+float32\n %0A    fmt\n@@ -244,73 +244,8 @@\n ao)%0A\n-    var nun1, nun2 float64%0A    nun1 = numero1%0A    nun2 = numero2%0A\n     \n@@ -269,14 +269,20 @@\n = nu\n-n1/nun\n+mero1/numero\n 2%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_14-38-39",
+            "content": "@@ -293,32 +293,65 @@\n  nun2 = numero2%0A\n+    ponto_flutuante := nun1/nun2%0A\n     fmt.Printf(%22\n@@ -359,21 +359,27 @@\n .2f%5Cn%22, \n-nun1/nun2\n+ponto_flutuante\n )%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_14-39-18",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numero1, numero2 int\n    fmt.Scan(&numero1, &numero2)\n\n    divisao_inteira := numero1/numero2\n    fmt.Println(divisao_inteira)\n    resto_divisao := numero1%numero2\n    fmt.Println(resto_divisao)\n    var nun1, nun2 float64\n    nun1 = numero1\n    nun2 = numero2\n    fmt.Printf(\"%.2f\\n\", nun1/nun2)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

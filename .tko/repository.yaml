@@ -13,9 +13,10 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@missão-seleção-1
-- fup@jogos-em-modo-texto
-- fup@campanha-principal
+- sandbox@student_sandbox_alias:00_rascunhos
+- '@fup@operacoes-basic-base_sem_quest'
+- '@fup@selecao-1-if_else-if1-base_sem_quest'
+- fup@operacoes-basic-base
 tasks:
   fup@tres: '{self:1, rate:100, study:8, friend:Nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:6, friend:Nao, guided:1}'
@@ -31,13 +32,14 @@ tasks:
   fup@positivo: '{self:1, rate:100, study:14, friend:Nao}'
   fup@multiplo: '{self:1, rate:100, study:5, friend:Nao}'
   fup@calc: '{self:1, rate:100, study:13, friend:Nao}'
-  fup@guarda: '{self:1, rate:100, study:71}'
+  fup@guarda: '{self:1, rate:100, study:71, friend:Sim}'
+  fup@quantos: '{self:1, rate:100, study:25, friend:Nao}'
 flags:
   painel: 2
   quests: 2
   tracks: 0
-  tasks: 0
+  tasks: 2
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@quantos
+selected: fup@quebrada

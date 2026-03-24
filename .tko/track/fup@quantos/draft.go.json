@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_18-05-20",
+            "content": "@@ -41,171 +41,35 @@\n     \n-var valor1 int%0A    var valor2 int%0A    var valor3 int%0A    fmt.Scan(&valor1, &valor2, &valor3)%0A%0A    if valor1==valor2 %7C%7C valor1==valor3 %7B%0A        fmt.Println(2)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_18-13-55",
+            "content": "@@ -197,11 +197,9 @@\n tln(\n-%222%22\n+2\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-23_18-14-03",
+            "content": "@@ -197,116 +197,11 @@\n tln(\n-2)%0A    %7D else if valor1==valor2 && valor1==valor3%7B%0A        fmt.Println(3)%0A    %7D else %7B%0A        fmt.Println(0\n+%222%22\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-23_18-17-06",
+            "content": "@@ -145,34 +145,34 @@\n  valor1==valor2 \n-&&\n+%7C%7C\n  valor1==valor3 \n@@ -197,273 +197,57 @@\n tln(\n-3)%0A    %7D else if valor1==valor2 && valor1!=valor3%7B%0A        fmt.Println(2)%0A    %7D else if valor1!=valor2 && valor1==valor3 %7B%0A        fmt.Println(3)%0A    %7D else if valor2==valor3 && valor2==valor1 %7B%0A        fmt.Println(3)%0A    %7D else if valor2==valor3 && valor2!=valor1 \n+2)%0A    %7D else if valor1==valor2 && valor1==valor3\n %7B%0A  \n@@ -256,33 +256,33 @@\n     fmt.Println(\n-2\n+3\n )%0A    %7D else %7B%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_13-39-48",
+            "content": "@@ -328,33 +328,33 @@\n     fmt.Println(\n-2\n+3\n )%0A    %7D else if \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-24_13-40-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valor1 int\n    var valor2 int\n    var valor3 int\n    fmt.Scan(&valor1, &valor2, &valor3)\n\n    if valor1==valor2 && valor1==valor3 {\n        fmt.Println(3)\n    } else if valor1==valor2 && valor1!=valor3{\n        fmt.Println(2)\n    } else if valor1!=valor2 && valor1==valor3 {\n        fmt.Println(2)\n    } else if valor2==valor3 && valor2==valor1 {\n        fmt.Println(3)\n    } else if valor2==valor3 && valor2!=valor1 {\n        fmt.Println(2)\n    } else {\n        fmt.Println(0)\n    }\n}\n",
+            "lines": "22"
+        }
+    ]
+}
