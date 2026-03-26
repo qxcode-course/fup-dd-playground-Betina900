@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-26_15-52-43",
+            "content": "@@ -41,112 +41,35 @@\n     \n-var num1, num2 int%0A    fmt.Scan(&num1, &num2)%0A    for num1==num2; num1++%7B%0A        fmt.Println(num1)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-26_15-58-07",
+            "content": "@@ -95,18 +95,8 @@\n for \n-%7B%0A        \n num1\n@@ -109,16 +109,17 @@\n ; num1++\n+%7B\n %0A       \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-26_15-58-48",
+            "content": "@@ -111,16 +111,24 @@\n m1==num2\n+; num1++\n %0A       \n@@ -149,24 +149,8 @@\n um1)\n-%0A%0A        num1++\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-26_15-59-20",
+            "content": "@@ -95,29 +95,8 @@\n for \n-num1;num1%3Cnum2;num1++\n %7B%0A  \n@@ -97,24 +97,34 @@\n r %7B%0A        \n+num1==num2\n %0A        fmt\n@@ -147,16 +147,22 @@\n         \n+num1++\n %0A    %7D%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-26_16-01-26",
+            "content": "@@ -91,42 +91,43 @@\n     \n-i :=\n+for\n  num1\n-%0A    for i; i%3Cnum2; i++ %7B\n+;num1%3Cnum2;num1++%7B%0A        \n %0A   \n@@ -147,10 +147,23 @@\n tln(\n-i)\n+num1)%0A%0A        \n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-26_16-04-03",
+            "content": "@@ -91,12 +91,8 @@\n     \n-for \n i :=\n@@ -96,16 +96,26 @@\n  := num1\n+%0A    for i\n ; i%3Cnum2\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-26_16-05-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 int\n    fmt.Scan(&num1, &num2)\n    for i := num1; i<num2; i++ {\n        fmt.Println(i)\n    }\n}\n",
+            "lines": "9"
+        }
+    ]
+}

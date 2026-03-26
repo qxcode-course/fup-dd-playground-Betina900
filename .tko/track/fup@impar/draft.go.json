@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-26_15-35-15",
+            "content": "@@ -41,276 +41,35 @@\n     \n-var P, D1, D2 int%0A    fmt.Scan(&P, &D1, &D2)%0A%0A    conta := (D1+D2)%252%0A    if P==0 && conta==0 %7B%0A        fmt.Pintln(0)%0A    %7D else if P==0 && conta==1 %7B%0A        fmt.Println(1)%0A    %7D else if P==1 && conta==1 %7B%0A        fmt.Println(0)%0A    %7D else %7B%0A        fmt.Pintln(1)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-26_15-47-23",
+            "content": "@@ -137,33 +137,32 @@\n  %7B%0A        fmt.P\n-r\n intln(0)%0A    %7D e\n@@ -284,33 +284,32 @@\n  %7B%0A        fmt.P\n-r\n intln(1)%0A    %7D%0A%7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-26_15-47-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P, D1, D2 int\n    fmt.Scan(&P, &D1, &D2)\n\n    conta := (D1+D2)%2\n    if P==0 && conta==0 {\n        fmt.Println(0)\n    } else if P==0 && conta==1 {\n        fmt.Println(1)\n    } else if P==1 && conta==1 {\n        fmt.Println(0)\n    } else {\n        fmt.Println(1)\n    }\n}\n",
+            "lines": "17"
+        }
+    ]
+}

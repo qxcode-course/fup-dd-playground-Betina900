@@ -24,7 +24,7 @@ tasks:
   fup@bala: '{self:1, rate:100, study:52, friend:Nao, concept:1}'
   fup@quebrada: '{self:1, rate:100, study:61, friend:Sim, debug:1}'
   fup@operacoes: '{self:1, rate:100, study:9, friend:Nao}'
-  fup@data: '{self:1, study:135, friend:Sim, Hanna, concept:1, code:1}'
+  fup@data: '{self:1, study:135, friend:Sim, concept:1, code:1}'
   fup@abs: '{self:1, rate:100, study:57, friend:Nao, concept:1}'
   fup@max: '{self:1, rate:100, study:21, friend:Nao}'
   fup@ou: '{self:1, rate:100, study:5, friend:Nao}'
@@ -33,6 +33,8 @@ tasks:
   fup@calc: '{self:1, rate:100, study:13, friend:Nao}'
   fup@guarda: '{self:1, rate:100, study:71, friend:Sim}'
   fup@quantos: '{self:1, rate:100, study:25, friend:Nao}'
+  fup@impar: '{self:1, rate:100, study:12, friend:Nao}'
+  fup@loop_i: '{self:1, rate:100, study:12, friend:Nao}'
 flags:
   panel: 3
   inbox: 1
@@ -40,4 +42,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@base
+selected: fup@for1
