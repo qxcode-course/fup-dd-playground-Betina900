@@ -157,8 +157,38 @@
         },
         {
             "label": "2026-03-24_18-04-13",
-            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var hora, minuto, dia, mes, ano int\n    fmt.Scan(&hora, &minuto, &dia, &mes, &ano)\n\n    ultimosDois := ano%100\n    fmt.Print(\"0\",4,\":\",minuto,\" \",dia,\"/0\",mes,\"/\",ultimosDois,\"\\n\")\n}\n",
+            "content": "@@ -149,10 +149,80 @@\n ano%25100%0A\n+    fmt.Print(%220%22,4,%22:%22,minuto,%22 %22,dia,%22/0%22,mes,%22/%22,ultimosDois,%22%5Cn%22)%0A\n %7D%0A\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-03-26_12-11-35",
+            "content": "@@ -1,8 +1,28 @@\n+@@ -1,161 +1,41 @@%0A-\n package \n@@ -29,23 +29,33 @@\n main\n-%0A\n+%250A\n import \n-%22fmt%22%0A%0A\n+%2522fmt%2522%250A%250A\n func\n@@ -62,18 +62,22 @@\n  main() \n-%7B%0A\n+%257B%250A\n     var \n@@ -107,17 +107,19 @@\n  ano int\n-%0A\n+%250A\n     fmt.\n@@ -156,18 +156,22 @@\n s, &ano)\n-%0A%0A\n+%250A%250A\n     ulti\n@@ -189,389 +189,1421 @@\n ano%25\n+25\n 100\n-%0A%0A    if hora%3C10 && mes%3C10 %7B%0A        fmt.Print (%220%22,hora,%22:%22,minuto,%22 %22,dia,%22/%22,mes,%22/%22,ultimosDois)%0A    %7D else if dia%3C10 && mes %7B%0A        fmt.Print (hora,%22:%22,minuto,%22 %22,%220%22,dia,%22/%22,%220%22,mes,ultimosDois)%0A    %7D else if minuto%3C10 && dia%3C10 && mes%3C10%7B%0A        fmt.Print (hora,%22:0%22,minuto,%22 0%22,dia,%22/0%22,mes,%22/%22,ultimosDois)%0A    %7D else %7B%0A        fmt.Print (dia,%22:0%22,minuto,%22 0%22,)%0A    %7D%0A%7D\n+%250A%250A%0A+@@ -152,386 +152,7 @@%250A %252525100%250A-%25250A%25250A%0A     %0A@@ -41,17 +41,19 @@%0A  if hora%0A-%253C%0A+%25253C%0A 10 && me%0A@@ -57,14 +57,20 @@%0A  mes%0A-%253C10 %257B%250A%0A+%25253C10 %25257B%25250A%0A     %0A@@ -88,47 +88,67 @@%0A nt (%0A-%25220%2522,hora,%2522:%2522,minuto,%2522 %2522,dia,%2522/%2522,mes,%2522/%2522%0A+%2525220%252522,hora,%252522:%252522,minuto,%252522 %252522,dia,%252522/%252522,mes,%252522/%252522%0A ,ult%0A@@ -148,38 +148,42 @@%0A %252522,ultimosDois)%0A-%250A%0A+%25250A%0A     %0A-%257D%0A+%25257D%0A  else if dia%253C10 %0A@@ -174,25 +174,27 @@%0A  else if dia%0A-%253C%0A+%25253C%0A 10 && mes %257B%250A%0A@@ -191,18 +191,22 @@%0A  && mes %0A-%257B%250A%0A+%25257B%25250A%0A         %0A@@ -225,19 +225,23 @@%0A ora,%0A-%2522:%2522%0A+%252522:%252522%0A ,minuto,%0A %2522 %2522,%0A@@ -240,27 +240,43 @@%0A uto,%0A-%2522 %2522,%25220%2522,dia,%2522/%2522,%25220%2522%0A+%252522 %252522,%2525220%252522,dia,%252522/%252522,%2525220%252522%0A ,mes%0A@@ -284,30 +284,34 @@%0A ultimosDois)%0A-%250A%0A+%25250A%0A     %0A-%257D%0A+%25257D%0A  else if min%0A@@ -313,17 +313,19 @@%0A f minuto%0A-%253C%0A+%25253C%0A 10 && di%0A@@ -325,17 +325,19 @@%0A 0 && dia%0A-%253C%0A+%25253C%0A 10 && me%0A@@ -341,13 +341,19 @@%0A  mes%0A-%253C10%257B%250A%0A+%25253C10%25257B%25250A%0A     %0A@@ -376,41 +376,57 @@%0A ora,%0A-%2522:0%2522,minuto,%2522 0%2522,dia,%2522/0%2522,mes,%2522/%2522%0A+%252522:0%252522,minuto,%252522 0%252522,dia,%252522/0%252522,mes,%252522/%252522%0A ,ult%0A@@ -438,22 +438,30 @@%0A ois)%0A-%250A%0A+%25250A%0A     %0A-%257D%0A+%25257D%0A  else %0A-%257B%250A%0A+%25257B%25250A%0A     %0A@@ -483,31 +483,52 @@%0A dia,%0A-%2522:0%2522,minuto,%2522 0%2522,)%250A    %257D%250A%257D%0A+%252522:0%252522,minuto,%252522 0%252522,)%25250A    %25257D%250A %25250A%25257D%25250A%0A %250A\n %0A\n",
+            "lines": "92"
+        },
+        {
+            "label": "2026-03-26_12-31-27",
+            "content": "@@ -125,13 +125,9 @@\n no)%0A\n-    \n %0A\n+\n     \n@@ -150,16 +150,47 @@\n no%25100%0A%0A\n+    if hora%3C10 && mes%3C10 %7B%0A    \n     fmt.\n@@ -198,74 +198,340 @@\n rint\n-f(%22%2502d:%2502d %2502d/%2502d/%2502d%22, hora, minuto, dia, mes, ultimosDois) \n+ (%220%22,hora,%22:%22,minuto,%22 %22,dia,%22/%22,mes,%22/%22,ultimosDois)%0A    %7D else if dia%3C10 && mes %7B%0A        fmt.Print (hora,%22:%22,minuto,%22 %22,%220%22,dia,%22/%22,%220%22,mes,ultimosDois)%0A    %7D else if minuto%3C10 && dia%3C10 && mes%3C10%7B%0A        fmt.Print (hora,%22:0%22,minuto,%22 0%22,dia,%22/0%22,mes,%22/%22,ultimosDois)%0A    %7D else %7B%0A        fmt.Print (dia,%22:0%22,minuto,%22 0%22,)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-26_15-27-09",
+            "content": "@@ -121,16 +121,21 @@\n , &ano)%0A\n+    %0A\n     ulti\n@@ -153,16 +153,17 @@\n ano%25100%0A\n+%0A\n     fmt.\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-26_15-28-05",
+            "content": "@@ -188,17 +188,16 @@\n 02d/%2502d\n- \n %22, hora,\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-26_15-29-20",
+            "content": "@@ -188,16 +188,17 @@\n 02d/%2502d\n+ \n %22, hora,\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-26_15-29-38",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var hora, minuto, dia, mes, ano int\n    fmt.Scan(&hora, &minuto, &dia, &mes, &ano)\n    ultimosDois := ano%100\n    fmt.Printf(\"%02d:%02d %02d/%02d/%02d\", hora, minuto, dia, mes, ultimosDois) \n}\n",
+            "lines": "9"
         }
     ]
 }

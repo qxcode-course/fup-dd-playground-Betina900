@@ -4,6 +4,6 @@ import "fmt"
 func main() {
     var hora, minuto, dia, mes, ano int
     fmt.Scan(&hora, &minuto, &dia, &mes, &ano)
-
     ultimosDois := ano%100
+    fmt.Printf("%02d:%02d %02d/%02d/%02d", hora, minuto, dia, mes, ultimosDois) 
 }
