@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-27_12-05-31",
+            "content": "@@ -1,206 +1,53 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var km, min, litro float64%0A    fmt.Scan(&km, &min, &litro)%0A    hora:= min/60%0A    dist:= km*hora%0A    desem:= dist/litro%0A    fmt.Printf(%22%25.2f%5Cn%22, float64(desem))%0A%7D\n+@@ -176,14 +176,8 @@%0A tf(%2522%0A-%2525.2f%255Cn%0A %2522)%250A%257D\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-03-27_12-05-55",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var km, min, litro float64\n    fmt.Scan(&km, &min, &litro)\n    hora:= min/60\n    dist:= km*hora\n    desem:= dist/litro\n    fmt.Printf(\"%.2f\\n\", float64(desem))\n}\n",
+            "lines": "10"
+        }
+    ]
+}

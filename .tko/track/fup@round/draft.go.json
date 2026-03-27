@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-27_12-07-19",
+            "content": "@@ -17,288 +17,59 @@\n ort \n-%7B%0A    %22fmt%22%0A    %22math%22%0A%7D func main() %7B%0A    var letra rune%0A    var num float64%0A    fmt.Scan(&letra, &num)%0A%0A    Switch letra%7B%0A    case %22c%22:%0A        fmt.Println(math.Ceil(num))%0A    case %22f%22:%0A        fmt.Println(math.Floor(num))%0A    case %22r%22:%0A        fmt.Println(math.Round(num))%0A    %7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-27_12-34-21",
+            "content": "@@ -37,17 +37,17 @@\n %22math%22%0A%7D\n-%0A\n+ \n func mai\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-27_12-34-47",
+            "content": "@@ -16,11 +16,8 @@\n port\n- ()\n  %7B%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-27_12-34-56",
+            "content": "@@ -17,13 +17,35 @@\n ort \n-%22fmt%22\n+() %7B%0A    %22fmt%22%0A    %22math%22%0A%7D\n %0Afun\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-27_12-35-43",
+            "content": "@@ -116,17 +116,16 @@\n ch letra\n- \n %7B%0A    ca\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-27_12-36-10",
+            "content": "@@ -157,23 +157,18 @@\n tln(\n-int ceil(float \n+math.Ceil(\n num)\n@@ -207,24 +207,19 @@\n tln(\n-int floor(float \n+math.Floor(\n num)\n@@ -258,24 +258,19 @@\n tln(\n-int round(float \n+math.Round(\n num)\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-27_12-38-27",
+            "content": "@@ -116,16 +116,17 @@\n ch letra\n+ \n %7B%0A    ca\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-27_12-38-44",
+            "content": "@@ -41,30 +41,42 @@\n     \n-rune\n+var\n  letra\n-%0A   \n+ rune%0A    var num\n  float64\n  num\n@@ -71,20 +71,16 @@\n  float64\n- num\n %0A    fmt\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-27_12-39-17",
+            "content": "@@ -41,42 +41,30 @@\n     \n-var\n+rune\n  letra\n- rune%0A    var num\n+%0A   \n  float64\n %0A   \n@@ -59,16 +59,20 @@\n  float64\n+ num\n %0A    fmt\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-27_12-39-45",
+            "content": "@@ -17,32 +17,13 @@\n ort \n-(%0A    %22fmt%22%0A    %22math%22%0A)\n+%22fmt%22\n %0Afun\n@@ -156,18 +156,23 @@\n tln(\n-math.Ceil(\n+int ceil(float \n num)\n@@ -211,19 +211,24 @@\n tln(\n-math.Floor(\n+int floor(float \n num)\n@@ -267,19 +267,24 @@\n tln(\n-math.Round(\n+int round(float \n num)\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-27_12-50-59",
+            "content": "@@ -123,17 +123,17 @@\n m)%0A%0A    \n-s\n+S\n witch le\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-27_12-53-09",
+            "content": "@@ -70,12 +70,12 @@\n tra \n-stri\n+rune\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-27_12-53-45",
+            "content": "@@ -74,10 +74,8 @@\n stri\n-ng\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-27_12-54-05",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"math\"\n)\nfunc main() {\n    var letra string\n    var num float64\n    fmt.Scan(&letra, &num)\n\n    switch letra{\n    case \"c\":\n        fmt.Println(math.Ceil(num))\n    case \"f\":\n        fmt.Println(math.Floor(num))\n    case \"r\":\n        fmt.Println(math.Round(num))\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}
