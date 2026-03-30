@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-38-24",
+            "content": "@@ -41,266 +41,34 @@\n     \n-var numA, numB int%0A    fmt.Scan(&numA, &numB)%0A%0A    fmt.Print(%22%5B %22)%0A    for i:=numA%7B%0A        if i%3EnumB%7B%0A            fmt.Print(i, %22 %22)%0A            i--%0A        %7D%0A        if i%3CnumB%7B%0A            fmt.Print(i, %22 %22)%0A            i++%0A        %7D%0A    %7D%0A    fmt.Println(%22%5D\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_17-45-33",
+            "content": "@@ -123,24 +123,33 @@\n numA\n-; i%3EnumB; i-- %7B%0A\n+%7B%0A        if i%3EnumB%7B%0A    \n     \n@@ -178,66 +178,104 @@\n     \n-%7D%0A    for i:=numA; i%3CnumB; i++ %7B%0A        fmt.Print(i, %22 %22)\n+        i--%0A        %7D%0A        if i%3CnumB%7B%0A            fmt.Print(i, %22 %22)%0A            i++%0A        %7D\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-30_17-52-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numA, numB int\n    fmt.Scan(&numA, &numB)\n\n    fmt.Print(\"[ \")\n    for i:=numA; i>numB; i-- {\n        fmt.Print(i, \" \")\n    }\n    for i:=numA; i<numB; i++ {\n        fmt.Print(i, \" \")\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "15"
+        }
+    ]
+}

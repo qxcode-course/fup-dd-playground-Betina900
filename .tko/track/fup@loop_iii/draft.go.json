@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-10-57",
+            "content": "@@ -41,161 +41,34 @@\n     \n-var numA, numB int%0A    fmt.Scan(&numA, &numB)%0A%0A    fmt.Print(%22%5B %22)%0A    for i=numA; i%3CnumB%7B%0A        fmt.Print(i, %22 %22)%0A        i--%0A    %7D%0A    fmt.Println(%22%5D\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_17-16-03",
+            "content": "@@ -130,13 +130,8 @@\n numB\n-; i--\n %7B%0A  \n@@ -150,24 +150,36 @@\n int(i, %22 %22)%0A\n+        i--%0A\n     %7D%0A    fm\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_17-16-31",
+            "content": "@@ -117,9 +117,8 @@\n or i\n-:\n =num\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-16-47",
+            "content": "@@ -132,17 +132,16 @@\n umB; i--\n- \n %7B%0A      \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-17-36",
+            "content": "@@ -123,17 +123,16 @@\n numA; i%3C\n-=\n numB; i-\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-18-14",
+            "content": "@@ -128,16 +128,22 @@\n  i%3C=numB\n+; i-- \n %7B%0A      \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-18-58",
+            "content": "@@ -160,29 +160,8 @@\n  %22)%0A\n-        %0A        i--%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-19-29",
+            "content": "@@ -132,13 +132,8 @@\n numB\n-; i--\n %7B%0A  \n@@ -152,24 +152,45 @@\n int(i, %22 %22)%0A\n+        %0A        i--%0A\n     %7D%0A    fm\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_17-19-50",
+            "content": "@@ -133,17 +133,16 @@\n umB; i--\n- \n %7B%0A      \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-19-54",
+            "content": "@@ -155,16 +155,21 @@\n .Print(i\n+, %22 %22\n )%0A    %7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-20-16",
+            "content": "@@ -135,10 +135,10 @@\n B; i\n-++\n+--\n  %7B%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-20-35",
+            "content": "@@ -135,10 +135,10 @@\n B; i\n---\n+++\n  %7B%0A \n@@ -159,13 +159,8 @@\n nt(i\n-, %22 %22\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-21-40",
+            "content": "@@ -123,16 +123,17 @@\n numA; i%3C\n+=\n numB; i-\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-25-29",
+            "content": "@@ -126,9 +126,9 @@\n A; i\n-%3E\n+%3C\n numB\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-27-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numA, numB int\n    fmt.Scan(&numA, &numB)\n\n    fmt.Print(\"[ \")\n    for i:=numA; i>numB; i-- {\n        fmt.Print(i, \" \")\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "12"
+        }
+    ]
+}

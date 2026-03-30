@@ -187,7 +187,12 @@
         },
         {
             "label": "2026-03-26_15-29-38",
-            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var hora, minuto, dia, mes, ano int\n    fmt.Scan(&hora, &minuto, &dia, &mes, &ano)\n    ultimosDois := ano%100\n    fmt.Printf(\"%02d:%02d %02d/%02d/%02d\", hora, minuto, dia, mes, ultimosDois) \n}\n",
+            "content": "@@ -192,10 +192,8 @@\n %2502d\n-%5Cn\n %22, h\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-30_16-57-12",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var hora, minuto, dia, mes, ano int\n    fmt.Scan(&hora, &minuto, &dia, &mes, &ano)\n    ultimosDois := ano%100\n    fmt.Printf(\"%02d:%02d %02d/%02d/%02d\\n\", hora, minuto, dia, mes, ultimosDois) \n}\n",
             "lines": "9"
         }
     ]
