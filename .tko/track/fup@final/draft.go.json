@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-09-39",
+            "content": "@@ -41,405 +41,35 @@\n     \n-var nota1, nota2, nota_final int%0A    fmt.Scan(&nota1, &nota2, &nota_final)%0A%0A    media := (nota1+nota2)/2%0A    media_final := (media+media)/2%0A%0A    if media%3E=7%7B%0A        fmt.Println(%22aprovado%22)%0A    %7D else if media%3C4%7B%0A        fmt.Println(%22reprovado%22)%0A    %7D else if media%3E4 && media%3C7 && media_final%3E=5%7B%0A        fmt.Println(%22aprovado na final%22)%0A    %7D else%7B%0A        fmt.Println(%22reprovado na final%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-23-22",
+            "content": "@@ -168,26 +168,21 @@\n  (media+\n-nota_final\n+media\n )/2%0A%0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-31_17-24-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nota1, nota2, nota_final int\n    fmt.Scan(&nota1, &nota2, &nota_final)\n\n    media := (nota1+nota2)/2\n    media_final := (media+nota_final)/2\n\n    if media>=7{\n        fmt.Println(\"aprovado\")\n    } else if media<4{\n        fmt.Println(\"reprovado\")\n    } else if media>4 && media<7 && media_final>=5{\n        fmt.Println(\"aprovado na final\")\n    } else{\n        fmt.Println(\"reprovado na final\")\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}

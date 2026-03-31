@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-45-23",
+            "content": "@@ -41,432 +41,35 @@\n     \n-var dia_semana, hora int%0A    fmt.Scan(&dia_semana, &hora)%0A%0A    if dia_semana%3E=2 &&dia_semana%3C=6 %7B%0A        if hora%3E=8 && hora%3C=%7B%0A            fmt.Println(%22SIM%22)%0A        %7D else if hora%3E=14 && hora%3C=17%7B%0A            fmt.Println(%22SIM%22)%0A        %7D else%7B%0A            fmt.Println(%22NAO%22)%0A        %7D%0A    %7D else%7B%0A        if hora%3E=8 && hora%3C=11%7B%0A            fmt.Println(%22SIM%22)%0A        %7D else %7B%0A            fmt.Println(%22NAO%22)%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_18-03-07",
+            "content": "@@ -324,16 +324,149 @@\n       %7D%0A\n+    %7D else%7B%0A        if hora%3E=8 && hora%3C=11%7B%0A            fmt.Println(%22SIM%22)%0A        %7D else %7B%0A            fmt.Println(%22NAO%22)%0A        %7D%0A\n     %7D%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_18-04-48",
+            "content": "@@ -119,17 +119,16 @@\n na%3E=2 &&\n- \n dia_sema\n@@ -328,138 +328,8 @@\n   %7D%0A\n-    %7D else%7B%0A        if hora%3E=8 && hora%3C=11%7B%0A            fmt.Println(%22SIM%22)%0A        %7D else %7B%0A            fmt.Println(%22%22)%0A        %7D%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_18-05-02",
+            "content": "@@ -334,47 +334,13 @@\n    %7D\n-%0A%0A    if dia_semana==1 %7C%7C dia_semana==7\n+ else\n %7B%0A  \n@@ -406,32 +406,33 @@\n )%0A        %7D else\n+ \n %7B%0A            fm\n@@ -434,35 +434,32 @@\n    fmt.Println(%22\n-NAO\n %22)%0A        %7D%0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_18-08-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var dia_semana, hora int\n    fmt.Scan(&dia_semana, &hora)\n\n    if dia_semana>=2 && dia_semana<=6 {\n        if hora>=8 && hora<={\n            fmt.Println(\"SIM\")\n        } else if hora>=14 && hora<=17{\n            fmt.Println(\"SIM\")\n        } else{\n            fmt.Println(\"NAO\")\n        }\n    }\n\n    if dia_semana==1 || dia_semana==7{\n        if hora>=8 && hora<=11{\n            fmt.Println(\"SIM\")\n        } else{\n            fmt.Println(\"NAO\")\n        }\n    }\n}\n",
+            "lines": "24"
+        }
+    ]
+}

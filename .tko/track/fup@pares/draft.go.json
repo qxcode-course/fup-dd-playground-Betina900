@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_16-43-06",
+            "content": "@@ -41,159 +41,35 @@\n     \n-var numA, numB int%0A    fmt.Scan(&numA, &numB)%0A%0A    soma := 0%0A    %0A    for i:=numB; i%3E=numA; i--%7B%0A        soma = soma + i%0A        fmt.Println(soma)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_16-53-13",
+            "content": "@@ -166,11 +166,8 @@\n     \n-%7D%0A%0A\n     \n@@ -184,10 +184,16 @@\n n(soma)%0A\n+    %7D%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_16-54-32",
+            "content": "@@ -146,75 +146,23 @@\n     \n-if i%252 == 0%7B%0A            soma = soma + i%0A        continue%0A        %7D\n+soma = soma + i\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_16-56-40",
+            "content": "@@ -138,26 +138,8 @@\n --%7B%0A\n-        //calculo%0A\n     \n@@ -214,94 +214,8 @@\n   %7D%0A\n-        //invalido%0A        if i %3C numA%7B%0A            fmt.Println(%22invalido%22)%0A        %7D%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-31_16-58-46",
+            "content": "@@ -242,19 +242,8 @@\n   //\n-quando for \n inva\n@@ -304,33 +304,16 @@\n alido%22)%0A\n-        continue%0A\n         \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_16-59-34",
+            "content": "@@ -194,10 +194,16 @@\n oma \n-+\n =\n+ soma +\n  i%0A \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-00-58",
+            "content": "@@ -134,11 +134,10 @@\n A; i\n-++ \n+--\n %7B%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-01-20",
+            "content": "@@ -134,9 +134,10 @@\n A; i\n--\n+++\n  %7B%0A \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-01-34",
+            "content": "@@ -131,17 +131,17 @@\n numA; i-\n--\n+ \n %7B%0A      \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-02-02",
+            "content": "@@ -134,10 +134,10 @@\n A; i\n-++\n+--\n %7B%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-02-25",
+            "content": "@@ -134,10 +134,10 @@\n A; i\n---\n+++\n %7B%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-02-36",
+            "content": "@@ -134,16 +134,34 @@\n A; i--%7B%0A\n+        //calculo%0A\n         \n@@ -207,14 +207,64 @@\n     \n-%7D else\n+continue%0A        %7D%0A        //quando for invalido%0A       \n  if \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-04-06",
+            "content": "@@ -152,10 +152,12 @@\n  i%252\n+ \n ==\n+ \n 0%7B%0A \n@@ -200,9 +200,11 @@\n if i\n-%3C\n+ %3C \n numA\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-31_17-04-27",
+            "content": "@@ -101,65 +101,8 @@\n := 0\n-%0A%0A    if numB%3CnumA%7B%0A        fmt.Println(%22invalido%22)%0A    %7D\n %0A   \n@@ -175,16 +175,95 @@\n ma += i%0A\n+        %7D else if i%3CnumA%7B%0A            fmt.Println(%22invalido%22)%0A        continue%0A\n         \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-31_17-06-58",
+            "content": "@@ -153,23 +153,8 @@\n o%22)%0A\n-        return%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-31_17-07-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numA, numB int\n    fmt.Scan(&numA, &numB)\n\n    soma := 0\n\n    if numB<numA{\n        fmt.Println(\"invalido\")\n        return\n    }\n    \n    for i:=numB; i>=numA; i--{\n        if i%2==0{\n            soma += i\n        }\n    }\n\n    fmt.Println(soma)\n}\n",
+            "lines": "21"
+        }
+    ]
+}
