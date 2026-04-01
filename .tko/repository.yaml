@@ -14,8 +14,7 @@ sources:
   writeable: false
   quests: null
   tasks: null
-expanded:
-- fup@for1
+expanded: []
 tasks:
   fup@tres: '{self:1, rate:100, study:8, friend:Nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:6, friend:Nao, guided:1}'
@@ -44,6 +43,8 @@ tasks:
   fup@jokenpo: '{self:1, rate:100, study:9}'
   fup@final: '{self:1, rate:100, study:15}'
   fup@semana: '{self:1, rate:100, study:24}'
+  fup@varetas: '{self:1, rate:100, study:6}'
+  fup@bhaskara: '{self:1, rate:100, friend:Pompeu, concept:1}'
   fup@maximo: '{self:1, rate:100, study:4}'
   fup@loop_i: '{self:1, rate:100, study:12, friend:Nao}'
   fup@loop_ii: '{self:1, rate:100, study:49}'
@@ -52,9 +53,8 @@ tasks:
   fup@loop_v: '{self:1, rate:100, study:19}'
   fup@pares: '{self:1, rate:100, study:24, friend:Hanna, concept:1}'
   fup@sapatos: '{self:1, rate:100, study:10}'
+  fup@filhos: '{self:1, rate:100, study:13, friend:Pompeu}'
   fup@tv: '{}'
-  fup@varetas: '{}'
-  fup@bhaskara: '{}'
   fup@cortada: '{}'
   fup@monica: '{}'
   fup@drone: '{}'
@@ -85,7 +85,6 @@ tasks:
   fup@segundo: '{}'
   fup@adedonha: '{}'
   fup@sono: '{}'
-  fup@filhos: '{}'
   fup@ceu: '{}'
   fup@esconde: '{}'
   fup@zigzag: '{}'

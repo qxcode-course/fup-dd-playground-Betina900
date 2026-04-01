@@ -22,8 +22,78 @@
         },
         {
             "label": "2026-04-01_14-10-36",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var idade_mais_novo, quant_filhos int\n    fmt.Scan(&idade_mais_novo, &quant_filhos)\n\n    idades := idade_mais_novo+2\n    for i:=0; i==quant_filhos; i++{\n        fmt.Println(idades)\n    }\n}\n",
+            "content": "@@ -122,16 +122,48 @@\n ilhos)%0A%0A\n+    idades := idade_mais_novo+2%0A\n     for \n@@ -210,16 +210,22 @@\n Println(\n+idades\n )%0A    %7D%0A\n",
             "lines": "11"
+        },
+        {
+            "label": "2026-04-01_15-27-37",
+            "content": "@@ -182,25 +182,8 @@\n tln(\n-idade_mais_novo+2\n )%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-01_15-30-19",
+            "content": "@@ -75,19 +75,12 @@\n hos \n-,total \n int%0A\n+\n     \n@@ -124,20 +124,8 @@\n hos)\n-%0A    total=2\n %0A%0A  \n@@ -170,14 +170,20 @@\n     \n-total=\n+fmt.Println(\n idad\n@@ -198,39 +198,9 @@\n ovo+\n-total%0A        fmt.Println(total\n+2\n )%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-01_15-33-16",
+            "content": "@@ -145,31 +145,8 @@\n =2%0A%0A\n-    fmt.Println(%22opa%22)%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-01_15-33-43",
+            "content": "@@ -141,16 +141,39 @@\n otal=2%0A%0A\n+    fmt.Println(%22opa%22)%0A\n     for \n@@ -267,35 +267,8 @@\n al)%0A\n-        fmt.Println(%22opa%22)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-01_15-34-03",
+            "content": "@@ -233,17 +233,48 @@\n Println(\n-i\n+total)%0A        fmt.Println(%22opa%22\n )%0A    %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-01_15-35-20",
+            "content": "@@ -74,11 +74,15 @@\n lhos\n-, p\n+ ,total\n  int\n@@ -136,12 +136,16 @@\n     \n-p:=0\n+total=2%0A\n %0A   \n@@ -189,20 +189,14 @@\n     \n-fmt.Println(\n+total=\n idad\n@@ -210,49 +210,37 @@\n novo\n-)%0A        p+=2%0A        idade_mais_novo+=p\n++total%0A        fmt.Println(i)\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-01_15-41-07",
+            "content": "@@ -70,16 +70,19 @@\n t_filhos\n+, p\n  int%0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-01_15-41-26",
+            "content": "@@ -253,32 +253,6 @@\n   %7D%0A\n-    fmt.Println(%22te amo%22)%0A\n %7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-01_15-41-52",
+            "content": "@@ -265,27 +265,20 @@\n Println(\n-idade_mais_novo\n+%22te amo%22\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-01_15-42-05",
+            "content": "@@ -249,10 +249,43 @@\n p%0A    %7D%0A\n+    fmt.Println(idade_mais_novo)%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-01_15-42-52",
+            "content": "@@ -149,9 +149,9 @@\n 0; i\n-%3C\n+=\n =qua\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-01_15-44-45",
+            "content": "@@ -121,16 +121,25 @@\n filhos)%0A\n+    p:=0%0A\n     for \n@@ -203,16 +203,29 @@\n s_novo)%0A\n+        p+=2%0A\n         \n@@ -241,17 +241,17 @@\n s_novo+=\n-2\n+p\n %0A    %7D%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-01_15-45-36",
+            "content": "@@ -136,9 +136,9 @@\n  i:=\n-1\n+0\n ; i%3C\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-01_15-45-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var idade_mais_novo, quant_filhos int\n    fmt.Scan(&idade_mais_novo, &quant_filhos)\n    for i:=1; i<=quant_filhos; i++{\n        fmt.Println(idade_mais_novo)\n        idade_mais_novo+=2\n    }\n}\n",
+            "lines": "10"
         }
     ]
 }
