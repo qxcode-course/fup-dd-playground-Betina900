@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-01_13-58-02",
+            "content": "@@ -1,48 +1,32 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B\n+@@ -41,170 +41,35 @@\n %0A    \n+ %0A-\n var \n@@ -58,17 +58,19 @@\n lhos int\n-%0A\n+%250A\n     fmt.\n@@ -110,10 +110,14 @@\n hos)\n-%0A%0A\n+%250A%250A\n     \n@@ -150,10 +150,14 @@\n  i++\n-%7B%0A\n+%257B%250A\n     \n@@ -191,16 +191,61 @@\n novo\n-+2)%0A    %7D%0A%7D\n+)%250A    %257D%0A+fmt.Println(%2522Hello, World!%2522)%0A %250A%257D%250A\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-01_14-06-03",
+            "content": "@@ -179,16 +179,32 @@\n rintln(i\n+dade_mais_novo+2\n )%0A    %7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-01_14-09-12",
+            "content": "@@ -126,39 +126,8 @@\n s)%0A%0A\n-    idades : idade_mais_novo+2%0A\n     \n@@ -183,13 +183,8 @@\n ln(i\n-dades\n )%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-01_14-10-19",
+            "content": "@@ -134,17 +134,16 @@\n idades :\n-=\n  idade_m\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-01_14-10-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var idade_mais_novo, quant_filhos int\n    fmt.Scan(&idade_mais_novo, &quant_filhos)\n\n    idades := idade_mais_novo+2\n    for i:=0; i==quant_filhos; i++{\n        fmt.Println(idades)\n    }\n}\n",
+            "lines": "11"
+        }
+    ]
+}
