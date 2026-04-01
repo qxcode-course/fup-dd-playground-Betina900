@@ -45,6 +45,9 @@ tasks:
   fup@semana: '{self:1, rate:100, study:24}'
   fup@varetas: '{self:1, rate:100, study:6}'
   fup@bhaskara: '{self:1, rate:100, friend:Pompeu, concept:1}'
+  fup@cortada: '{self:1, rate:100, study:50, friend:Pompeu}'
+  fup@monica: '{self:1, rate:100, study:21, friend:Pompeu}'
+  fup@goiabas: '{self:1, rate:100, study:36, friend:Pompeu}'
   fup@maximo: '{self:1, rate:100, study:4}'
   fup@loop_i: '{self:1, rate:100, study:12, friend:Nao}'
   fup@loop_ii: '{self:1, rate:100, study:49}'
@@ -55,11 +58,8 @@ tasks:
   fup@sapatos: '{self:1, rate:100, study:10}'
   fup@filhos: '{self:1, rate:100, study:13, friend:Pompeu}'
   fup@tv: '{}'
-  fup@cortada: '{}'
-  fup@monica: '{}'
   fup@drone: '{}'
   fup@teleferico: '{}'
-  fup@goiabas: '{}'
   fup@cobra: '{}'
   fup@game10: '{}'
   fup@salario: '{}'
@@ -247,4 +247,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@for1
+selected: fup@if1

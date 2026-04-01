@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-01_17-13-31",
+            "content": "@@ -41,86 +41,35 @@\n     \n-var b, t int%0A    fmt.Scan(&base, &distancia)%0A%0A    area_retangulo := 160*70%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-01_17-47-09",
+            "content": "@@ -33,10 +33,94 @@\n ain() %7B%0A\n+    var b, t int%0A    fmt.Scan(&base, &distancia)%0A%0A    area_retangulo := 160*70%0A    %0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-01_18-14-00",
+            "content": "@@ -37,293 +37,6 @@\n ) %7B%0A\n-%09var base, topo int%0A%09fmt.Scan(&base, &topo)%0A%0A%09area_retangulo := 160*70%0A%09metade_retangulo := area_retangulo/2%0A%09area_trapezio := (base+topo)*70/2%0A%0A%09if area_trapezio%3Emetade_retangulo%7B%0A%09%09fmt.Println(1)%0A%09%7D else if area_trapezio%3Cmetade_retangulo%7B%0A%09%09fmt.Println(2)%0A%09%7D else%7B%0A%09%09fmt.Println(0)%0A%09%7D%0A\n %7D%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-04-01_18-37-58",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar base, topo int\n\tfmt.Scan(&base, &topo)\n\n\tarea_retangulo := 160*70\n\tmetade_retangulo := area_retangulo/2\n\tarea_trapezio := (base+topo)*70/2\n\n\tif area_trapezio>metade_retangulo{\n\t\tfmt.Println(1)\n\t} else if area_trapezio<metade_retangulo{\n\t\tfmt.Println(2)\n\t} else{\n\t\tfmt.Println(0)\n\t}\n}\n",
+            "lines": "18"
+        }
+    ]
+}
