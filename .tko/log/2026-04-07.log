@@ -33,3 +33,46 @@
 2026-04-07 13:52:54, EXEC, v:1, k:fup@zigzag, mode:FULL, rate:100, size:25
 2026-04-07 13:53:42, MOVE, v:1, k:fup@zigzag, mode:BACK
 2026-04-07 13:54:04, SELF, v:1, k:fup@zigzag, self:1, rate:100, study:19, concept:1
+2026-04-07 16:20:17, MOVE, v:1, k:fup@teleferico, mode:DOWN
+2026-04-07 16:20:18, MOVE, v:1, k:fup@teleferico, mode:PICK
+2026-04-07 16:20:25, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:0, size:5
+2026-04-07 16:25:34, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:0, size:10
+2026-04-07 16:25:50, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:0, size:10
+2026-04-07 16:27:35, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:25, size:10
+2026-04-07 16:32:09, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:37, size:10
+2026-04-07 16:33:02, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:37, size:10
+2026-04-07 16:36:42, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:12, size:9
+2026-04-07 16:36:55, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:0, size:9
+2026-04-07 16:57:48, EXEC, v:1, k:fup@teleferico, mode:FULL, size:13, fail:COMP
+2026-04-07 16:58:18, EXEC, v:1, k:fup@teleferico, mode:FULL, size:12, fail:COMP
+2026-04-07 17:00:19, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:75, size:12
+2026-04-07 17:02:41, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:100, size:12
+2026-04-07 17:03:11, MOVE, v:1, k:fup@teleferico, mode:BACK
+2026-04-07 17:03:46, SELF, v:1, k:fup@teleferico, self:1, rate:100, study:42, friend:Hanna
+2026-04-07 17:04:25, MOVE, v:1, k:fup@colorido, mode:DOWN
+2026-04-07 17:04:29, MOVE, v:1, k:fup@colorido, mode:PICK
+2026-04-07 17:04:41, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:5
+2026-04-07 17:12:09, EXEC, v:1, k:fup@colorido, mode:FULL, size:16, fail:COMP
+2026-04-07 17:12:26, EXEC, v:1, k:fup@colorido, mode:FULL, size:16, fail:COMP
+2026-04-07 17:29:12, EXEC, v:1, k:fup@colorido, mode:FULL, size:26, fail:COMP
+2026-04-07 17:29:30, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:26
+2026-04-07 17:31:41, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:27
+2026-04-07 17:32:09, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:27
+2026-04-07 17:32:21, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:27
+2026-04-07 17:33:54, EXEC, v:1, k:fup@colorido, mode:FULL, rate:16, size:26
+2026-04-07 17:40:43, EXEC, v:1, k:fup@colorido, mode:FULL, rate:33, size:26
+2026-04-07 17:42:13, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:26
+2026-04-07 17:43:56, EXEC, v:1, k:fup@colorido, mode:FULL, rate:33, size:26
+2026-04-07 17:50:09, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:22
+2026-04-07 17:52:53, EXEC, v:1, k:fup@colorido, mode:FULL, rate:16, size:27
+2026-04-07 18:04:20, EXEC, v:1, k:fup@colorido, mode:FULL, rate:16, size:30
+2026-04-07 18:04:31, EXEC, v:1, k:fup@colorido, mode:FULL, rate:100, size:31
+2026-04-07 18:04:41, MOVE, v:1, k:fup@colorido, mode:BACK
+2026-04-07 18:05:51, SELF, v:1, k:fup@colorido, self:1, rate:100, study:60, friend:Hanna, concept:1
+2026-04-07 18:07:16, MOVE, v:1, k:fup@concentra, mode:DOWN
+2026-04-07 18:07:20, MOVE, v:1, k:fup@concentra, mode:PICK
+2026-04-07 18:07:21, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:5
+2026-04-07 18:16:22, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:11
+2026-04-07 18:16:49, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:12
+2026-04-07 18:21:17, EXEC, v:1, k:fup@concentra, mode:FULL, size:17, fail:COMP
+2026-04-07 18:21:20, MOVE, v:1, k:fup@concentra, mode:BACK

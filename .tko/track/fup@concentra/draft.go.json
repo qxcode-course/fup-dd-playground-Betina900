@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_18-07-21",
+            "content": "@@ -28,94 +28,21 @@\n unc \n-sequenciaCompleta(numeroA, numeroB int)%7B%0A    for i:=numeroA; i%3C=numeroB; i++%7B%0A   \n+main() %7B%0A\n     \n- \n fmt.\n@@ -50,99 +50,26 @@\n rint\n-(i, %22 %22)%0A    %7D%0A%7D%0Afunc main() %7B%0A    var numeroA, numeroB int%0A    fmt.Scan(&numeroA, &numeroB\n+ln(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_18-16-22",
+            "content": "@@ -216,46 +216,6 @@\n oB)%0A\n-    sequenciaCompleta(numeroA, numeroB)%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_18-16-49",
+            "content": "@@ -37,131 +37,16 @@\n ncia\n-NumeroB(numeroA, numeroB int)%7B%0A    for i:=numeroB; i%3E=numeroA; i--%7B%0A        fmt.Print(i, %22 %22)%0A    %7D%0A%7D%0Afunc sequenciaNumeroA\n+Completa\n (num\n@@ -130,44 +130,8 @@\n  %22 %22\n-, sequenciaNumeroB(numeroA, numeroB)\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_18-21-17",
+            "content": "package main\nimport \"fmt\"\nfunc sequenciaNumeroB(numeroA, numeroB int){\n    for i:=numeroB; i>=numeroA; i--{\n        fmt.Print(i, \" \")\n    }\n}\nfunc sequenciaNumeroA(numeroA, numeroB int){\n    for i:=numeroA; i<=numeroB; i++{\n        fmt.Print(i, \" \", sequenciaNumeroB(numeroA, numeroB))\n    }\n}\nfunc main() {\n    var numeroA, numeroB int\n    fmt.Scan(&numeroA, &numeroB)\n    sequenciaCompleta(numeroA, numeroB)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

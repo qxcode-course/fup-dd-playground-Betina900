@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-04-41",
+            "content": "@@ -41,214 +41,35 @@\n     \n-var n_caiu int%0A    var peInicio string%0A%0A    for i=0; i%3C=10; i++%7B%0A        if i==n_caiu%7B%0A            continue%0A        %7D%0A        if i==10%7B%0A            fmt.Print(%22ceu %22)%0A        %7D%0A        fmt.Print(i, %22 %22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_17-12-09",
+            "content": "@@ -90,9 +90,8 @@\n or i\n-:\n =0; \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_17-12-26",
+            "content": "@@ -81,28 +81,8 @@\n ng%0A%0A\n-    fmt.Print(%22%5B %22)%0A\n     \n@@ -216,195 +216,40 @@\n     \n-    continue%0A        %7D%0A%0A        fmt.Print(i, peInicio %22 %22)%0A%0A        if peInicio==%22d%22%7B%0A            peInicio=%22e%22%0A        %7D else%7B%0A            peInicio=%22d%22%0A        %7D%0A    %7D%0A    fmt.Println(%22%5D%22)\n+%7D%0A        fmt.Print(i, %22 %22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_17-29-12",
+            "content": "@@ -285,17 +285,16 @@\n peInicio\n-,\n  %22 %22)%0A%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_17-29-30",
+            "content": "@@ -81,32 +81,8 @@\n ng%0A%0A\n-    ladoAtual:=peInicio%0A\n     \n@@ -277,25 +277,24 @@\n rint(i, \n-ladoAtual\n+peInicio\n , %22 %22)%0A%0A\n@@ -304,25 +304,24 @@\n      if \n-ladoAtual\n+peInicio\n ==%22d%22%7B%0A \n@@ -331,25 +331,24 @@\n         \n-ladoAtual\n+peInicio\n =%22e%22%0A   \n@@ -376,17 +376,16 @@\n     \n-ladoAtual\n+peInicio\n =%22d%22\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_17-31-41",
+            "content": "@@ -264,13 +264,16 @@\n     \n-break\n+continue\n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-07_17-32-09",
+            "content": "@@ -256,32 +256,29 @@\n             \n-continue\n+break\n %0A        %7D%0A%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-07_17-32-21",
+            "content": "@@ -151,113 +151,8 @@\n ++%7B%0A\n-        if ladoAtual==%22d%22%7B%0A            ladoAtual=%22e%22%0A        %7D else%7B%0A            ladoAtual=%22d%22%0A        %7D%0A\n     \n@@ -316,16 +316,122 @@\n al, %22 %22)\n+%0A%0A        if ladoAtual==%22d%22%7B%0A            ladoAtual=%22e%22%0A        %7D else%7B%0A            ladoAtual=%22d%22%0A        %7D\n %0A    %7D%0A \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-07_17-33-54",
+            "content": "@@ -79,41 +79,8 @@\n ring\n-%0A    fmt.Scan(&n_caiu, &peInicio)\n %0A%0A  \n@@ -376,32 +376,33 @@\n tinue%0A        %7D%0A\n+%0A\n         fmt.Prin\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_17-40-43",
+            "content": "@@ -209,26 +209,8 @@\n =%22d%22\n- %7C%7C ladoAtual==%22e%22\n %7B%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_17-42-13",
+            "content": "@@ -205,16 +205,34 @@\n ual==%22d%22\n+ %7C%7C ladoAtual==%22e%22\n %7B%0A      \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_17-43-56",
+            "content": "@@ -68,26 +68,16 @@\n peInicio\n-, peDepois\n  string%0A\n@@ -118,19 +118,94 @@\n     \n-if peInicio\n+ladoAtual:=peInicio%0A    fmt.Print(%22%5B %22)%0A    for i:=0; i%3C=10; i++%7B%0A        if ladoAtual\n ==%22d\n@@ -219,21 +219,30 @@\n     \n-peDepois\n+    ladoAtual\n =%22e%22%0A\n+    \n     \n@@ -257,24 +257,29 @@\n         \n-peDepois\n+    ladoAtual\n =%22d%22%0A   \n@@ -283,55 +283,66 @@\n     \n+   \n+ \n %7D%0A    \n+   \n-fmt.Print(%22%5B %22)%0A    for i:=0; i%3C=10; i++%7B\n+ if i==n_caiu%7B%0A            continue%0A        %7D\n %0A   \n@@ -354,12 +354,11 @@\n if i\n-%252\n ==\n+1\n 0%7B%0A \n@@ -381,52 +381,48 @@\n rint\n-f\n (%22\n-%25d%25s %22, i, peInicio)%0A        %7D else%7B\n+ceu %22)%0A            continue\n %0A    \n+    %7D%0A\n     \n@@ -438,41 +438,27 @@\n rint\n-f(%22%25d%25s %22, i, peDepois)%0A        %7D\n+(i, ladoAtual, %22 %22)\n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_17-50-09",
+            "content": "@@ -51,23 +51,13 @@\n caiu\n-, contador\n  int%0A\n+\n     \n@@ -124,23 +124,8 @@\n o)%0A%0A\n-    contador=0%0A\n     \n@@ -264,68 +264,8 @@\n if i\n-==n_caiu%7B%0A            continue%0A        %7D%0A        if contador\n %252==\n@@ -373,16 +373,16 @@\n Depois)%0A\n+\n         \n@@ -387,27 +387,8 @@\n   %7D%0A\n-        contador++%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_17-52-53",
+            "content": "@@ -330,66 +330,8 @@\n   %7D%0A\n-        if i==10%7B%0A            fmt.Print(%22ceu %22)%0A        %7D%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-07_18-04-20",
+            "content": "@@ -374,37 +374,16 @@\n %22ceu %22)%0A\n-            continue%0A\n         \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-07_18-04-31",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n_caiu, contador int\n    var peInicio, peDepois string\n    fmt.Scan(&n_caiu, &peInicio)\n\n    contador=0\n    if peInicio==\"d\"{\n        peDepois=\"e\"\n    } else{\n        peDepois=\"d\"\n    }\n    fmt.Print(\"[ \")\n    for i:=0; i<=10; i++{\n        if i==n_caiu{\n            continue\n        }\n        if i==10{\n            fmt.Print(\"ceu \")\n            continue\n        }\n        if contador%2==0{\n            fmt.Printf(\"%d%s \", i, peInicio)\n        } else{\n            fmt.Printf(\"%d%s \", i, peDepois)\n        }\n        contador++\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "31"
+        }
+    ]
+}

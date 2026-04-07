@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_16-20-25",
+            "content": "@@ -41,151 +41,35 @@\n     \n-var cap_cabine, num_alunos int%0A    fmt.Scan(&cap_cabine, &num_alunos)%0A%0A    numeroViagens:= num_alunos/cap_cabine%0A%0A    fmt.Println(numeroViagens\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_16-25-34",
+            "content": "@@ -142,9 +142,9 @@\n unos\n-%25\n+/\n cap_\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_16-25-50",
+            "content": "@@ -132,29 +132,29 @@\n s:= \n-cap_cabine/num_alunos\n+num_alunos%25cap_cabine\n %0A%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_16-27-35",
+            "content": "@@ -128,17 +128,16 @@\n agens:= \n-(\n cap_cabi\n@@ -142,11 +142,8 @@\n bine\n--1)\n /num\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_16-32-09",
+            "content": "@@ -132,19 +132,8 @@\n s:= \n-num_alunos/\n (cap\n@@ -142,16 +142,27 @@\n abine-1)\n+/num_alunos\n %0A%0A    fm\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_16-33-02",
+            "content": "@@ -116,27 +116,36 @@\n     \n-quant_por_v\n+numeroV\n iage\n-m\n+ns\n := \n+num_alunos/(\n cap_\n@@ -151,26 +151,19 @@\n _cabine-\n-num_alunos\n+1)%0A\n %0A    fmt\n@@ -175,24 +175,21 @@\n tln(\n-quant_por_v\n+numeroV\n iage\n-m\n+ns\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_16-36-42",
+            "content": "@@ -135,29 +135,29 @@\n m:= \n-num_alunos-cap_cabine\n+cap_cabine-num_alunos\n %0A   \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-07_16-36-55",
+            "content": "@@ -17,32 +17,13 @@\n ort \n-(%0A    %22fmt%22%0A    %22math%22%0A)\n+%22fmt%22\n %0Afun\n@@ -121,17 +121,22 @@\n uant\n-V\n+_por_v\n iage\n-ns\n+m\n :=\n+ \n num_\n@@ -145,9 +145,9 @@\n unos\n-/\n+-\n cap_\n@@ -153,17 +153,16 @@\n _cabine%0A\n-%0A\n     fmt.\n@@ -173,31 +173,24 @@\n tln(\n-math.Ceil(quantV\n+quant_por_v\n iage\n-ns)\n+m\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-07_16-57-48",
+            "content": "@@ -167,16 +167,17 @@\n _cabine%0A\n+%0A\n     fmt.\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_16-58-18",
+            "content": "@@ -87,15 +87,11 @@\n nos \n-float64\n+int\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_17-00-19",
+            "content": "@@ -160,17 +160,16 @@\n _alunos/\n-(\n cap_cabi\n@@ -174,11 +174,8 @@\n bine\n--1)\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_17-02-41",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"math\"\n)\nfunc main() {\n    var cap_cabine, num_alunos float64\n    fmt.Scan(&cap_cabine, &num_alunos)\n\n    quantViagens:=num_alunos/(cap_cabine-1)\n    fmt.Println(math.Ceil(quantViagens))\n}\n",
+            "lines": "12"
+        }
+    ]
+}
