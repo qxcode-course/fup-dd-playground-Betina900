@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_12-57-44",
+            "content": "@@ -41,281 +41,35 @@\n     \n-var a, b, c int%0A    var at_janela, lar_janela int%0A    fmt.Scan(&a, &b, &c, &atu_janela, &lar_janela)%0A%0A    areaJ:=lar_janela*atu_janela%0A    pacote:=2*((a*b)+(a*c)+(b*c))%0A    if pacote%3C=areaJ%7B%0A        fmt.Println(%22S%22)%0A    %7D else if pacote%3EareaJ%7B%0A        fmt.Println(%22N%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_13-12-28",
+            "content": "@@ -115,16 +115,17 @@\n  &c, &at\n+u\n _janela,\n@@ -163,16 +163,17 @@\n anela*at\n+u\n _janela%0A\n@@ -264,16 +264,19 @@\n  %7D else \n+if \n pacote%3Ea\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_13-13-03",
+            "content": "@@ -262,16 +262,28 @@\n  %7D else \n+pacote%3EareaJ\n %7B%0A      \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_13-13-13",
+            "content": "@@ -218,16 +218,17 @@\n  pacote%3C\n+=\n areaJ%7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_13-13-49",
+            "content": "@@ -178,116 +178,52 @@\n     \n-if a*b%3C=areaJ%7B%0A        fmt.Printl(%22S%22)%0A    %7D else if a*c%3C=areaJ%7B%0A        fmt.Printl(%22S%22)%0A    %7D else if b*c%3C=\n+pacote:=2*((a*b)+(a*c)+(b*c))%0A    if pacote%3C\n area\n@@ -243,16 +243,17 @@\n t.Printl\n+n\n (%22S%22)%0A  \n@@ -281,16 +281,17 @@\n t.Printl\n+n\n (%22N%22)%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_13-31-21",
+            "content": "@@ -199,33 +199,32 @@\n       fmt.Printl\n-n\n (%22S%22)%0A    %7D else\n@@ -249,33 +249,32 @@\n       fmt.Printl\n-n\n (%22S%22)%0A    %7D else\n@@ -307,17 +307,16 @@\n t.Printl\n-n\n (%22S%22)%0A  \n@@ -344,17 +344,16 @@\n t.Printl\n-n\n (%22N%22)%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_13-31-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c int\n    var at_janela, lar_janela int\n    fmt.Scan(&a, &b, &c, &at_janela, &lar_janela)\n\n    areaJ:=lar_janela*at_janela\n    if a*b<=areaJ{\n        fmt.Println(\"S\")\n    } else if a*c<=areaJ{\n        fmt.Println(\"S\")\n    } else if b*c<=areaJ{\n        fmt.Println(\"S\")\n    } else {\n        fmt.Println(\"N\")\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}
