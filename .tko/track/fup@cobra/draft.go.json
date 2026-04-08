@@ -1,0 +1,124 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-08_12-03-29",
+            "content": "@@ -41,285 +41,35 @@\n     \n-var dim_tabu, horizonteX, verticalY, seg int%0A    var direcao string%0A    fmt.Scan(&dim_tabu, &horizonteX, &verticalY, &direcao, &seg)%0A%0A    var casas int%0A    switch direcao%7B%0A    case %22U%22:%0A        casa=horizonteX+seg%0A        fmt.Println((-1*(dim_tabu-casas)), %22 %22, verticalY)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-08_13-06-27",
+            "content": "@@ -235,17 +235,16 @@\n     casa\n-s\n =horizon\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-08_13-06-47",
+            "content": "@@ -256,36 +256,8 @@\n seg%0A\n-        if casas%3Edim_tabu%7B%0A \n     \n@@ -314,78 +314,8 @@\n alY)\n-   %0A        %7D%0A        fmt.Println(casas, %22 %22, verticalY)%0A    case %22D%22:\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-08_13-11-18",
+            "content": "@@ -395,16 +395,30 @@\n ticalY)%0A\n+    case %22D%22:%0A\n     %7D%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-08_13-11-40",
+            "content": "@@ -81,15 +81,8 @@\n  seg\n-, casas\n  int\n@@ -171,16 +171,34 @@\n  &seg)%0A%0A\n+    var casas int%0A\n     swit\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-08_13-13-16",
+            "content": "@@ -182,30 +182,8 @@\n g)%0A%0A\n-    fmt.Println(%22oi%22)%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-08_13-15-17",
+            "content": "@@ -366,19 +366,9 @@\n    %7D\n- else%7B%0A    \n+%0A\n     \n@@ -406,26 +406,16 @@\n ticalY)%0A\n-        %7D%0A\n     %7D%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-08_13-20-17",
+            "content": "@@ -178,16 +178,38 @@\n  &seg)%0A%0A\n+    fmt.Println(%22oi%22)%0A\n     swit\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-08_13-20-30",
+            "content": "@@ -290,16 +290,20 @@\n rintln((\n+-1*(\n dim_tabu\n@@ -309,16 +309,17 @@\n u-casas)\n+)\n , %22 %22, v\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-08_13-27-39",
+            "content": "@@ -182,46 +182,8 @@\n g)%0A%0A\n-    dim_tabu-=%0A    var novoAngulo int%0A\n     \n@@ -230,18 +230,19 @@\n sas=\n-verticalY-\n+horizonteX+\n seg%0A\n@@ -249,34 +249,33 @@\n         if casas\n-%3C=\n+%3E\n dim_tabu%7B%0A      \n@@ -269,35 +269,32 @@\n _tabu%7B%0A         \n- \n-  \n fmt.Println(hori\n@@ -293,184 +293,31 @@\n tln(\n-horizonteX, %22 %22, casas)%0A        %7D else%7B%0A            novoAngulo=(dim_tabu-casas)*(-1)%0A            fmt,Println(horizonteX, %22 %22, novoAngulo)%0A        %7D%0A    case %22D%22:%0A        casas=\n+(dim_tabu-casas), %22 %22, \n vert\n@@ -321,20 +321,20 @@\n erticalY\n-+seg\n+)   \n %0A       \n@@ -338,26 +338,14 @@\n     \n-if casas%3C=dim_tabu\n+%7D else\n %7B%0A  \n@@ -370,143 +370,29 @@\n tln(\n-horizonteX, %22 %22, casas)%0A        %7Delse%7B%0A            novoAngulo=(dim_tabu-casas)*(-1)%0A            fmt,Println(horizonteX, %22 %22, novoAngulo\n+casas, %22 %22, verticalY\n )%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-08_13-48-37",
+            "content": "@@ -84,28 +84,16 @@\n g, casas\n-, novoAngulo\n  int%0A   \n@@ -193,16 +193,39 @@\n _tabu-=%0A\n+    var novoAngulo int%0A\n     swit\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-08_13-49-33",
+            "content": "@@ -411,33 +411,33 @@\n %0A            fmt\n-.\n+,\n Println(horizont\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-08_13-49-44",
+            "content": "@@ -652,33 +652,33 @@\n %0A            fmt\n-.\n+,\n Println(horizont\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-08_13-49-57",
+            "content": "@@ -223,17 +223,16 @@\n  direcao\n- \n %7B%0A    ca\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-08_13-50-58",
+            "content": "@@ -209,13 +209,8 @@\n u-=%0A\n-    %0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-08_13-55-17",
+            "content": "@@ -205,16 +205,20 @@\n _tabu-=%0A\n+    \n %0A    swi\n@@ -228,16 +228,17 @@\n  direcao\n+ \n %7B%0A    ca\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-08_13-55-18",
+            "content": "@@ -206,19 +206,10 @@\n tabu\n+-\n =\n-dim_tabu-1\n %0A%0A  \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-08_13-57-47",
+            "content": "@@ -206,12 +206,18 @@\n tabu\n- -= \n+=dim_tabu-\n 1%0A%0A \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-08_13-58-23",
+            "content": "@@ -335,16 +335,19 @@\n zonteX, \n+%22 %22\n , casas)\n@@ -339,32 +339,32 @@\n eX, %22 %22, casas)%0A\n-\n         %7D else%7B%0A\n@@ -435,32 +435,37 @@\n ntln(horizonteX,\n+ %22 %22,\n  novoAngulo)%0A   \n@@ -576,16 +576,21 @@\n izonteX,\n+ %22 %22,\n  casas)%0A\n@@ -641,32 +641,32 @@\n abu-casas)*(-1)%0A\n-\n             fmt.\n@@ -684,16 +684,21 @@\n izonteX,\n+ %22 %22,\n  novoAng\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-08_14-04-07",
+            "content": "@@ -326,32 +326,34 @@\n ntln(horizonteX,\n+ ,\n  casas)%0A        \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-08_14-04-45",
+            "content": "@@ -77,16 +77,35 @@\n alY, seg\n+, casas, novoAngulo\n  int%0A   \n@@ -190,16 +190,35 @@\n  &seg)%0A%0A\n+    dim_tabu -= 1%0A%0A\n     swit\n@@ -247,35 +247,30 @@\n U%22:%0A        \n-verticalY=(\n+casas=\n verticalY-se\n@@ -270,35 +270,43 @@\n calY-seg\n-+dim_tabu)%25\n+%0A        if casas%3C=\n dim_tabu\n %0A       \n@@ -293,33 +293,37 @@\n as%3C=dim_tabu\n-%0A\n+%7B%0A   \n         \n fmt.Println(\n@@ -302,32 +302,33 @@\n abu%7B%0A           \n+ \n fmt.Println(hori\n@@ -339,93 +339,85 @@\n eX, \n-verticalY)%0A    case %22D%22:%0A        verticalY=(verticalY+seg+dim_tabu)%25dim_tabu%0A\n+casas)%0A        %7D else%7B%0A            novoAngulo=(dim_tabu-casas)*(-1)%0A \n         \n fmt.\n@@ -404,32 +404,35 @@\n )*(-1)%0A         \n+   \n fmt.Println(hori\n@@ -435,34 +435,45 @@\n horizonteX, \n-verticalY)\n+novoAngulo)%0A        %7D\n %0A    case %22L\n@@ -475,9 +475,9 @@\n se %22\n-L\n+D\n %22:%0A \n@@ -487,53 +487,54 @@\n     \n-horizonteX=(horizonteX-seg+dim_tabu)%25\n+casas=verticalY+seg%0A        if casas%3C=\n dim_tabu\n %0A   \n@@ -521,33 +521,38 @@\n  casas%3C=dim_tabu\n-%0A\n+%7B%0A    \n         fmt.Prin\n@@ -571,87 +571,79 @@\n eX, \n-verticalY)%0A    case %22R%22:%0A        horizonteX=(horizonteX+seg+dim_tabu)%25dim_tabu%0A\n+casas)%0A        %7Delse%7B%0A            novoAngulo=(dim_tabu-casas)*(-1)%0A    \n     \n@@ -674,18 +674,29 @@\n eX, \n-verticalY)\n+novoAngulo)%0A        %7D\n %0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-08_14-42-01",
+            "content": "@@ -481,95 +481,8 @@\n abu%0A\n-        if horizonteX%3C0%7B%0A            fmt.Println(horizonteX*(-1), verticalY)%0A        %7D%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-08_14-44-19",
+            "content": "@@ -567,19 +567,9 @@\n    %7D\n- else%7B%0A    \n+%0A\n     \n@@ -603,34 +603,24 @@\n  verticalY)%0A\n-        %7D%0A\n     case %22R%22\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-08_14-45-07",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var dim_tabu, horizonteX, verticalY, seg int\n    var direcao string\n    fmt.Scan(&dim_tabu, &horizonteX, &verticalY, &direcao, &seg)\n\n    switch direcao{\n    case \"U\":\n        verticalY=(verticalY-seg+dim_tabu)%dim_tabu\n        fmt.Println(horizonteX, verticalY)\n    case \"D\":\n        verticalY=(verticalY+seg+dim_tabu)%dim_tabu\n        fmt.Println(horizonteX, verticalY)\n    case \"L\":\n        horizonteX=(horizonteX-seg+dim_tabu)%dim_tabu\n        if horizonteX<0{\n            fmt.Println(horizonteX*(-1), verticalY)\n        } else{\n            fmt.Println(horizonteX, verticalY)\n        }\n    case \"R\":\n        horizonteX=(horizonteX+seg+dim_tabu)%dim_tabu\n        fmt.Println(horizonteX, verticalY)\n    }\n}\n",
+            "lines": "26"
+        }
+    ]
+}

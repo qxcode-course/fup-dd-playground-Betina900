@@ -15,7 +15,7 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@for2
+- fup@if2
 flags:
   inbox: all
   panel: graph
@@ -23,4 +23,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@concentra
+selected: fup@cobra
