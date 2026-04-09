@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-08_16-12-42",
+            "content": "@@ -41,153 +41,35 @@\n     \n-var salario  float64%0A    fmt.Scan(&salario)%0A    if salario%3C=1000%7B%0A        salario = salario*(200/100)%0A        fmt.Printf(%22%25.02f%5Cn%22, salario)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-09_15-14-42",
+            "content": "@@ -125,17 +125,8 @@\n o = \n-salario+(\n sala\n@@ -138,17 +138,16 @@\n 200/100)\n-)\n %0A       \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-09_15-15-35",
+            "content": "@@ -141,16 +141,17 @@\n ario*(20\n+0\n /100))%0A \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-09_15-15-53",
+            "content": "@@ -142,11 +142,16 @@\n rio*\n-0.2\n+(20/100)\n )%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-09_15-16-37",
+            "content": "@@ -186,46 +186,8 @@\n io)%0A\n-    %7D else if salario%3C=1500%7B%0A        %0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-09_15-25-13",
+            "content": "@@ -223,279 +223,8 @@\n     \n-salario = salario+(salario*0.15)%0A        fmt.Printf(%22%25.02f%5Cn%22, salario)%0A    %7D else if salario%3C=2000%7B%0A        salario = salario+(salario*0.1)%0A        fmt.Printf(%22%25.02f%5Cn%22, salario)%0A    %7D else%7B%0A        salario = salario+(salario*0.05)%0A        fmt.Printf(%22%25.02f%5Cn%22, salario)\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-09_15-26-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var salario  float64\n    fmt.Scan(&salario)\n    if salario<=1000{\n        salario = salario+(salario*0.2)\n        fmt.Printf(\"%.02f\\n\", salario)\n    } else if salario<=1500{\n        salario = salario+(salario*0.15)\n        fmt.Printf(\"%.02f\\n\", salario)\n    } else if salario<=2000{\n        salario = salario+(salario*0.1)\n        fmt.Printf(\"%.02f\\n\", salario)\n    } else{\n        salario = salario+(salario*0.05)\n        fmt.Printf(\"%.02f\\n\", salario)\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}
