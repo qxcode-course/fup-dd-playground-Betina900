@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-05-37",
+            "content": "@@ -41,237 +41,34 @@\n     \n-var N int%0A    fmt.Scan(&N)%0A%0A    fmt.Pint(%22%5B %22)%0A    for i:=0; i%3C=10; i++%7B%0A        if i==N%7B%0A            continue%0A        %7D%0A        if i==10%7B%0A            fmt.Print(%22ceu %22)%0A        %7D%0A        fmt.Print(i, %22 %22)%0A    %7D%0A    fmt.Println(%22%5D\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_17-10-53",
+            "content": "@@ -70,25 +70,24 @@\n )%0A%0A    fmt.P\n-r\n int(%22%5B %22)%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-11-03",
+            "content": "@@ -207,37 +207,16 @@\n %22ceu %22)%0A\n-            continue%0A\n         \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-11-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    fmt.Print(\"[ \")\n    for i:=0; i<=10; i++{\n        if i==N{\n            continue\n        }\n        if i==10{\n            fmt.Print(\"ceu \")\n            continue\n        }\n        fmt.Print(i, \" \")\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "19"
+        }
+    ]
+}

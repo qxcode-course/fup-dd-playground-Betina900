@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-00-41",
+            "content": "@@ -17,283 +17,59 @@\n ort \n-(%0A    %22fmt%22%0A    %22math%22%0A)%0Afunc main() %7B%0A    var coo_x1, coo_y1, coo_x2, coo_y2, resultado float64%0A    fmt.Scan(&coo_x1, &coo_y1, &coo_x2, &coo_y2)%0A%0A    resultado=math.Sqrt(((coo_x2-coo_x1)*(coo_x2-coo_x1))+((coo_y2-coo_y1)*(coo_y2-coo_y1)))%0A    fmt.Printf(%22%25.02f%5Cn%22, resultado\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_17-51-27",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"math\"\n)\nfunc main() {\n    var coo_x1, coo_y1, coo_x2, coo_y2, resultado float64\n    fmt.Scan(&coo_x1, &coo_y1, &coo_x2, &coo_y2)\n\n    resultado=math.Sqrt(((coo_x2-coo_x1)*(coo_x2-coo_x1))+((coo_y2-coo_y1)*(coo_y2-coo_y1)))\n    fmt.Printf(\"%.02f\\n\", resultado)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

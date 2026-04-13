@@ -9,3 +9,9 @@
 2026-04-09 15:26:48, EXEC, v:1, k:fup@salario, mode:FULL, rate:100, size:19
 2026-04-09 15:26:54, MOVE, v:1, k:fup@salario, mode:BACK
 2026-04-09 15:27:30, SELF, v:1, k:fup@salario, self:1, rate:100, study:21
+2026-04-09 15:55:03, MOVE, v:1, k:fup@game10, mode:DOWN
+2026-04-09 15:55:06, MOVE, v:1, k:fup@game10, mode:PICK
+2026-04-09 15:55:07, EXEC, v:1, k:fup@game10, mode:FULL, rate:0, size:5
+2026-04-09 15:55:03, MOVE, v:1, k:fup@game10, mode:EDIT
+2026-04-09 15:55:03, MOVE, v:1, k:fup@game10, mode:EDIT
+2026-04-09 15:55:07, MOVE, v:1, k:fup@game10, mode:EDIT

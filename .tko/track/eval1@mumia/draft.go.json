@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-34-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var name string\n    var year int\n    fmt.Scan(&name, &year)\n\n    if year<12{\n        fmt.Println(name, \"eh crianca\")\n    } else if year<18{\n        fmt.Println(name, \"eh jovem\")\n    } else if year<65{\n        fmt.Println(name, \"eh adulto\")\n    } else if year<1000{\n        fmt.Println(name, \"eh idoso\")\n    } else{\n        fmt.Println(name, \"eh mumia\")\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}
