@@ -1,5 +1,6 @@
 package main
 import "fmt"
 func main() {
-    fmt.Println("Hello, World!")
+    var n_posicoes, disco, aviao int
+    fmt.Scan(&n_posicoes, &disco, &aviao)
 }
