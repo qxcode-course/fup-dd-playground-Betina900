@@ -47,8 +47,43 @@
         },
         {
             "label": "2026-04-14_18-11-58",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var elementos int\n    fmt.Scan(&elementos)\n    var arr []int = make([]int, elementos)\n    for i:=0; i<elementos; i++{\n        fmt.Println(arr[i])\n    }\n}\n",
+            "content": "@@ -143,16 +143,17 @@\n ; i%3C\n-len(arr)\n+elementos\n ; i+\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-04-15_13-51-00",
+            "content": "@@ -84,18 +84,28 @@\n os)%0A\n-%0A\n     \n+v\n ar\n-r:=\n+ arr %5B%5Dint = \n make\n@@ -123,17 +123,16 @@\n mentos)%0A\n-%0A\n     for \n@@ -143,82 +143,16 @@\n ; i%3C\n-e\n le\n-mentos; i++%7B%0A        fmt.Sca\n n(\n-&\n arr\n-%5Bi%5D)%0A    %7D%0A%0A    for i:=0; i%3Celementos\n+)\n ; i+\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-15_14-10-18",
+            "content": "@@ -118,32 +118,8 @@\n s)%0A%0A\n-    if elementos%3E0%7B%0A    \n     \n@@ -150,28 +150,24 @@\n ++%7B%0A        \n-    \n fmt.Scan(&ar\n@@ -176,18 +176,8 @@\n i%5D)%0A\n-        %7D%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-15_14-20-17",
+            "content": "@@ -210,24 +210,27 @@\n       %7D%0A    \n+%7D%0A%0A\n     for i:=0\n@@ -253,28 +253,24 @@\n ++%7B%0A        \n-    \n fmt.Println(\n@@ -283,16 +283,10 @@\n )%0A    %7D%0A\n-    %7D%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-15_14-21-04",
+            "content": "@@ -270,34 +270,30 @@\n Println(arr%5Bi%5D)%0A\n-    \n     %7D%0A    %7D%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-15_14-21-44",
+            "content": "@@ -88,20 +88,18 @@\n %0A    arr\n- \n :=\n- \n make(%5B%5Di\n@@ -110,24 +110,48 @@\n elementos)%0A%0A\n+    if elementos%3E0%7B%0A    \n     for i :=\n@@ -143,35 +143,31 @@\n        for i\n- \n :=\n- \n 0; i\n- %3C \n+%3C\n elementos; i\n@@ -160,33 +160,32 @@\n i%3Celementos; i++\n- \n %7B%0A        fmt.Sc\n@@ -174,24 +174,28 @@\n ++%7B%0A        \n+ \n+   \n fmt.Scan(&ar\n@@ -208,11 +208,18 @@\n     \n+    \n %7D\n-%0A\n %0A\n+    \n     \n@@ -227,19 +227,15 @@\n or i\n- \n :=\n- \n 0; i\n- %3C \n+%3C\n elem\n@@ -244,19 +244,22 @@\n tos; i++\n- \n %7B%0A\n+    \n         \n@@ -274,20 +274,30 @@\n tln(arr%5Bi%5D)%0A\n+        %7D%0A\n     %7D%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-15_14-26-07",
+            "content": "@@ -120,80 +120,8 @@\n s)%0A%0A\n-    if elementos == 0 %7B%0A        fmt.Println()%0A        return%0A    %7D%0A    %0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-15_14-27-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var elementos int\n    fmt.Scan(&elementos)\n\n    arr := make([]int, elementos)\n\n    if elementos == 0 {\n        fmt.Println()\n        return\n    }\n    \n    for i := 0; i < elementos; i++ {\n        fmt.Scan(&arr[i])\n    }\n\n    for i := 0; i < elementos; i++ {\n        fmt.Println(arr[i])\n    }\n}\n",
+            "lines": "21"
         }
     ]
 }
