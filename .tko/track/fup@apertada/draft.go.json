@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_18-02-10",
+            "content": "@@ -41,45 +41,35 @@\n     \n-var valores %5B%5Dint := make(%5B%5Dint,0, 30\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_18-11-26",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valores []int := make([]int,0, 30)\n}\n",
+            "lines": "5"
+        }
+    ]
+}

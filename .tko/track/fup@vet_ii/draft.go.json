@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_16-46-24",
+            "content": "@@ -41,80 +41,35 @@\n     \n-var quant_numeros, elementos int%0A    fmt.Scan(&quant_numeros, &elementos\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-27_17-09-59",
+            "content": "@@ -115,11 +115,6 @@\n os)%0A\n-    %0A\n %7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-04-28_17-02-43",
+            "content": "@@ -119,117 +119,7 @@\n     \n-arr := make(%5B%5Dint, elementos, quant_numeros)%0A    for _, nums := range elementos%7B%0A        fmt.Print(nums)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-28_17-18-10",
+            "content": "@@ -134,16 +134,27 @@\n (%5B%5Dint, \n+elementos, \n quant_nu\n@@ -163,88 +163,8 @@\n ros)\n-%0A    %0A    for i := 0; i%3Cquant_numeros; i++%7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A    \n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-28_17-21-41",
+            "content": "@@ -254,19 +254,25 @@\n = range \n-arr\n+elementos\n %7B%0A      \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_17-22-02",
+            "content": "@@ -93,24 +93,36 @@\n uant_numeros\n+, &elementos\n )%0A    arr :=\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_17-22-36",
+            "content": "@@ -54,16 +54,27 @@\n _numeros\n+, elementos\n  int%0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_17-22-44",
+            "content": "@@ -205,27 +205,12 @@\n   %7D%0A\n-%0A\n     \n-fmt.Print(%22%5B%22)\n %0A   \n@@ -258,13 +258,8 @@\n int(\n-%22 %22, \n nums\n@@ -270,27 +270,6 @@\n   %7D%0A\n-    fmt.Println(%22%5D%22)%0A\n %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_17-25-42",
+            "content": "@@ -303,15 +303,14 @@\n rintln(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_17-25-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var quant_numeros int\n    fmt.Scan(&quant_numeros)\n    arr := make([]int, quant_numeros)\n    \n    for i := 0; i<quant_numeros; i++{\n        fmt.Scan(&arr[i])\n    }\n\n    fmt.Print(\"[\")\n    for _, nums := range arr{\n        fmt.Print(\" \", nums)\n    }\n    fmt.Println(\" ]\")\n}\n",
+            "lines": "17"
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-28-16",
+            "content": "@@ -41,204 +41,35 @@\n     \n-var nums int%0A    fmt.Scan(&nums)%0A    arr := make(%5B%5Dint, nums)%0A%0A    for i := nums; i%3Cnums; i++%7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A%0A    for _, elementos := range arr%7B%0A        fmt.Print(elementos)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_17-36-22",
+            "content": "@@ -117,9 +117,12 @@\n  := \n-0\n+nums\n ; i%3C\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_17-36-56",
+            "content": "@@ -209,125 +209,27 @@\n     \n-if elementos == arr%7B%0A            fmt.Print(elementos)%0A            continue%0A        %7D%0A        fmt.Print(elementos, %22 %22\n+fmt.Print(elementos\n )%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_17-39-30",
+            "content": "@@ -221,25 +221,19 @@\n ntos == \n-elementos\n+arr\n %7B%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-39-49",
+            "content": "@@ -225,9 +225,17 @@\n  == \n-3\n+elementos\n %7B%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-40-09",
+            "content": "@@ -221,20 +221,17 @@\n ntos == \n-arr \n+3\n %7B%0A      \n@@ -318,17 +318,16 @@\n entos, %22\n-,\n  %22)%0A    \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-40-34",
+            "content": "@@ -221,25 +221,19 @@\n ntos == \n-elementos\n+arr\n  %7B%0A     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-40-44",
+            "content": "@@ -165,26 +165,8 @@\n   %7D%0A\n-    fmt.Print(%22%5B%22)\n %0A   \n@@ -220,16 +220,26 @@\n entos ==\n+ elementos\n  %7B%0A     \n@@ -342,27 +342,6 @@\n   %7D%0A\n-    fmt.Println(%22%5D%22)%0A\n %7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-41-39",
+            "content": "@@ -239,25 +239,16 @@\n ntos == \n-elementos\n %7B%0A      \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_17-41-51",
+            "content": "@@ -240,9 +240,10 @@\n tos \n-%3E\n+==\n  ele\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_17-42-16",
+            "content": "@@ -237,17 +237,16 @@\n mentos %3E\n-=\n  element\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_17-42-31",
+            "content": "@@ -236,17 +236,18 @@\n ementos \n-%3C\n+%3E=\n  element\n@@ -252,11 +252,8 @@\n ntos\n--1 \n %7B%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_17-44-22",
+            "content": "@@ -285,16 +285,37 @@\n mentos)%0A\n+            continue%0A\n         \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_17-45-12",
+            "content": "@@ -169,45 +169,62 @@\n     \n-var elementos int%0A    fmt.Print(%22%5B%22)%0A\n+fmt.Print(%22%5B%22)%0A    for _, elementos := range arr%7B%0A    \n     \n@@ -242,17 +242,26 @@\n s %3C \n-num\n+elemento\n s-1 %7B%0A\n+    \n     \n@@ -293,43 +293,13 @@\n     \n-%7D%0A\n     \n-for _, elementos = range arr%7B\n+%7D\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-51-31",
+            "content": "@@ -161,16 +161,37 @@\n )%0A    %7D%0A\n+    var elementos int\n %0A    fmt\n@@ -202,16 +202,79 @@\n nt(%22%5B%22)%0A\n+    if elementos %3C nums-1 %7B%0A        fmt.Print(elementos)%0A    %7D%0A\n     for \n@@ -286,17 +286,16 @@\n ementos \n-:\n = range \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_17-53-06",
+            "content": "@@ -189,17 +189,17 @@\n     for \n-i\n+_\n , elemen\n@@ -220,79 +220,8 @@\n rr%7B%0A\n-        if i == len(arr-1)%7B%0A            fmt.Print(elementos)%0A        %7D%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_17-57-57",
+            "content": "@@ -243,13 +243,11 @@\n (arr\n-) - 1\n+-1)\n %7B%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_17-58-19",
+            "content": "@@ -292,19 +292,9 @@\n    %7D\n- else%7B%0A    \n+%0A\n     \n@@ -324,26 +324,16 @@\n , %22, %22)%0A\n-        %7D%0A\n     %7D%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_17-58-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nums int\n    fmt.Scan(&nums)\n    arr := make([]int, nums)\n\n    for i := 0; i<nums; i++{\n        fmt.Scan(&arr[i])\n    }\n\n    fmt.Print(\"[\")\n    for i, elementos := range arr{\n        if i == len(arr) - 1{\n            fmt.Print(elementos)\n        } else{\n            fmt.Print(elementos, \", \")\n        }\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "21"
+        }
+    ]
+}
