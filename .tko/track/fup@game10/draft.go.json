@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-04-09_15-55-07",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,81 +41,35 @@\n     \n-var n_posicoes, disco, aviao int%0A    fmt.Scan(&n_posicoes, &disco, &aviao\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-04_17-30-11",
+            "content": "@@ -116,35 +116,6 @@\n ao)%0A\n-    distancia := disco-aviao%0A\n %7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-05-04_17-39-32",
+            "content": "@@ -129,17 +129,16 @@\n ncia := \n-(\n disco-av\n@@ -144,57 +144,7 @@\n viao\n-+n_posicoes)%25n_posicoes%0A    fmt.Println(distancia)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-04_17-43-21",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n_posicoes, disco, aviao int\n    fmt.Scan(&n_posicoes, &disco, &aviao)\n    distancia := (disco-aviao+n_posicoes)%n_posicoes\n    fmt.Println(distancia)\n}\n",
+            "lines": "8"
         }
     ]
 }

@@ -7,8 +7,28 @@
         },
         {
             "label": "2026-04-28_18-11-26",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valores []int := make([]int,0, 30)\n}\n",
+            "content": "@@ -80,29 +80,6 @@\n 30)%0A\n-    fmt.Scan(&valores)%0A\n %7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-04_17-53-54",
+            "content": "@@ -102,70 +102,7 @@\n res)\n-%0A%0A    for i:=0; i%3Cvalores; i++%7B%0A        fmt.Scan(valores)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-05-04_17-55-26",
+            "content": "@@ -53,59 +53,49 @@\n res \n+%5B%5D\n int\n-%0A    fmt.Scan(&valores)%0A    nums := make(%5B%5Dint, \n+ := make(%5B%5Dint,0, 30)%0A    fmt.Scan(&\n valo\n@@ -151,165 +151,21 @@\n can(\n-&nums%5Bi%5D)%0A    %7D%0A    menor := nums%5B0%5D%0A%0A    for i:=1; i%3Cnums; i++%7B%0A        if nums%5Bi%5D%3Cmenor%7B%0A            menor = nums%5Bi%5D%0A        %7D%0A    %7D%0A%0A    fmt.Println(menor)\n+valores)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-04_18-10-27",
+            "content": "@@ -112,24 +112,8 @@\n res)\n- //criando lista\n %0A%0A  \n@@ -143,34 +143,8 @@\n i++%7B\n- //lendo valores em 'nums'\n %0A   \n@@ -197,25 +197,106 @@\n s%5B0%5D\n- //o menor n%C3%BAmero\n+%0A%0A    for i:=1; i%3Cnums; i++%7B%0A        if nums%5Bi%5D%3Cmenor%7B%0A            menor = nums%5Bi%5D%0A        %7D%0A    %7D\n %0A%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-04_18-13-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valores int\n    fmt.Scan(&valores)\n    nums := make([]int, valores) //criando lista\n\n    for i:=0; i<valores; i++{ //lendo valores em 'nums'\n        fmt.Scan(&nums[i])\n    }\n    menor := nums[0] //o menor n\u00famero\n\n    fmt.Println(menor)\n}\n",
+            "lines": "14"
         }
     ]
 }
