@@ -21,14 +21,13 @@ sources:
   writeable: false
   quests: null
   tasks: null
-expanded:
-- fup@list
+expanded: []
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@dieta
-selected_index: 13
+selected: fup@for1
+selected_index: 5

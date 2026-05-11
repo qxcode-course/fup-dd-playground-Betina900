@@ -17,7 +17,27 @@
         },
         {
             "label": "2026-04-07_18-21-17",
-            "content": "package main\nimport \"fmt\"\nfunc sequenciaNumeroB(numeroA, numeroB int){\n    for i:=numeroB; i>=numeroA; i--{\n        fmt.Print(i, \" \")\n    }\n}\nfunc sequenciaNumeroA(numeroA, numeroB int){\n    for i:=numeroA; i<=numeroB; i++{\n        fmt.Print(i, \" \", sequenciaNumeroB(numeroA, numeroB))\n    }\n}\nfunc main() {\n    var numeroA, numeroB int\n    fmt.Scan(&numeroA, &numeroB)\n    sequenciaCompleta(numeroA, numeroB)\n}\n",
+            "content": "@@ -28,14 +28,385 @@\n unc \n-main() %7B\n+sequenciaNumeroB(numeroA, numeroB int)%7B%0A    for i:=numeroB; i%3E=numeroA; i--%7B%0A        fmt.Print(i, %22 %22)%0A    %7D%0A%7D%0Afunc sequenciaNumeroA(numeroA, numeroB int)%7B%0A    for i:=numeroA; i%3C=numeroB; i++%7B%0A        fmt.Print(i, %22 %22, sequenciaNumeroB(numeroA, numeroB))%0A    %7D%0A%7D%0Afunc main() %7B%0A    var numeroA, numeroB int%0A    fmt.Scan(&numeroA, &numeroB)%0A    sequenciaCompleta(numeroA, numeroB)%0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-11_16-37-54",
+            "content": "@@ -36,249 +36,6 @@\n () %7B\n-%0A    var numA, numB int%0A    fmt.Scan(&numA, &numB)%0A    %0A    A := numA%0A    B := numB%0A    fmt.Print(%22%5B %22)%0A    for i:=numA; i%3CnumB; i++%7B%0A        fmt.Print(A, %22 %22)%0A        A += 1%0A        fmt.Print(B, %22 %22)%0A        B -= 1%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)%0A\n %7D%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2026-05-11_16-50-41",
+            "content": "@@ -132,16 +132,17 @@\n Print(%22%5B\n+ \n %22)%0A    f\n@@ -155,17 +155,16 @@\n numA; i%3C\n-=\n numB; i+\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-11_16-54-00",
+            "content": "@@ -132,17 +132,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-11_16-54-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numA, numB int\n    fmt.Scan(&numA, &numB)\n    \n    A := numA\n    B := numB\n    fmt.Print(\"[ \")\n    for i:=numA; i<=numB; i++{\n        fmt.Print(A, \" \")\n        A += 1\n        fmt.Print(B, \" \")\n        B -= 1\n    }\n    fmt.Print(\"]\\n\")\n}\n",
             "lines": "17"
         }
     ]

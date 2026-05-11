@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_17-38-35",
+            "content": "@@ -41,255 +41,35 @@\n     \n-var palpiteChico int%0A    var palpiteCebola int%0A    var quant_animais int%0A    fmt.Scan(&palpiteChico, &palpiteCebola, &quant_animais)%0A%0A    letras := make(%5B%5Dstring, quant_animais)%0A    for i:=0; i%3Cquant_animais; i++%7B%0A        fmt.Scan(&letras%5Bi%5D)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-05_17-49-26",
+            "content": "@@ -289,124 +289,7 @@\n    %7D\n-%0A%0A    vaca := 0%0A    galinha := 0%0A    cavalo := 0%0A   %0A    for i, animal := range letras%7B%0A        if i == %22v%22%0A        %7D\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-05_17-58-51",
+            "content": "@@ -346,17 +346,17 @@\n     for \n-_\n+i\n , animal\n@@ -385,154 +385,24 @@\n     \n-switch len(letras)%7B%0A        case %22v%22:%0A            vaca++%0A        case %22g%22:%0A            galinha++%0A        case %22c%22:%0A            cavalo++%0A        %7D%0A\n+if i == %22v%22%0A    \n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_18-03-35",
+            "content": "@@ -346,17 +346,17 @@\n     for \n-i\n+_\n , animal\n@@ -414,19 +414,16 @@\n    case \n-i==\n %22v%22:%0A   \n@@ -451,19 +451,16 @@\n    case \n-i==\n %22g%22:%0A   \n@@ -495,11 +495,8 @@\n ase \n-i==\n %22c%22:\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-05_18-04-41",
+            "content": "@@ -346,17 +346,17 @@\n     for \n-_\n+i\n , animal\n@@ -388,22 +388,27 @@\n  switch \n-animal\n+len(letras)\n %7B%0A      \n@@ -414,16 +414,19 @@\n    case \n+i==\n %22v%22:%0A   \n@@ -454,16 +454,19 @@\n    case \n+i==\n %22g%22:%0A   \n@@ -497,16 +497,19 @@\n    case \n+i==\n %22c%22:%0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-05_18-07-45",
+            "content": "@@ -531,79 +531,7 @@\n    %7D\n-%0A%0A    fmt.Println(vaca)%0A    fmt.Println(galinha)%0A    fmt.Println(cavalo)\n %0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-05_18-09-04",
+            "content": "@@ -537,53 +537,49 @@\n     \n-total_patas := (vaca*4)+(galinha*2)+(cavalo*4\n+fmt.Println(vaca)%0A    fmt.Println(galinha\n )%0A  \n@@ -596,19 +596,14 @@\n tln(\n-total_patas\n+cavalo\n )%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-05_18-11-23",
+            "content": "@@ -537,20 +537,23 @@\n     \n-fmt.Println(\n+total_patas := \n (vac\n@@ -579,12 +579,40 @@\n avalo*4)\n+%0A    fmt.Println(total_patas\n )%0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-05_18-11-51",
+            "content": "@@ -287,29 +287,61 @@\n %0A    %7D%0A%0A    \n-patas\n+vaca := 0%0A    galinha := 0%0A    cavalo\n  := 0%0A   %0A  \n@@ -416,13 +416,8 @@\n  %22v%22\n-, %22c%22\n :%0A  \n@@ -430,18 +430,14 @@\n     \n-patas += 4\n+vaca++\n %0A   \n@@ -467,80 +467,73 @@\n     \n-patas += 2%0A        %7D\n+galinha++%0A        case %22c%22:\n %0A    \n-%7D%0A%0A\n     \n-patas := (vaca*4)+(galinha*2)+(cavalo*4)\n+    cavalo++%0A        %7D%0A    %7D%0A\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-05_18-19-29",
+            "content": "@@ -476,25 +476,96 @@\n     \n-fmt.Println(patas\n+patas := (vaca*4)+(galinha*2)+(cavalo*4)%0A    fmt.Println((vaca*4)+(galinha*2)+(cavalo*4)\n )%0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-05_18-19-46",
+            "content": "@@ -23,80 +23,8 @@\n mt%22%0A\n-func abs(x int) int%7B%0A    if x%3C0%7B%0A        return -x%0A    %7D%0A    return x%0A%7D%0A\n func\n@@ -494,272 +494,7 @@\n tas)\n-%0A%0A    difChico := abs(patas - palpiteChico)%0A    difCebola := abs(patas - palpiteCebola)%0A%0A    if difChico%3CdifCebola%7B%0A        fmt.Println(%22Chico Bento%22)%0A    %7D else if difCebola%3CdifChico%7B%0A        fmt.Println(%22Cebolinha%22)%0A    %7D else%7B%0A        fmt.Println(%22empate%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-05_18-27-24",
+            "content": "package main\nimport \"fmt\"\nfunc abs(x int) int{\n    if x<0{\n        return -x\n    }\n    return x\n}\nfunc main() {\n    var palpiteChico int\n    var palpiteCebola int\n    var quant_animais int\n    fmt.Scan(&palpiteChico, &palpiteCebola, &quant_animais)\n\n    letras := make([]string, quant_animais)\n    for i:=0; i<quant_animais; i++{\n        fmt.Scan(&letras[i])\n    }\n\n    patas := 0\n   \n    for _, animal := range letras{\n        switch animal{\n        case \"v\", \"c\":\n            patas += 4\n        case \"g\":\n            patas += 2\n        }\n    }\n\n    fmt.Println(patas)\n\n    difChico := abs(patas - palpiteChico)\n    difCebola := abs(patas - palpiteCebola)\n\n    if difChico<difCebola{\n        fmt.Println(\"Chico Bento\")\n    } else if difCebola<difChico{\n        fmt.Println(\"Cebolinha\")\n    } else{\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "43"
+        }
+    ]
+}
