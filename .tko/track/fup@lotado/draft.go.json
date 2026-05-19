@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_17-45-45",
+            "content": "@@ -41,95 +41,35 @@\n     \n-var capacidade, movimento int%0A    fmt.Scan(&capacidade, &movimento)%0A%0A    pessoas:=0%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-12_17-50-55",
+            "content": "@@ -55,86 +55,17 @@\n dade\n- int%0A    fmt.Scan(&capacidade)%0A%0A    passageiros:=0%0A    for%7B%0A        var\n+,\n  movime\n+n\n to i\n@@ -67,28 +67,24 @@\n nto int%0A    \n- \n-   \n fmt.Scan(&mo\n@@ -85,341 +85,51 @@\n an(&\n-movimeto)%0A        passageiros+=movimeto%0A%0A        if passageiros==0%7B%0A            fmt.Println(%22vazio%22)%0A        %7D else if passageiros==2*capacidade%7B%0A            fmt.Println(%22hora de partir%22)%0A        %7D else if passageiros==capacidade%7B%0A            fmt.Println(%22lotado%22)%0A        %7D else%7B%0A            fmt.Println(%22ainda cabe%22)%0A        %7D%0A    %7D\n+capacidade, &movimento)%0A%0A    pessoas:=0%0A    \n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-12_18-03-00",
+            "content": "@@ -106,17 +106,15 @@\n :=0%0A\n-%0A\n     for\n- \n %7B%0A  \n@@ -164,17 +164,16 @@\n vimeto)%0A\n-%0A\n         \n@@ -187,12 +187,10 @@\n iros\n- \n +=\n- \n movi\n@@ -217,20 +217,18 @@\n sageiros\n- \n ==\n- \n 0%7B%0A     \n@@ -255,17 +255,16 @@\n vazio%22)%0A\n-%0A\n         \n@@ -288,12 +288,10 @@\n iros\n- \n ==\n- \n 2*ca\n@@ -342,17 +342,16 @@\n artir%22)%0A\n-%0A\n         \n@@ -375,12 +375,10 @@\n iros\n- %3E= \n+==\n capa\n@@ -423,21 +423,8 @@\n o%22)%0A\n-            %0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-18_18-18-52",
+            "content": "@@ -131,17 +131,16 @@\n r movime\n-n\n to int%0A \n@@ -196,17 +196,16 @@\n = movime\n-n\n to%0A%0A    \n@@ -428,24 +428,36 @@\n n(%22lotado%22)%0A\n+            \n %0A        %7D e\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-18_18-19-41",
+            "content": "@@ -163,17 +163,16 @@\n (&movime\n-n\n to)%0A%0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-18_18-20-19",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -102,12 +102,10 @@\n iros\n- \n :=\n- \n 0%0A%0A \n@@ -230,17 +230,16 @@\n ros == 0\n- \n %7B%0A      \n@@ -299,16 +299,18 @@\n iros == \n+2*\n capacida\n@@ -303,33 +303,32 @@\n  == 2*capacidade\n- \n %7B%0A            fm\n@@ -358,26 +358,8 @@\n ir%22)\n-%0A            break\n %0A%0A  \n@@ -387,16 +387,17 @@\n geiros %3E\n+=\n  capacid\n@@ -399,17 +399,16 @@\n pacidade\n- \n %7B%0A      \n@@ -450,17 +450,16 @@\n   %7D else\n- \n %7B%0A      \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-18_23-37-47",
+            "content": "@@ -222,22 +222,24 @@\n  if \n-movimento\n+passageiros\n  == \n-1\n+0\n  %7B%0A \n@@ -266,42 +266,15 @@\n ln(%22\n-hora de partir%22)%0A            break\n+vazio%22)\n %0A%0A  \n@@ -296,33 +296,42 @@\n  passageiros == \n-0\n+capacidade\n  %7B%0A            f\n@@ -334,39 +334,66 @@\n    fmt.Println(%22\n-vazio%22)\n+hora de partir%22)%0A            break\n %0A%0A        %7D else\n@@ -409,17 +409,16 @@\n geiros %3E\n-=\n  capacid\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_23-43-08",
+            "content": "@@ -222,24 +222,22 @@\n  if \n-passageiros\n+movimento\n  == \n-0\n+1\n  %7B%0A \n@@ -264,15 +264,42 @@\n ln(%22\n-vazio%22)\n+hora de partir%22)%0A            break\n %0A%0A  \n@@ -330,23 +330,12 @@\n ros \n-%3E= 2*capacidade\n+== 0\n  %7B%0A \n@@ -362,42 +362,15 @@\n ln(%22\n-hora de partir%22)%0A            break\n+vazio%22)\n %0A%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_23-47-52",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var capacidade int\n    fmt.Scan(&capacidade)\n\n    passageiros := 0\n\n    for {\n        var movimento int\n        fmt.Scan(&movimento)\n\n        passageiros += movimento\n\n        if passageiros == 0 {\n            fmt.Println(\"vazio\")\n\n        } else if passageiros >= 2*capacidade {\n            fmt.Println(\"hora de partir\")\n            break\n\n        } else if passageiros >= capacidade {\n            fmt.Println(\"lotado\")\n\n        } else {\n            fmt.Println(\"ainda cabe\")\n        }\n    }\n}\n",
+            "lines": "31"
+        }
+    ]
+}

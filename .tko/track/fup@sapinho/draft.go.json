@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_00-27-39",
+            "content": "@@ -41,353 +41,35 @@\n     \n-var P, S, E int%0A    fmt.Scan(&P, &S, &E)%0A%0A    posicao := 0%0A%0A    for%7B%0A        inicio := posicao%0A        posicao += S%0A%0A        // saiu do po%C3%A7o%0A        if posicao %3E= P %7B%0A            fmt.Println(inicio, %22saiu%22)%0A            break%0A        %7D%0A%0A        // imprime salto%0A        fmt.Println(inicio, posicao)%0A%0A        // escorrega%0A        posicao -= E%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_00-46-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P, S, E int\n    fmt.Scan(&P, &S, &E)\n\n    posicao := 0\n\n    for{\n        inicio := posicao\n        posicao += S\n\n        // saiu do po\u00e7o\n        if posicao >= P {\n            fmt.Println(inicio, \"saiu\")\n            break\n        }\n\n        // imprime salto\n        fmt.Println(inicio, posicao)\n\n        // escorrega\n        posicao -= E\n    }\n}\n",
+            "lines": "25"
+        }
+    ]
+}

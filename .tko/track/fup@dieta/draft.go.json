@@ -32,7 +32,12 @@
         },
         {
             "label": "2026-05-05_17-29-21",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var dias int\n    var soma float64\n    fmt.Scan(&dias)\n\n    calorias := make([]float64, dias)\n\n    for i:=0; i<dias; i++{\n        fmt.Scan(&calorias[i])\n    }\n\n    for i:=0; i<dias; i++{\n        soma += calorias[i]\n    }\n    media_calorias := soma/float64(dias)\n\n    fmt.Printf(\"%.1f\\n\", media_calorias)\n}\n",
+            "content": "@@ -133,46 +133,8 @@\n ias)\n- //exige que 'dias' (no caso) seja int\n %0A%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-18_17-04-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var dias int\n    var soma float64\n    fmt.Scan(&dias)\n\n    calorias := make([]float64, dias) //exige que 'dias' (no caso) seja int\n\n    for i:=0; i<dias; i++{\n        fmt.Scan(&calorias[i])\n    }\n\n    for i:=0; i<dias; i++{\n        soma += calorias[i]\n    }\n    media_calorias := soma/float64(dias)\n\n    fmt.Printf(\"%.1f\\n\", media_calorias)\n}\n",
             "lines": "20"
         }
     ]

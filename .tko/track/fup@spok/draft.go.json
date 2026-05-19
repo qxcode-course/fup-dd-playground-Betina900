@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_00-10-07",
+            "content": "@@ -28,356 +28,48 @@\n unc \n-inverter(numero int) int%7B%0A    invertido := 0%0A%0A    for numero %3E 0%7B%0A        ultimoDigito := numero %25 10%0A%0A        invertido = invertido*10 + ultimoDigito%0A%0A        numero = numero / 10%0A    %7D%0A%0A    return invertido%0A%7D%0Afunc main() %7B%0A    var id int%0A    fmt.Scan(&id)%0A%0A    if id == inverter(id)%7B%0A        fmt.Println(1)%0A    %7D else%7B%0A        fmt.Println(0)%0A    %7D\n+main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_00-25-07",
+            "content": "@@ -306,16 +306,17 @@\n verter(i\n+d\n )%7B%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-19_00-25-31",
+            "content": "@@ -278,17 +278,17 @@\n t.Scan(&\n-1\n+i\n d)%0A%0A    \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-19_00-25-40",
+            "content": "@@ -278,16 +278,17 @@\n t.Scan(&\n+1\n d)%0A%0A    \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-19_00-26-18",
+            "content": "@@ -278,17 +278,16 @@\n t.Scan(&\n-i\n d)%0A%0A    \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-19_00-26-25",
+            "content": "@@ -306,17 +306,16 @@\n verter(i\n-d\n )%7B%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-19_00-26-39",
+            "content": "package main\nimport \"fmt\"\nfunc inverter(numero int) int{\n    invertido := 0\n\n    for numero > 0{\n        ultimoDigito := numero % 10\n\n        invertido = invertido*10 + ultimoDigito\n\n        numero = numero / 10\n    }\n\n    return invertido\n}\nfunc main() {\n    var id int\n    fmt.Scan(&id)\n\n    if id == inverter(id){\n        fmt.Println(1)\n    } else{\n        fmt.Println(0)\n    }\n}\n",
+            "lines": "25"
+        }
+    ]
+}

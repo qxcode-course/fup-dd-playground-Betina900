@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_17-08-34",
+            "content": "@@ -41,81 +41,35 @@\n     \n-var num_p, tamanhoVetor int%0A    elementos := make(%5B%5Dint,tamanhoVetor)%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-12_17-19-15",
+            "content": "@@ -69,44 +69,8 @@\n int%0A\n-    fmt.Scan(&num_p, &tamanhoVetor)%0A\n     \n@@ -107,11 +107,15 @@\n oVetor)%0A\n+    \n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-12_17-20-09",
+            "content": "@@ -146,81 +146,8 @@\n tor)\n-%0A    for i:=0; i%3CtamanhoVetor; i++%7B%0A        fmt.Scan(&elementos%5Bi%5D)%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-05-12_17-21-54",
+            "content": "@@ -221,67 +221,6 @@\n  %7D%0A%0A\n-    for i, percorrendo:= range elementos%7B%0A        if %0A    %7D%0A%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-12_17-34-55",
+            "content": "@@ -225,17 +225,17 @@\n     for \n-_\n+i\n , percor\n@@ -274,68 +274,8 @@\n  if \n-percorrendo==num_p%7B%0A            fmt.Println(num_p)%0A        %7D\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-12_17-36-03",
+            "content": "@@ -325,26 +325,8 @@\n _p)%0A\n-            break%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-12_17-37-35",
+            "content": "@@ -69,28 +69,8 @@\n int%0A\n-    var numeros int%0A\n     \n@@ -133,18 +133,8 @@\n int,\n- numeros, \n tama\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_17-38-14",
+            "content": "@@ -65,16 +65,36 @@\n tor int%0A\n+    var numeros int%0A\n     fmt.\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-12_17-41-07",
+            "content": "@@ -129,16 +129,25 @@\n e(%5B%5Dint,\n+ numeros,\n  tamanho\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_17-41-23",
+            "content": "@@ -221,25 +221,8 @@\n   %7D%0A\n-    contador := 0\n %0A   \n@@ -229,21 +229,27 @@\n  for _, \n-valor\n+percorrendo\n := range\n@@ -275,13 +275,19 @@\n  if \n-valor\n+percorrendo\n ==nu\n@@ -307,61 +307,60 @@\n     \n-contador+=1%0A        %7D%0A\n+fmt.Println(num_p)%0A            break%0A  \n     \n+  \n %7D\n-%0A\n %0A    \n-fmt.Println(contador)\n+%7D%0A\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_17-44-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num_p, tamanhoVetor int\n    fmt.Scan(&num_p, &tamanhoVetor)\n    elementos := make([]int, tamanhoVetor)\n    for i:=0; i<tamanhoVetor; i++{\n        fmt.Scan(&elementos[i])\n    }\n    contador := 0\n    for _, valor:= range elementos{\n        if valor==num_p{\n            contador+=1\n        }\n    }\n\n    fmt.Println(contador)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

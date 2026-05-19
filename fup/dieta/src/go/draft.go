@@ -5,7 +5,7 @@ func main() {
     var soma float64
     fmt.Scan(&dias)
 
-    calorias := make([]float64, dias) //exige de 'dias' (no caso) seja int
+    calorias := make([]float64, dias) //exige que 'dias' (no caso) seja int
 
     for i:=0; i<dias; i++{
         fmt.Scan(&calorias[i])

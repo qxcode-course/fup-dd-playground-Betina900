@@ -1,7 +1,7 @@
 package main
 import "fmt"
 func main() {
-    nums := make([]int, 5) //criando lista
+    nums := make([]int, 5) //criando lista de inteiros
 
     for i:=0; i<5; i++{ //lendo valores
         fmt.Scan(&nums[i])
