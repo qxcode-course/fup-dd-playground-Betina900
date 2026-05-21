@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_16-38-35",
+            "content": "@@ -41,245 +41,35 @@\n     \n-var totalAlbum int%0A    var totalFigurinhas int%0A    fmt.Scan(&totalAlbum)%0A    fmt.Scan(&totalFigurinhas)%0A%0A    seqFigurinhas := make(%5B%5Dint, totalFigurinhas)%0A    for i := 0; i %3C totalFigurinhas; i++%7B%0A        fmt.Scan(&seqFigurinhas%5Bi%5D)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_16-46-49",
+            "content": "@@ -275,17 +275,11 @@\n %5D)%0A    %7D\n-%0A%0A    \n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-19_16-49-37",
+            "content": "@@ -23,325 +23,8 @@\n mt%22%0A\n-func separar_figurinhas(montante %5B%5Dint) (%5B%5Dint, %5B%5Dint)%7B%0A    album := make(%5B%5Dint, montante)%0A    repet := make(%5B%5Dint, montante)%0A    %0A    for _, fig := range montante%7B%0A        if !contains(album, fig)%7B%0A            album = append(album, fig)%0A        %7D else%7B%0A            repet = append(repet, fig)%0A        %7D%0A    %7D%0A    %0A%7D%0A%0A\n func\n@@ -146,24 +146,29 @@\n s)%0A%0A    \n-montante\n+seqFigurinhas\n  := make\n@@ -256,16 +256,21 @@\n an(&\n-montante\n+seqFigurinhas\n %5Bi%5D)\n@@ -275,11 +275,17 @@\n %5D)%0A    %7D\n+%0A%0A    \n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-19_17-02-30",
+            "content": "@@ -92,39 +92,32 @@\n  := make(%5B%5Dint, \n-0, len(\n montante))%0A    r\n@@ -109,17 +109,16 @@\n ontante)\n-)\n %0A    rep\n@@ -139,15 +139,8 @@\n nt, \n-0, len(\n mont\n@@ -144,18 +144,21 @@\n ontante)\n-)\n %0A\n+    \n %0A    for\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_17-03-10",
+            "content": "@@ -17,197 +17,13 @@\n ort \n-(%0A    %22fmt%22%0A    %22strconv%22%0A)    %0Afunc contains(num %5B%5Dint, valor int) bool%7B%0A    for _, elem := range num%7B%0A        if elem == valor%7B%0A            return true%0A        %7D%0A    %7D%0A    return false%0A%7D%0A\n+%22fmt%22\n %0Afun\n@@ -598,39 +598,7 @@\n    %7D\n-%0A%0A    num, err := strconv.Atoi()\n %0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_17-05-34",
+            "content": "@@ -524,16 +524,21 @@\n %7D%0A    %7D%0A\n+    %0A\n %7D%0A%0Afunc \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-19_17-05-53",
+            "content": "@@ -783,153 +783,33 @@\n     \n-montante = append(montante)%0A    num, err := strconv.Atoi()%0A%0A    if err == nil%7B%0A        fmt.Println(num)%0A    %7D else%7B%0A        fmt.Println(err)%0A    %7D\n+num, err := strconv.Atoi()\n %0A%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-19_17-07-19",
+            "content": "@@ -528,36 +528,8 @@\n   %7D%0A\n-    return album, repet    %0A\n %7D%0A%0Af\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-19_17-07-58",
+            "content": "@@ -864,24 +864,16 @@\n nv.Atoi(\n-montante\n )%0A%0A    i\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-05-19_17-08-27",
+            "content": "@@ -17,14 +17,39 @@\n ort \n-%22fmt%22%0A\n+(%0A    %22fmt%22%0A    %22strconv%22%0A)    \n %0Afun\n@@ -380,17 +380,16 @@\n ntante%7B%0A\n-%0A\n         \n@@ -453,17 +453,16 @@\n m, fig)%0A\n-%0A\n         \n@@ -520,25 +520,24 @@\n     %7D%0A    %7D%0A\n-%0A\n     return a\n@@ -547,17 +547,20 @@\n m, repet\n-%0A\n+    \n %0A%7D%0A%0Afunc\n@@ -620,17 +620,16 @@\n has int%0A\n-%0A\n     fmt.\n@@ -719,25 +719,24 @@\n Figurinhas)%0A\n-%0A\n     for i :=\n@@ -811,55 +811,161 @@\n     \n-album, repetidas := separar_figurinhas(montante)\n+montante = append(montante)%0A    num, err := strconv.Atoi(montante)%0A%0A    if err == nil%7B%0A        fmt.Println(num)%0A    %7D else%7B%0A        fmt.Println(err)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-05-19_17-17-17",
+            "content": "@@ -34,21 +34,19 @@\n ontains(\n-lista\n+num\n  %5B%5Dint, \n@@ -91,13 +91,11 @@\n nge \n-lista\n+num\n %7B%0A  \n@@ -234,17 +234,16 @@\n %5B%5Dint)%7B%0A\n-%0A\n     albu\n@@ -260,16 +260,31 @@\n %5B%5Dint, 0\n+, len(montante)\n )%0A    re\n@@ -282,28 +282,24 @@\n ))%0A    repet\n-idas\n  := make(%5B%5Di\n@@ -295,32 +295,47 @@\n := make(%5B%5Dint, 0\n+, len(montante)\n )%0A%0A    for _, fi\n@@ -353,17 +353,16 @@\n montante\n- \n %7B%0A%0A     \n@@ -384,25 +384,24 @@\n (album, fig)\n- \n %7B%0A          \n@@ -448,38 +448,8 @@\n else\n- if !contains(repetidas, fig) \n %7B%0A  \n@@ -463,20 +463,16 @@\n    repet\n-idas\n  = appen\n@@ -478,20 +478,16 @@\n nd(repet\n-idas\n , fig)%0A \n@@ -525,20 +525,16 @@\n m, repet\n-idas\n %0A%0A%7D%0A%0Afun\n@@ -836,224 +836,7 @@\n nte)\n-%0A%0A    faltando := make(%5B%5Dint, 0)%0A%0A    for i := 1; i %3C= totalAlbum; i++ %7B%0A        if !contains(album, i)%7B%0A            faltando = append(faltando, i)%0A        %7D%0A    %7D%0A%0A    fmt.Println(repetidas)%0A    fmt.Println(faltando)\n %0A%7D%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-19_17-25-43",
+            "content": "@@ -1024,28 +1024,8 @@\n  %7D%0A%0A\n-    fmt.Print(%22%5B %22)%0A\n     \n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-19_17-27-04",
+            "content": "@@ -425,16 +425,45 @@\n   %7D else\n+ if !contains(repetidas, fig)\n  %7B%0A     \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-05-19_17-32-12",
+            "content": "@@ -987,24 +987,44 @@\n    %7D%0A    %7D%0A%0A\n+    fmt.Print(%22%5B %22)%0A\n     fmt.Prin\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-05-19_17-32-21",
+            "content": "@@ -1011,11 +1011,8 @@\n tln(\n-%22 %22\n repe\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-19_17-32-57",
+            "content": "@@ -1010,18 +1010,16 @@\n ntln(%22 %22\n-, \n repetida\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-19_17-34-27",
+            "content": "@@ -1007,16 +1007,21 @@\n Println(\n+%22 %22, \n repetida\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-19_17-36-17",
+            "content": "@@ -1008,39 +1008,11 @@\n rint\n-(%22%5B %22)%0A    for _, num := range \n+ln(\n repe\n@@ -1016,26 +1016,22 @@\n epetidas\n-%7B%0A \n+)%0A\n     \n-   \n fmt.Prin\n@@ -1035,44 +1035,19 @@\n rint\n-(num, %22 %22)%0A    %7D%0A    fmt.Println(%22%5D%22\n+ln(faltando\n )%0A%7D%0A\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-19_17-38-46",
+            "content": "@@ -1104,121 +1104,7 @@\n %22%5D%22)\n-%0A%0A    fmt.Print(%22%5B %22)%0A    for _, num := range faltando%7B%0A        fmt.Print(num, %22 %22)%0A    %7D%0A    fmt.Println(%22%5D%22)    \n %0A%7D%0A\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-05-19_17-39-17",
+            "content": "package main\nimport \"fmt\"\n\nfunc contains(lista []int, valor int) bool{\n    for _, elem := range lista{\n        if elem == valor{\n            return true\n        }\n    }\n    return false\n}\n\nfunc separar_figurinhas(montante []int) ([]int, []int){\n\n    album := make([]int, 0)\n    repetidas := make([]int, 0)\n\n    for _, fig := range montante {\n\n        if !contains(album, fig) {\n            album = append(album, fig)\n\n        } else {\n            repetidas = append(repetidas, fig)\n        }\n    }\n\n    return album, repetidas\n\n}\n\nfunc main() {\n    var totalAlbum int\n    var totalFigurinhas int\n\n    fmt.Scan(&totalAlbum)\n    fmt.Scan(&totalFigurinhas)\n\n    montante := make([]int, totalFigurinhas)\n\n    for i := 0; i < totalFigurinhas; i++{\n        fmt.Scan(&montante[i])\n    }\n\n    album, repetidas := separar_figurinhas(montante)\n\n    faltando := make([]int, 0)\n\n    for i := 1; i <= totalAlbum; i++ {\n        if !contains(album, i){\n            faltando = append(faltando, i)\n        }\n    }\n\n    fmt.Print(\"[ \")\n    for _, num := range repetidas{\n        fmt.Print(num, \" \")\n    }\n    fmt.Println(\"]\")\n\n    fmt.Print(\"[ \")\n    for _, num := range faltando{\n        fmt.Print(num, \" \")\n    }\n    fmt.Println(\"]\")    \n}\n",
+            "lines": "66"
+        }
+    ]
+}

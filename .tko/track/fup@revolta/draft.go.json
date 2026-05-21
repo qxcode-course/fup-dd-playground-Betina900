@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-21_13-11-27",
+            "content": "@@ -41,81 +41,35 @@\n     \n-var t int%0A    fmt.Scan(&t)%0A%0A    num = make(%5B%5Dint, t)%0A%0A    fmt.Println(num\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-21_13-16-37",
+            "content": "@@ -77,9 +77,8 @@\n num \n-:\n = ma\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-21_13-16-47",
+            "content": "@@ -94,68 +94,8 @@\n , t)\n-%0A    for i := 0; i %3C t; i++%7B%0A        fmt.Scan(&num%5Bi%5D)%0A    %7D\n %0A%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-21_13-17-46",
+            "content": "@@ -160,539 +160,23 @@\n     \n-r := 0%0A    s := 0%0A%0A    for i := 0; i %3C t; i++%7B%0A        //se num for divisivel po 2 ele %C3%A9 par, ent%C3%A3o ele %C3%A9 um rebelde%0A        //se n%C3%A3o ele %C3%A9 impar, logo %C3%A9 soldado%0A        if num%5Bi%5D %25 2 == 0%7B%0A            r += num%5Bi%5D%0A        %7D else %7B%0A            s += num%5Bi%5D%0A        %7D%0A    %7D%0A%0A    //se a soma dos n%C3%BAmeros pares for maior que a soma dos impares, rebelde ganham%0A    //se n%C3%A3o, soldados ganham%0A    if r %3E s%7B%0A        fmt.Println(%22rebeldes%22)%0A    %7D else if s %3E r%7B%0A        fmt.Println(%22soldados%22)%0A    %7D else %7B%0A        fmt.Println(%22empate%22)%0A    %7D\n+fmt.Println(num)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-21_13-33-09",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var t int\n    fmt.Scan(&t)\n\n    num := make([]int, t)\n    for i := 0; i < t; i++{\n        fmt.Scan(&num[i])\n    }\n\n    r := 0\n    s := 0\n\n    for i := 0; i < t; i++{\n        //se num for divisivel po 2 ele \u00e9 par, ent\u00e3o ele \u00e9 um rebelde\n        //se n\u00e3o ele \u00e9 impar, logo \u00e9 soldado\n        if num[i] % 2 == 0{\n            r += num[i]\n        } else {\n            s += num[i]\n        }\n    }\n\n    //se a soma dos n\u00fameros pares for maior que a soma dos impares, rebelde ganham\n    //se n\u00e3o, soldados ganham\n    if r > s{\n        fmt.Println(\"rebeldes\")\n    } else if s > r{\n        fmt.Println(\"soldados\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "34"
+        }
+    ]
+}

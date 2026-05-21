@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_17-40-11",
+            "content": "@@ -41,177 +41,35 @@\n     \n-var quanidade int%0A    fmt.Scan(&quanidade)%0A%0A    tazos := make(%5B%5Dint, quanidade)%0A    for i := 0; i %3C quanidade; i++%7B%0A        fmt.Scan(&tazos)%0A    %7D%0A%0A    fmt.Println(tazos\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_17-45-14",
+            "content": "@@ -180,11 +180,8 @@\n azos\n-%5Bi%5D\n )%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-19_17-45-25",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -197,48 +197,24 @@\n    f\n-or _, elem := range tazos%7B%0A        %0A    %7D\n+mt.Println(tazos)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-19_17-52-12",
+            "content": "@@ -193,28 +193,8 @@\n  %7D%0A%0A\n-    repetidas := 0%0A%0A\n     \n@@ -233,94 +233,13 @@\n     \n-if elem == elem%7B%0A            repetidas += 1%0A        %7D%0A    %7D%0A%0A    fmt.Println(repetidas)\n+%0A    %7D\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-19_17-55-10",
+            "content": "@@ -189,16 +189,36 @@\n %0A    %7D%0A%0A\n+    repetidas := 0%0A%0A\n     for \n@@ -308,11 +308,39 @@\n  %7D%0A    %7D\n+%0A%0A    fmt.Println(repetidas)\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_17-55-59",
+            "content": "@@ -221,16 +221,78 @@\n  tazos%7B%0A\n+        if elem == elem%7B%0A            repetidas += 1%0A        %7D%0A\n     %7D%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-19_18-03-39",
+            "content": "@@ -197,542 +197,40 @@\n     \n-atual := tazos%5B0%5D%0A    contagem := 1%0A%0A    maisRepetido := atual%0A    maiorContagem := 1%0A%0A    for i := 1; i %3C len(tazos); i++ %7B%0A%0A        if tazos%5Bi%5D == atual %7B%0A            contagem++%0A        %7D else %7B%0A            if contagem %3E maiorContagem %7B%0A                maiorContagem = contagem%0A                maisRepetido = atual%0A            %7D%0A%0A            atual = tazos%5Bi%5D%0A            contagem = 1%0A        %7D%0A    %7D%0A%0A    if contagem %3E maiorContagem %7B%0A        maiorContagem = contagem%0A        maisRepetido = atual%0A    %7D%0A%0A    fmt.Println(maisRepetido)\n+for _, elem := range tazos%7B%0A    %7D\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-19_18-12-10",
+            "content": "@@ -716,71 +716,23 @@\n rint\n-(%22%5B %22)%0A    fmt.Print(maisRepetido, %22 %22)%0A    fmt.Println(%22%5D%22)    \n+ln(maisRepetido)\n %0A%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-19_18-13-31",
+            "content": "@@ -241,50 +241,49 @@\n  mai\n-orContagem := 1%0A%0A    vencedores := %5B%5Dint%7B%7D\n+sRepetido := atual%0A    maiorContagem := 1\n %0A%0A  \n@@ -527,112 +527,8 @@\n    %7D\n- else if contagem == maiorContagem%7B%0A                vencedores = append(vencedores, atual)%0A            %7D\n %0A%0A  \n@@ -642,49 +642,14 @@\n     \n-vencedores = %5B%5Dint%7Batual%7D%0A    %7D else if c\n+maiorC\n onta\n@@ -657,25 +657,17 @@\n em =\n-= maiorC\n+ c\n ontagem\n- %7B\n %0A   \n@@ -675,46 +675,28 @@\n     \n-vencedores = append(vencedores,\n+maisRepetido =\n  atual\n-)\n %0A   \n@@ -737,18 +737,20 @@\n int(\n-vencedores\n+maisRepetido\n , %22 \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_18-19-17",
+            "content": "@@ -474,16 +474,53 @@\n ontagem%0A\n+                maisRepetido = atual%0A\n         \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-19_18-19-35",
+            "content": "@@ -826,14 +826,88 @@\n l)%0A    %7D\n+%0A%0A    fmt.Print(%22%5B %22)%0A    fmt.Print(vencedores, %22 %22)%0A    fmt.Println(%22%5D%22) \n    %0A%7D%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-21_11-19-51",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -42,25 +42,24 @@\n     var quan\n-t\n idade int%0A  \n@@ -70,25 +70,24 @@\n t.Scan(&quan\n-t\n idade)%0A%0A    \n@@ -115,17 +115,15 @@\n quan\n-t\n idade)%0A\n-%0A\n     \n@@ -134,33 +134,32 @@\n i := 0; i %3C quan\n-t\n idade; i++ %7B%0A   \n@@ -152,17 +152,16 @@\n ade; i++\n- \n %7B%0A      \n@@ -249,24 +249,25 @@\n ntagem := 1%0A\n+%0A\n     vencedor\n@@ -274,29 +274,24 @@\n es := %5B%5Dint%7B\n-atual\n %7D%0A%0A    for i\n@@ -305,18 +305,18 @@\n i %3C \n-quantidade\n+len(tazos)\n ; i+\n@@ -391,17 +391,16 @@\n  else %7B%0A\n-%0A\n         \n@@ -478,51 +478,8 @@\n gem%0A\n-                vencedores = %5B%5Dint%7Batual%7D%0A%0A\n     \n@@ -513,33 +513,32 @@\n == maiorContagem\n- \n %7B%0A              \n@@ -668,40 +668,8 @@\n  %7D%0A%0A\n-    // verifica o %C3%BAltimo n%C3%BAmero%0A\n     \n@@ -732,17 +732,16 @@\n %7Batual%7D%0A\n-%0A\n     %7D el\n@@ -830,116 +830,10 @@\n    %7D\n-%0A%0A\n    \n- fmt.Print(%22%5B %22)%0A    for _, v := range vencedores %7B%0A        fmt.Print(v, %22 %22)%0A    %7D%0A    fmt.Println(%22%5D%22)\n %0A%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-21_11-26-39",
+            "content": "@@ -204,733 +204,210 @@\n     \n-//N%C3%BAmero atual; come%C3%A7a contando o primeiro n%C3%BAmero%0A    atual := tazos%5B0%5D%0A    //Come%C3%A7a com 1 porque o primeiro elemnto j%C3%A1 apareceu uma vez%0A    contagem := 1%0A%0A    //Porque o maior n%C3%BAmero de repeti%C3%A7%C3%B5es %C3%A9 1%0A    maiorRepeticao := 1%0A    //Lista de vencedores; come%C3%A7a vazia, porque n%C3%A3o sabemos quem ganhou%0A    vencedores := %5B%5Dint%7B%7D%0A%0A    //loop principal%0A    //percorre o vetor%0A    //com%C3%A7a do %C3%ADndicie 1, porque o %C3%ADndicie 0 j%C3%A1 est%C3%A1 sendo usado%0A    for i := 1; i %3C quantidade; i++ %7B%0A%0A        //caso o n%C3%BAmero atual seja igual ao anterior a contagem de quantas vezes esse elemento apareceu aumenta em um%0A        if tazos%5Bi%5D == atual %7B%0A            contagem++%0A%0A        //Quando o n%C3%BAmero mudar   %0A        %7D else %7B%0A%0A            //NOVO CAMPE%C3%83O\n+atual := tazos%5B0%5D%0A    contagem := 1%0A%0A    maiorContagem := 1%0A    vencedores := %5B%5Dint%7Batual%7D%0A%0A    for i := 1; i %3C quantidade; i++ %7B%0A%0A        if tazos%5Bi%5D == atual %7B%0A            contagem++%0A        %7D else %7B%0A\n %0A   \n@@ -448,46 +448,8 @@\n em %7B\n-%0A%0A                //Atualiza o recorde\n %0A   \n@@ -490,77 +490,8 @@\n gem%0A\n-                //Atualiza vencedor%0A                //apaga o antigo%0A\n     \n@@ -533,29 +533,8 @@\n l%7D%0A%0A\n-            //EMPATE%0A\n     \n@@ -582,61 +582,8 @@\n em %7B\n-%0A%0A                //Adiciona outro vendcedor ao vetor\n %0A   \n@@ -665,179 +665,24 @@\n     \n-//Come%C3%A7ar nova contagem%0A            atual = tazos%5Bi%5D%0A            //Reinicia a contagem da repeti%C3%A7%C3%A3o do n%C3%BAmero%0A            //porque o novo n%C3%BAmero apareceu pela primeira vez\n+atual = tazos%5Bi%5D\n %0A   \n@@ -798,72 +798,33 @@\n     \n-maiorContagem = contagem%0A        vencedores = append(vencedores)\n+vencedores = %5B%5Dint%7Batual%7D\n %0A%0A  \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-21_12-11-31",
+            "content": "@@ -411,24 +411,25 @@\n    maior\n-Contagem\n+Repeticao\n  := 1%0A  \n",
+            "lines": "75"
+        },
+        {
+            "label": "2026-05-21_12-12-14",
+            "content": "@@ -1715,23 +1715,16 @@\n ncedores\n-, atual\n )%0A%0A    %7D\n",
+            "lines": "75"
+        },
+        {
+            "label": "2026-05-21_12-15-39",
+            "content": "@@ -43,17 +43,26 @@\n     var \n-n\n+quantidade\n  int%0A   \n@@ -76,17 +76,30 @@\n an(&\n-n\n+quantidade\n )%0A%0A    \n-v\n+tazos\n  := \n@@ -110,17 +110,26 @@\n (%5B%5Dint, \n-n\n+quantidade\n )%0A%0A    f\n@@ -139,25 +139,34 @@\n i := 0; i %3C \n-n\n+quantidade\n ; i++ %7B%0A    \n@@ -179,17 +179,21 @@\n t.Scan(&\n-v\n+tazos\n %5Bi%5D)%0A   \n@@ -204,59 +204,440 @@\n     \n-maior := 0%0A    repetidos := %5B%5Dint%7B%7D%0A%0A    cont := 1%0A\n+//N%C3%BAmero atual; come%C3%A7a contando o primeiro n%C3%BAmero%0A    atual := tazos%5B0%5D%0A    //Come%C3%A7a com 1 porque o primeiro elemnto j%C3%A1 apareceu uma vez%0A    contagem := 1%0A%0A    //Porque o maior n%C3%BAmero de repeti%C3%A7%C3%B5es %C3%A9 1%0A    maiorContagem := 1%0A    //Lista de vencedores; come%C3%A7a vazia, porque n%C3%A3o sabemos quem ganhou%0A    vencedores := %5B%5Dint%7B%7D%0A%0A    //loop principal%0A    //percorre o vetor%0A    //com%C3%A7a do %C3%ADndicie 1, porque o %C3%ADndicie 0 j%C3%A1 est%C3%A1 sendo usado\n %0A   \n@@ -653,17 +653,26 @@\n  1; i %3C \n-n\n+quantidade\n ; i++ %7B%0A\n@@ -684,25 +684,146 @@\n     \n-if v\n+//caso o n%C3%BAmero atual seja igual ao anterior a contagem de quantas vezes esse elemento apareceu aumenta em um%0A        if tazos\n %5Bi%5D == \n-v%5Bi-1%5D\n+atual\n  %7B%0A \n@@ -837,18 +837,58 @@\n     cont\n-++\n+agem++%0A%0A        //Quando o n%C3%BAmero mudar   \n %0A       \n@@ -894,24 +894,51 @@\n   %7D else %7B%0A%0A\n+            //NOVO CAMPE%C3%83O%0A\n             \n@@ -940,32 +940,36 @@\n      if cont\n+agem\n  %3E maior\n  %7B%0A         \n@@ -948,34 +948,80 @@\n contagem %3E maior\n- %7B\n+Contagem %7B%0A%0A                //Atualiza o recorde\n %0A               \n@@ -1030,16 +1030,29 @@\n aior\n+Contagem\n  = cont\n-%0A\n+agem%0A \n     \n@@ -1058,33 +1058,102 @@\n             \n- repetido\n+//Atualiza vencedor%0A                //apaga o antigo%0A                vencedore\n s = %5B%5Dint%7Bv%5B\n@@ -1154,17 +1154,37 @@\n int%7B\n-v%5Bi-1%5D\n+atual\n %7D%0A%0A\n+            //EMPATE%0A\n     \n@@ -1197,32 +1197,36 @@\n   %7D else if cont\n+agem\n  == maior %7B%0A    \n@@ -1210,35 +1210,44 @@\n ontagem == maior\n+Contagem\n  %7B%0A\n+%0A\n                 \n@@ -1250,60 +1250,297 @@\n     \n-repetidos = append(repetidos, v%5Bi-1%5D)%0A            %7D%0A\n+//Adiciona outro vendcedor ao vetor%0A                vencedores = append(vencedores, atual)%0A            %7D%0A%0A            //Come%C3%A7ar nova contagem%0A            atual = tazos%5Bi%5D%0A            //Reinicia a contagem da repeti%C3%A7%C3%A3o do n%C3%BAmero%0A            //porque o novo n%C3%BAmero apareceu pela primeira vez\n %0A   \n@@ -1552,16 +1552,20 @@\n     cont\n+agem\n  = 1%0A   \n@@ -1589,12 +1589,15 @@\n  // \n-trat\n+verific\n a o \n@@ -1607,12 +1607,13 @@\n imo \n-grup\n+n%C3%BAmer\n o%0A  \n@@ -1621,24 +1621,28 @@\n  if cont\n+agem\n  %3E maior\n  %7B%0A     \n@@ -1629,24 +1629,32 @@\n agem %3E maior\n+Contagem\n  %7B%0A        r\n@@ -1656,33 +1656,80 @@\n     \n-repetidos = %5B%5Dint%7Bv%5Bn-1%5D%7D\n+maiorContagem = contagem%0A        vencedores = append(vencedores, atual)%0A\n %0A   \n@@ -1743,16 +1743,20 @@\n  if cont\n+agem\n  == maio\n@@ -1756,16 +1756,24 @@\n == maior\n+Contagem\n  %7B%0A     \n@@ -1775,24 +1775,25 @@\n         \n-repetido\n+vencedore\n s = appe\n@@ -1799,25 +1799,25 @@\n end(\n-repetidos, v%5Bn-1%5D\n+vencedores, atual\n )%0A  \n@@ -1852,17 +1852,17 @@\n  for _, \n-x\n+v\n  := rang\n@@ -1867,16 +1867,17 @@\n nge \n-repetido\n+vencedore\n s %7B%0A\n@@ -1898,9 +1898,9 @@\n int(\n-x\n+v\n , %22 \n",
+            "lines": "75"
+        },
+        {
+            "label": "2026-05-21_12-19-52",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    v := make([]int, n)\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&v[i])\n    }\n\n    maior := 0\n    repetidos := []int{}\n\n    cont := 1\n\n    for i := 1; i < n; i++ {\n\n        if v[i] == v[i-1] {\n            cont++\n        } else {\n\n            if cont > maior {\n                maior = cont\n                repetidos = []int{v[i-1]}\n\n            } else if cont == maior {\n                repetidos = append(repetidos, v[i-1])\n            }\n\n            cont = 1\n        }\n    }\n\n    // trata o \u00faltimo grupo\n    if cont > maior {\n        repetidos = []int{v[n-1]}\n    } else if cont == maior {\n        repetidos = append(repetidos, v[n-1])\n    }\n\n    fmt.Print(\"[ \")\n    for _, x := range repetidos {\n        fmt.Print(x, \" \")\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "50"
+        }
+    ]
+}
