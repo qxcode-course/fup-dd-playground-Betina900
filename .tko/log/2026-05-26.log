@@ -1,0 +1,34 @@
+2026-05-26 16:38:08, SELF, v:1, k:fup@quebrada, self:1, rate:100, friend:Sim
+2026-05-26 16:40:00, MOVE, v:1, k:fup@intervalada, mode:DOWN
+2026-05-26 16:40:01, MOVE, v:1, k:fup@intervalada, mode:PICK
+2026-05-26 16:40:03, EXEC, v:1, k:fup@intervalada, mode:FULL, rate:0, size:5
+2026-05-26 16:40:07, MOVE, v:1, k:fup@intervalada, mode:BACK
+2026-05-26 16:40:23, MOVE, v:1, k:fup@poco, mode:DOWN
+2026-05-26 16:40:24, MOVE, v:1, k:fup@poco, mode:PICK
+2026-05-26 16:40:39, MOVE, v:1, k:fup@poco, mode:BACK
+2026-05-26 16:42:54, SELF, v:1, k:fup@tres, self:1, rate:100, friend:Nao
+2026-05-26 16:42:55, MOVE, v:1, k:fup@tres, mode:PICK
+2026-05-26 16:42:56, MOVE, v:1, k:fup@tres, mode:BACK
+2026-05-26 16:43:09, SELF, v:1, k:fup@resto, self:1, rate:100, friend:Nao
+2026-05-26 16:43:17, SELF, v:1, k:fup@segundos, self:1, rate:100, friend:Sim
+2026-05-26 16:43:25, SELF, v:1, k:fup@celsius, self:1, rate:100, friend:Nao
+2026-05-26 16:46:00, MOVE, v:1, k:fup@invertendo, mode:PICK
+2026-05-26 16:46:02, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:5
+2026-05-26 16:46:02, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-26 16:48:44, MOVE, v:1, k:fup@invertendo, mode:BACK
+2026-05-26 16:49:34, MOVE, v:1, k:fup@blackjack, mode:DOWN
+2026-05-26 16:49:35, MOVE, v:1, k:fup@blackjack, mode:PICK
+2026-05-26 16:49:37, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:0, size:5
+2026-05-26 16:51:39, MOVE, v:1, k:fup@blackjack, mode:BACK
+2026-05-26 16:49:34, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-26 16:49:34, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-26 16:49:34, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-26 16:49:37, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-26 16:52:20, MOVE, v:1, k:fup@invertendo, mode:PICK
+2026-05-26 16:52:21, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0
+2026-05-26 16:52:21, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-26 17:04:20, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-26 17:14:05, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:11
+2026-05-26 17:15:55, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-26 17:14:05, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-26 17:20:55, MOVE, v:1, k:fup@invertendo, mode:BACK

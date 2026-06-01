@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_16-58-04",
+            "content": "@@ -41,122 +41,35 @@\n     \n-var qnt int%0A    fmt.Scan(&qnt)%0A%0A    spc := make(%5B%5Dint, qnt)%0A    for i := range spc%7B%0A        fmt.Scan(&spc%5Bi%5D)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_17-02-37",
+            "content": "@@ -156,60 +156,7 @@\n    %7D\n-%0A%0A    fem := make(%5B%5Dint, 0)%0A    mac := make(%5B%5Dint, 0)\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-01_17-04-28",
+            "content": "@@ -169,144 +169,47 @@\n  := \n-0%0A    mac := 0%0A%0A    for i := 0; i %3Cqnt; i++%7B%0A        if spc%5Bi%5D %3E 0%7B%0A            mac ++%0A        %7D else%7B%0A            fem ++%0A        %7D%0A    %7D\n+make(%5B%5Dint, 0)%0A    mac := make(%5B%5Dint, 0)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-01_17-07-42",
+            "content": "@@ -162,79 +162,58 @@\n     \n-vistos := make(map%5Bint%5Dboll)%0A    casais := 0%0A%0A    for _, n := range spc\n+fem := 0%0A    mac := 0%0A%0A    for i := 0; i %3Cqnt; i++\n %7B%0A  \n@@ -225,18 +225,18 @@\n  if \n-vistos%5B-n%5D\n+spc%5Bi%5D %3E 0\n %7B%0A  \n@@ -249,14 +249,46 @@\n     \n-casais\n+mac ++%0A        %7D else%7B%0A            fem\n  ++%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-01_17-23-16",
+            "content": "@@ -290,33 +290,8 @@\n   %7D%0A\n-        vistos%5Bn%5D = true%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-01_17-24-38",
+            "content": "@@ -320,32 +320,7 @@\n    %7D\n-%0A%0A    fmt.Println(casais)\n %0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-01_17-24-52",
+            "content": "@@ -183,17 +183,17 @@\n p%5Bint%5Dbo\n-o\n+l\n l)%0A    c\n@@ -348,24 +348,4 @@\n )%0A%7D%0A\n-%0A//qual o problema?%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-01_17-26-31",
+            "content": "@@ -23,85 +23,8 @@\n mt%22%0A\n-func abs(x int) int%7B%0A    if x %3C 0 %7B%0A        return -x%0A    %7D%0A%0A    return x%0A%7D%0A%0A\n func\n@@ -191,48 +191,8 @@\n ol)%0A\n-    contados := make(map%5Bint%5Dbool)%0A    %0A\n     \n@@ -256,30 +256,8 @@\n %5B-n%5D\n- && !contados%5Babs(n)%5D \n %7B%0A  \n@@ -280,44 +280,8 @@\n  ++%0A\n-            contados%5Babs(n)%5D = true%0A\n     \n@@ -344,8 +344,28 @@\n sais)%0A%7D%0A\n+%0A//qual o problema?%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-01_17-44-42",
+            "content": "@@ -23,553 +23,252 @@\n mt%22%0A\n-%0A//Declara uma fun%C3%A7%C3%A3o chamada abs que recebe um inteiro x e retorna um inteiro%0Afunc abs(x int) int%7B%0A    //Se x for negativo, retorna seu oposto%0A    if x %3C 0 %7B%0A        return -x%0A    %7D%0A%0A    //Se x j%C3%A1 for positivo, retorna ele mesmo%0A    return x%0A%7D%0A%0Afunc main() %7B%0A    var qnt int%0A    fmt.Scan(&qnt)%0A%0A    spc := make(%5B%5Dint, qnt)%0A    for i := range spc%7B%0A        fmt.Scan(&spc%5Bi%5D)%0A    %7D%0A%0A    //Cria um mapa para registrar quais n%C3%BAmeros j%C3%A1 apareceram%0A    vistos := make(map%5Bint%5Dbool)%0A    //Cria um mapa para registrar quais pares j%C3%A1 foram contabilizados\n+func abs(x int) int%7B%0A    if x %3C 0 %7B%0A        return -x%0A    %7D%0A%0A    return x%0A%7D%0A%0Afunc main() %7B%0A    var qnt int%0A    fmt.Scan(&qnt)%0A%0A    spc := make(%5B%5Dint, qnt)%0A    for i := range spc%7B%0A        fmt.Scan(&spc%5Bi%5D)%0A    %7D%0A%0A    vistos := make(map%5Bint%5Dbool)\n %0A   \n@@ -360,10 +360,11 @@\n     \n-/*\n+if \n vist\n@@ -374,147 +374,8 @@\n -n%5D \n--%3E Verifica se o oposto de n j%C3%A1 apareceu%0A        !contados%5Babs(n)%5D -%3E Verifica se esse casal ainda n%C3%A3o foi contado*/%0A        if vistos%5B-n%5D \n && !\n@@ -414,16 +414,52 @@\n asais ++\n+%0A            contados%5Babs(n)%5D = true\n %0A       \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-01_17-52-48",
+            "content": "@@ -408,99 +408,434 @@\n     \n-vistos := make(%5B%5Dint, 0)%0A%0A    casais := 0%0A%0A    for _, n := range spc%7B%0A        if vistos%5B-n%5D\n+//Cria um mapa para registrar quais n%C3%BAmeros j%C3%A1 apareceram%0A    vistos := make(map%5Bint%5Dbool)%0A    //Cria um mapa para registrar quais pares j%C3%A1 foram contabilizados%0A    contados := make(map%5Bint%5Dbool)%0A    %0A    casais := 0%0A%0A    for _, n := range spc%7B%0A        /*vistos%5B-n%5D -%3E Verifica se o oposto de n j%C3%A1 apareceu%0A        !contados%5Babs(n)%5D -%3E Verifica se esse casal ainda n%C3%A3o foi contado*/%0A        if vistos%5B-n%5D && !contados%5Babs(n)%5D \n %7B%0A  \n@@ -864,16 +864,41 @@\n       %7D%0A\n+        vistos%5Bn%5D = true%0A\n     %7D%0A%0A \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-01_18-04-08",
+            "content": "@@ -19,16 +19,262 @@\n t %22fmt%22%0A\n+%0A//Declara uma fun%C3%A7%C3%A3o chamada abs que recebe um inteiro x e retorna um inteiro%0Afunc abs(x int) int%7B%0A    //Se x for negativo, retorna seu oposto%0A    if x %3C 0 %7B%0A        return -x%0A    %7D%0A%0A    //Se x j%C3%A1 for positivo, retorna ele mesmo%0A    return x%0A%7D%0A%0A\n func mai\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-01_18-04-34",
+            "content": "@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var qnt \n@@ -49,17 +49,20 @@\n qnt int%0A\n-%09\n+    \n fmt.Scan\n@@ -73,1059 +73,233 @@\n t)%0A%0A\n-%09// Cria um mapa para contar quantas vezes cada animal aparece%0A%09contagem := make(map%5Bint%5Dint)%0A%09for i := 0; i %3C qnt; i++ %7B%0A%09%09var animal int%0A%09%09fmt.Scan(&animal)%0A%09%09// Incrementa a quantidade desse animal no mapa%0A%09%09contagem%5Banimal%5D++%0A%09%7D%0A%0A%09// Vari%C3%A1vel que armazenar%C3%A1 a quantidade total de casais%0A%09casais := 0%0A%0A%09// Percorre todos os elementos do mapa%0A%09for especie, qtdMachos := range contagem %7B%0A%0A%09%09// Considera apenas os machos (valores positivos)%0A%09%09// Isso evita contar a mesma esp%C3%A9cie duas vezes%0A%09%09if especie %3E 0 %7B%0A%0A%09%09%09// Procura quantas f%C3%AAmeas existem dessa esp%C3%A9cie%0A%09%09%09// Exemplo: para especie = 3, procura contagem%5B-3%5D%0A%09%09%09qtdFemeas := contagem%5B-especie%5D%0A%0A%09%09%09// O n%C3%BAmero de casais poss%C3%ADveis %C3%A9 o menor valor%0A%09%09%09// entre a quantidade de machos e de f%C3%AAmeas%0A%0A%09%09%09if qtdMachos %3C qtdFemeas %7B%0A%0A%09%09%09%09// H%C3%A1 menos machos que f%C3%AAmeas%0A%09%09%09%09// Ent%C3%A3o todos os machos formam casal%0A%09%09%09%09casais += qtdMachos%0A%0A%09%09%09%7D else %7B%0A%0A%09%09%09%09// H%C3%A1 menos f%C3%AAmeas que machos%0A%09%09%09%09// Ent%C3%A3o todas as f%C3%AAmeas formam casal%0A%09%09%09%09casais += qtdFemeas%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09// Exibe o total de casais encontrados%0A%09\n+    spc := make(%5B%5Dint, qnt)%0A    for i := range spc%7B%0A        fmt.Scan(&spc%5Bi%5D)%0A    %7D%0A%0A    vistos := make(%5B%5Dint, 0)%0A%0A    casais := 0%0A%0A    for _, n := range spc%7B%0A        if vistos%5B-n%5D%7B%0A            casais ++%0A        %7D%0A    %7D%0A%0A    \n fmt.\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-01_18-11-45",
+            "content": "@@ -302,83 +302,389 @@\n %7D%0A%0A%09\n-casais := 0%0A%0A%09for especie, qtdMachos := range contagem %7B%0A%09%09if especie %3E 0 %7B\n+// Vari%C3%A1vel que armazenar%C3%A1 a quantidade total de casais%0A%09casais := 0%0A%0A%09// Percorre todos os elementos do mapa%0A%09for especie, qtdMachos := range contagem %7B%0A%0A%09%09// Considera apenas os machos (valores positivos)%0A%09%09// Isso evita contar a mesma esp%C3%A9cie duas vezes%0A%09%09if especie %3E 0 %7B%0A%0A%09%09%09// Procura quantas f%C3%AAmeas existem dessa esp%C3%A9cie%0A%09%09%09// Exemplo: para especie = 3, procura contagem%5B-3%5D\n %0A%09%09%09\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-06-01_18-17-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar qnt int\n\tfmt.Scan(&qnt)\n\n\t// Cria um mapa para contar quantas vezes cada animal aparece\n\tcontagem := make(map[int]int)\n\tfor i := 0; i < qnt; i++ {\n\t\tvar animal int\n\t\tfmt.Scan(&animal)\n\t\t// Incrementa a quantidade desse animal no mapa\n\t\tcontagem[animal]++\n\t}\n\n\tcasais := 0\n\n\tfor especie, qtdMachos := range contagem {\n\t\tif especie > 0 {\n\t\t\tqtdFemeas := contagem[-especie]\n\n\t\t\t// O n\u00famero de casais poss\u00edveis \u00e9 o menor valor\n\t\t\t// entre a quantidade de machos e de f\u00eameas\n\n\t\t\tif qtdMachos < qtdFemeas {\n\n\t\t\t\t// H\u00e1 menos machos que f\u00eameas\n\t\t\t\t// Ent\u00e3o todos os machos formam casal\n\t\t\t\tcasais += qtdMachos\n\n\t\t\t} else {\n\n\t\t\t\t// H\u00e1 menos f\u00eameas que machos\n\t\t\t\t// Ent\u00e3o todas as f\u00eameas formam casal\n\t\t\t\tcasais += qtdFemeas\n\t\t\t}\n\t\t}\n\t}\n\n\t// Exibe o total de casais encontrados\n\tfmt.Println(casais)\n}\n",
+            "lines": "42"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_16-57-06",
+            "content": "@@ -41,622 +41,34 @@\n     \n-var qtd int%0A    fmt.Scan(&qtd)%0A    arr := make(%5B%5Dint, qtd)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A%0A    par := make(%5B%5Dint, 0)%0A    imp := make(%5B%5Dint, 0)%0A%0A    for _, elem := range arr %7B%0A        if elem %25 2 == 0 %7B%0A            par = append(par, elem)%0A        %7D else %7B%0A            imp = append(imp, elem)%0A        %7D%0A    %7D%0A%0A    fmt.Print(%22%5B %22)%0A    if len(imp) %3E 0 %7B%0A        for _, i := range imp %7B%0A            fmt.Print(i, %22 %22)%0A        %7D%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)%0A%0A    fmt.Print(%22%5B %22)%0A    if len(par) %3E 0 %7B%0A        for _, i := range par %7B%0A            fmt.Print(i, %22 %22)%0A        %7D%0A    %7D%0A    fmt.Print(%22%5D%5Cn\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_16-57-31",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtd int\n    fmt.Scan(&qtd)\n    arr := make([]int, qtd)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n\n    par := make([]int, 0)\n    imp := make([]int, 0)\n\n    for _, elem := range arr {\n        if elem % 2 == 0 {\n            par = append(par, elem)\n        } else {\n            imp = append(imp, elem)\n        }\n    }\n\n    fmt.Print(\"[ \")\n    if len(imp) > 0 {\n        for _, i := range imp {\n            fmt.Print(i, \" \")\n        }\n    }\n    fmt.Print(\"]\\n\")\n\n    fmt.Print(\"[ \")\n    if len(par) > 0 {\n        for _, i := range par {\n            fmt.Print(i, \" \")\n        }\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "37"
+        }
+    ]
+}

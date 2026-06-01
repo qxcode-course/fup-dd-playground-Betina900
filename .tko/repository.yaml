@@ -18,9 +18,7 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded:
-- fup@list
-- sandbox@sandbox
+expanded: []
 flags:
   inbox: all
   panel: skills
@@ -28,5 +26,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@tazos
-selected_index: 20
+selected: fup@list
+selected_index: 8

@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_16-46-02",
+            "content": "@@ -41,138 +41,35 @@\n     \n-var elen int%0A    fmt.Scan(&elen)%0A    %0A    nums := make(%5B%5Dint, elen)%0A    for i := 0; i %3C elen; i++%7B%0A        fmt.Scan(&nums%5Bi%5D)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-26_17-14-05",
+            "content": "@@ -172,93 +172,7 @@\n    %7D\n-%0A%0A    //come%C3%A7a em 0 at%C3%A9 n%C3%BAmerp N%0A    //o i do for come%C3%A7aria igual a N e depois o i vao\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-01_16-47-36",
+            "content": "@@ -41,19 +41,20 @@\n     var \n-qtd\n+elen\n  int%0A   \n@@ -68,20 +68,27 @@\n an(&\n-qtd\n+elen\n )%0A    \n-arr\n+%0A    nums\n  := \n@@ -103,11 +103,12 @@\n nt, \n-qtd\n+elen\n )%0A  \n@@ -114,34 +114,40 @@\n    for i := \n-range arr \n+0; i %3C elen; i++\n %7B%0A        fm\n@@ -154,19 +154,20 @@\n t.Scan(&\n-arr\n+nums\n %5Bi%5D)%0A   \n@@ -178,502 +178,87 @@\n     \n-par := make(%5B%5Dint, 0)%0A    imp := make(%5B%5Dint, 0)%0A%0A    for _, elem := range arr %7B%0A        if elem %25 2 == 0 %7B%0A            par = append(par, elem)%0A        %7D else %7B%0A            imp = append(imp, elem)%0A        %7D%0A    %7D%0A%0A    fmt.Print(%22%5B %22)%0A    if len(imp) %3E 0 %7B%0A        for _, i := range imp %7B%0A            fmt.Print(i, %22 %22)%0A        %7D%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)%0A%0A    fmt.Print(%22%5B %22)%0A    if len(par) %3E 0 %7B%0A        for _, i := range par %7B%0A            fmt.Print(i, %22 %22)%0A        %7D%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)\n+//come%C3%A7a em 0 at%C3%A9 n%C3%BAmerp N%0A    //o i do for come%C3%A7aria igual a N e depois o i vao\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-01_16-53-53",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -157,127 +157,329 @@\n   %7D%0A\n+%0A\n     \n-st\n+pa\n r := \n-0\n+make(%5B%5Dint, 0)\n %0A    \n-end\n+imp\n  := \n-len(arr) - 1%0A%0A    for str %3C end %7B%0A        arr%5Bstr%5D, arr%5Bend%5D = arr%5Bend%5D, arr%5Bstr%5D%0A        str++\n+make(%5B%5Dint, 0)%0A%0A    for _, elem := range arr %7B%0A        if elem %25 2 == 0 %7B%0A            par = append(par, elem)%0A        %7D else %7B%0A            imp = append(imp, elem)%0A        %7D%0A    %7D%0A%0A    fmt.Print(%22%5B %22)%0A    if len(imp) %3E 0 %7B%0A        for _, i := range imp %7B%0A            fmt.Print(i, %22 %22)\n %0A   \n@@ -487,19 +487,36 @@\n     \n-end--\n+%7D\n %0A    %7D\n+%0A    fmt.Print(%22%5D%5Cn%22)\n %0A%0A  \n@@ -533,23 +533,52 @@\n t(%22%5B %22)%0A\n+    if len(par) %3E 0 %7B%0A    \n     for\n+ _,\n  i := ra\n@@ -573,34 +573,34 @@\n r _, i := range \n+p\n a\n-r\n r %7B%0A        fmt.\n@@ -587,32 +587,36 @@\n e par %7B%0A        \n+   \n+ \n fmt.Print(arr%5Bi%5D\n@@ -613,20 +613,25 @@\n int(\n-arr%5Bi%5D, %22 %22)\n+i, %22 %22)%0A        %7D\n %0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-01_16-56-19",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var qtd int\n    fmt.Scan(&qtd)\n    arr := make([]int, qtd)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n    str := 0\n    end := len(arr) - 1\n\n    for str < end {\n        arr[str], arr[end] = arr[end], arr[str]\n        str++\n        end--\n    }\n\n    fmt.Print(\"[ \")\n    for i := range arr {\n        fmt.Print(arr[i], \" \")\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "25"
+        }
+    ]
+}
