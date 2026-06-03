@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_00-49-15",
+            "content": "@@ -41,65 +41,35 @@\n     \n-var jogL, jogR, jogD int%0A    fmt.Scan(&jogL, &jogR, &jogD\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_00-57-20",
+            "content": "@@ -99,124 +99,7 @@\n ogD)\n-%0A%0A    if jogR %3E 50 && jogL %3C jogR && jogR %3E jogD%7B%0A        fmt.Println(%22S%22)%0A    %7D else%7B%0A        fmt.Println(%22N%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-06-03_01-04-14",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var jogL, jogR, jogD int\n    fmt.Scan(&jogL, &jogR, &jogD)\n\n    if jogR > 50 && jogL < jogR && jogR > jogD{\n        fmt.Println(\"S\")\n    } else{\n        fmt.Println(\"N\")\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}

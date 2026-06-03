@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_01-07-25",
+            "content": "@@ -41,270 +41,35 @@\n     \n-var num int%0A    fmt.Scan(&num)%0A%0A    quadrado := false%0A%0A    for i := 1; i*i %3C= num; i++%7B%0A        if i*i == num%7B%0A            quadrado = true%0A            break%0A        %7D%0A    %7D%0A%0A    if !quadrado%7B%0A        fmt.Println(%22nao%22)%0A    %7D else%7B%0A        fmt.Println(%22sim%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_01-24-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num int\n    fmt.Scan(&num)\n\n    quadrado := false\n\n    for i := 1; i*i <= num; i++{\n        if i*i == num{\n            quadrado = true\n            break\n        }\n    }\n\n    if !quadrado{\n        fmt.Println(\"nao\")\n    } else{\n        fmt.Println(\"sim\")\n    }\n}\n",
+            "lines": "21"
+        }
+    ]
+}

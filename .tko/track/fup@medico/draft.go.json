@@ -1,0 +1,144 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-02_16-20-30",
+            "content": "@@ -41,140 +41,35 @@\n     \n-var qnt int%0A    fmt.Scan(&qnt)%0A%0A    sequencia := make(%5B%5Dint, qnt)%0A    for i := 0; i %3C qnt; i++%7B%0A        fmt.Scan(&sequencia%5Bi%5D)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-02_16-23-15",
+            "content": "@@ -174,242 +174,7 @@\n    %7D\n-%0A%0A    contador := 0%0A%0A    for i := 0; i %3C len(sequencia); i++%7B%0A        if sequencia%5Bi%5D == 0%7B%0A            temUmPerto := false%0A            //verifica a esquerda%0A            if i %3E 0 &&  sequencia%5Bi-1%5D == 1%7B%0A%0A            %7D%0A        %7D%0A%0A    %7D\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-02_16-34-06",
+            "content": "@@ -351,16 +351,17 @@\n i %3E 0 &&\n+ \n  sequenc\n@@ -378,146 +378,22 @@\n  1%7B%0A\n-                temUmPerto = true%0A            %7D%0A            //verifica a direita%0A            if i %3C len(sequencia) - 1 sequencia%5Bi+1%5D == 1\n+%0A            %7D\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-02_23-14-56",
+            "content": "@@ -195,94 +195,8 @@\n  0%0A%0A\n-    //for _, n := range sequencia%7B%7D%0A    //for i, n := range sequencia%7B%7D%0A    //for %7B%7D%0A%0A\n     \n@@ -228,24 +228,24 @@\n ncia); i++%7B%0A\n+\n         if s\n@@ -294,16 +294,50 @@\n = false%0A\n+            //verifica a esquerda%0A\n         \n@@ -417,24 +417,115 @@\n           %7D%0A\n+            //verifica a direita%0A            if i %3C len(sequencia) - 1 sequencia%5Bi+1%5D == 1%0A\n         %7D%0A  \n@@ -518,20 +518,21 @@\n 1%0A        %7D%0A\n+%0A\n     %7D%0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-02_23-24-10",
+            "content": "@@ -196,17 +196,17 @@\n 0%0A%0A    /\n-*\n+/\n for _, n\n@@ -227,24 +227,26 @@\n encia%7B%7D%0A    \n+//\n for i, n := \n@@ -271,17 +271,16 @@\n     \n+//\n for %7B%7D\n-i*/\n %0A%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-02_23-30-48",
+            "content": "@@ -476,180 +476,22 @@\n   %7D%0A\n-%0A            if i %3E len(sequencia) && sequencia%5Bi+1%5D == 1%7B%0A                temUmPerto = true%0A            %7D%0A%0A            contador++%0A        %7D%0A    %7D%0A%0A    fmt.Println(contador)\n+        %7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-02_23-40-50",
+            "content": "@@ -505,18 +505,16 @@\n equencia\n--1\n ) && seq\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-02_23-41-00",
+            "content": "@@ -191,16 +191,101 @@\n r := 0%0A%0A\n+    /*for _, n := range sequencia%7B%7D%0A    for i, n := range sequencia%7B%7D%0A    for %7B%7Di*/%0A%0A\n     for \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-02_23-45-40",
+            "content": "@@ -191,17 +191,16 @@\n r := 0%0A%0A\n-%0A\n     for \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-02_23-49-35",
+            "content": "@@ -1,573 +1,46 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var qnt int%0A    fmt.Scan(&qnt)%0A%0A    sequencia := make(%5B%5Dint, qnt)%0A    for i := 0; i %3C qnt; i++%7B%0A        fmt.Scan(&sequencia%5Bi%5D)%0A    %7D%0A%0A    contador := 0%0A%0A%0A    for i := 0; i %3C len(sequencia); i++%7B%0A        if sequencia%5Bi%5D == 0%7B%0A            temUmPerto := false%0A            if i %3E 0 && sequencia%5Bi-1%5D == 1%7B%0A                temUmPerto = true%0A            %7D%0A%0A            if i %3E len(sequencia)-1 && sequencia%5Bi+1%5D == 1%7B%0A                temUmPerto = true%0A            %7D%0A%0A            contador++%0A        %7D%0A    %7D%0A%0A    fmt.Println(contador)%0A%7D\n+@@ -421,16 +421,18 @@%0A equencia%0A+-1%0A ) && seq\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-06-02_23-56-48",
+            "content": "@@ -412,11 +412,22 @@\n i %3E \n-qtd\n+len(sequencia)\n -1 &\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-02_23-57-28",
+            "content": "@@ -408,30 +408,19 @@\n  if i %3E \n-len(sequencia)\n+qtd\n -1 && se\n@@ -503,64 +503,18 @@\n     \n-if temUmPerto %7B%0A                contador++%0A            %7D\n+contador++\n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-03_00-01-05",
+            "content": "@@ -408,16 +408,19 @@\n  if i %3E \n+len\n (sequenc\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-03_00-03-45",
+            "content": "@@ -408,18 +408,16 @@\n  if i %3E \n-le\n (sequenc\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-03_00-03-53",
+            "content": "@@ -410,17 +410,16 @@\n f i %3E le\n-n\n (sequenc\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-03_00-03-58",
+            "content": "@@ -514,18 +514,64 @@\n     \n-contador++\n+if temUmPerto %7B%0A                contador++%0A            %7D\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-03_00-05-03",
+            "content": "@@ -514,69 +514,18 @@\n     \n-if temUmPerto!=true%7B%0A                contador++%0A            %7D\n+contador++\n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-03_00-06-17",
+            "content": "@@ -514,27 +514,8 @@\n     \n-%0A        %7D%0A        \n if t\n@@ -572,16 +572,26 @@\n       %7D%0A\n+        %7D%0A\n     %7D%0A%0A \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-03_00-07-13",
+            "content": "@@ -506,24 +506,41 @@\n             \n+%0A        %7D%0A      \n   if temUmPe\n@@ -542,17 +542,22 @@\n mUmPerto\n- \n+!=true\n %7B%0A      \n@@ -591,26 +591,16 @@\n       %7D%0A\n-        %7D%0A\n     %7D%0A%0A \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-03_00-10-58",
+            "content": "@@ -529,16 +529,9 @@\n erto\n-== false\n+ \n %7B%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-03_00-12-13",
+            "content": "@@ -489,32 +489,35 @@\n e%0A            %7D%0A\n+%0A  \n             if t\n@@ -525,16 +525,24 @@\n mUmPerto\n+== false\n %7B%0A      \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-03_00-14-06",
+            "content": "@@ -194,30 +194,8 @@\n = 0%0A\n-    temUmPerto:= false\n %0A%0A  \n@@ -286,16 +286,17 @@\n UmPerto \n+:\n = false%0A\n@@ -513,27 +513,8 @@\n     \n-%0A        %7D%0A        \n if t\n@@ -532,24 +532,28 @@\n             \n+    \n contador++%0A \n@@ -551,16 +551,30 @@\n tador++%0A\n+            %7D%0A\n         \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-03_00-18-58",
+            "content": "@@ -566,15 +566,8 @@\n erto\n-==false\n %7B%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-03_00-19-09",
+            "content": "@@ -194,17 +194,35 @@\n = 0%0A    \n+temUmPerto:= false\n %0A\n-\n %0A    for\n@@ -259,36 +259,8 @@\n ++%7B%0A\n-        temUmPerto := false%0A\n     \n@@ -285,16 +285,16 @@\n %5D == 0%7B%0A\n-\n         \n@@ -289,32 +289,50 @@\n  0%7B%0A            \n+temUmPerto = false\n %0A            if \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-03_00-20-02",
+            "content": "@@ -419,17 +419,17 @@\n    if i \n-%3C\n+%3E\n  len(seq\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-03_00-21-45",
+            "content": "@@ -522,16 +522,35 @@\n         \n+%0A        %7D%0A        \n if temUm\n@@ -598,32 +598,9 @@\n     \n-    %7D%0A        %7D%0A        \n+%7D\n %0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-03_00-23-11",
+            "content": "@@ -249,61 +249,57 @@\n     \n-if sequencia%5Bi%5D == 0%7B%0A            temUmPerto := false\n+temUmPerto := false%0A        if sequencia%5Bi%5D == 0%7B\n %0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-03_00-33-28",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qnt int\n    fmt.Scan(&qnt)\n\n    sequencia := make([]int, qnt)\n    for i := 0; i < qnt; i++{\n        fmt.Scan(&sequencia[i])\n    }\n\n    contador := 0\n    \n\n    for i := 0; i < len(sequencia); i++{\n        if sequencia[i] == 0{\n            temUmPerto := false\n            \n            if i > 0 && sequencia[i-1] == 1{\n                temUmPerto = true\n            }\n\n            if i < len(sequencia)-1 && sequencia[i+1] == 1{\n                temUmPerto = true\n            }\n            if temUmPerto==false{\n            contador++\n            }\n        }\n        \n    }\n\n    fmt.Println(contador)\n}\n",
+            "lines": "34"
+        }
+    ]
+}

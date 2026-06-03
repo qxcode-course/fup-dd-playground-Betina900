@@ -7,8 +7,38 @@
         },
         {
             "label": "2026-05-25_18-07-53",
-            "content": "package main\nimport \"fmt\"\nfunc main() {}\n",
+            "content": "@@ -36,218 +36,6 @@\n () %7B\n-%0A%09var n int%0A%09fmt.Scan(&n)%0A%0A%09numero := make(%5B%5Dint, n)%0A%09for i := 0; i %3C n; i++%7B%0A%09%09fmt.Scan(&numero%5Bi%5D)%0A%09%7D%0A%09pe := make(%5B%5Dint, n)%0A%09for i := 0; i %3C n; i++%7B%0A%09%09fmt.Scan(&pe%5Bi%5D)%0A%09%7D%0A%0A%09fmt.Println(numero)%0A%09fmt.Println(pe)%0A\n %7D%0A\n",
             "lines": "3"
+        },
+        {
+            "label": "2026-06-03_01-45-11",
+            "content": "@@ -154,14 +154,11 @@\n e(%5B%5D\n-str\n in\n-g\n+t\n , n)\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-03_01-45-31",
+            "content": "@@ -59,10 +59,198 @@\n an(&n)%0A%0A\n+%09numero := make(%5B%5Dint, n)%0A%09for i := 0; i %3C n; i++%7B%0A%09%09fmt.Scan(&numero%5Bi%5D)%0A%09%7D%0A%09pe := make(%5B%5Dstring, n)%0A%09for i := 0; i %3C n; i++%7B%0A%09%09fmt.Scan(&pe%5Bi%5D)%0A%09%7D%0A%0A%09fmt.Println(numero)%0A%09fmt.Println(pe)%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-03_01-50-15",
+            "content": "@@ -63,78 +63,6 @@\n n)%0A%0A\n-%09pe := make(%5B%5Dstring, n)%0A%09for i := 0; i %3C n; i++%7B%0A%09%09fmt.Scan(&pe%5Bi%5D)%0A%09%7D%0A\n %7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-06-03_01-54-15",
+            "content": "@@ -33,20 +33,17 @@\n ain() %7B%0A\n-    \n+%09\n var n in\n@@ -44,20 +44,17 @@\n r n int%0A\n-    \n+%09\n fmt.Scan\n@@ -59,23 +59,19 @@\n an(&n)%0A%0A\n-    esq\n+%09pe\n  := make\n@@ -77,49 +77,20 @@\n e(%5B%5D\n-int, 70)%0A    dir := make(%5B%5Dint, 70)%0A%0A    \n+string, n)%0A%09\n for \n@@ -111,396 +111,30 @@\n  i++\n- \n %7B%0A\n-%0A        var tamanho int%0A        var lado string%0A%0A        fmt.Scan(&tamanho, &lado)%0A%0A        if lado == %22E%22 %7B%0A            esq%5Btamanho%5D++%0A        %7D else %7B%0A            dir%5Btamanho%5D++%0A        %7D%0A    %7D%0A%0A    pares := 0%0A%0A    for i := 0; i %3C 70; i++ %7B%0A%0A        if esq%5Bi%5D %3C dir%5Bi%5D %7B%0A            pares += esq%5Bi%5D%0A        %7D else %7B%0A            pares += dir%5Bi%5D%0A        %7D%0A    %7D%0A%0A    fmt.Println(pares)\n+%09%09fmt.Scan(&pe%5Bi%5D)%0A%09%7D\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-03_02-08-49",
+            "content": "@@ -278,31 +278,19 @@\n  esq\n- = append(esq, \n+%5B\n tamanho\n-)\n+%5D++\n %0A   \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-03_02-13-54",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    esq := make([]int, 70)\n    dir := make([]int, 70)\n\n    for i := 0; i < n; i++ {\n\n        var tamanho int\n        var lado string\n\n        fmt.Scan(&tamanho, &lado)\n\n        if lado == \"E\" {\n            esq = append(esq, tamanho)\n        } else {\n            dir[tamanho]++\n        }\n    }\n\n    pares := 0\n\n    for i := 0; i < 70; i++ {\n\n        if esq[i] < dir[i] {\n            pares += esq[i]\n        } else {\n            pares += dir[i]\n        }\n    }\n\n    fmt.Println(pares)\n}\n",
+            "lines": "36"
         }
     ]
 }
