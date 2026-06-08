@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_13-22-19",
+            "content": "@@ -17,259 +17,59 @@\n ort \n-(%0A    %22fmt%22%0A    %22math%22%0A)%0Afunc main() %7B%0A    var num int%0A    fmt.Scan(&num)%0A%0A    raiz := math.Sqrt(num)%0A%0A    for i := 2; i %3C raiz; i++ %7B%0A        if raiz %25 i == 0 %7B%0A            fmt.Println(%221%22)%0A        %7D else %7B%0A            fmt.Println(%220%22)%0A        %7D%0A    %7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_13-36-26",
+            "content": "@@ -114,21 +114,12 @@\n qrt(\n-float64(\n num)\n-)\n %0A%0A  \n@@ -140,17 +140,12 @@\n i %3C \n-int(\n raiz\n-)\n ; i+\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-03_13-38-36",
+            "content": "@@ -61,16 +61,18 @@\n    var n\n+um\n  int%0A   \n@@ -87,25 +87,48 @@\n n(&n\n+um\n )%0A%0A    \n-primo := 1\n+raiz := math.Sqrt(float64(num))\n %0A%0A  \n@@ -148,41 +148,24 @@\n  i %3C\n-=\n  int(\n-math.Sqrt(float64(n))\n+raiz\n ); i++\n+ \n %7B%0A  \n@@ -173,17 +173,20 @@\n      if \n-n\n+raiz\n  %25 i == \n@@ -186,16 +186,17 @@\n %25 i == 0\n+ \n %7B%0A      \n@@ -205,53 +205,50 @@\n     \n-primo = 0%0A            break%0A   \n+fmt.Println(%221%22)%0A        %7D else %7B%0A\n     \n- %7D%0A\n     \n-%7D%0A%0A\n     \n@@ -263,13 +263,27 @@\n tln(\n-primo)\n+%220%22)%0A        %7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-03_13-46-19",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"math\"\n)\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    primo := 1\n\n    for i := 2; i <= int(math.Sqrt(float64(n))); i++{\n        if n % i == 0{\n            primo = 0\n            break\n        }\n    }\n\n    fmt.Println(primo)\n}\n",
+            "lines": "20"
+        }
+    ]
+}

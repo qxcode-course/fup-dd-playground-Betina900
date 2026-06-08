@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-08_11-14-20",
+            "content": "@@ -23,845 +23,53 @@\n mt%22%0A\n-import %22sort%22%0A%0Afunc contains(lista %5B%5Dint, valor int) bool%7B%0A    for _, elem := range lista%7B%0A        if elem == valor%7B%0A            return true%0A        %7D%0A    %7D%0A    return false%0A%7D%0A%0Afunc separar_figurinhas(montante %5B%5Dint) (%5B%5Dint)%7B%0A%0A    especies := make(%5B%5Dint, 0)%0A%0A    for _, animal := range montante %7B%0A%0A        if !contains(especies, animal) %7B%0A            especies = append(especies, animal)%0A%0A        %7D%0A    %7D%0A%0A    return especies%0A%0A%7D%0A%0Afunc main() %7B%0A    var qtd int%0A    fmt.Scan(&qtd)%0A    animais := make(%5B%5Dint, qtd)%0A%0A    for i := range animais%7B%0A        fmt.Scan(&animais%5Bi%5D)%0A    %7D%0A%0A    especies := separar_figurinhas(animais)%0A    sort.Ints(especies)%0A%0A    for i, elem := range especies%7B%0A        if i == len(especies) - 1 %7B%0A            fmt.Println(elem)%0A            break%0A        %7D else %7B%0A            fmt.Print(elem, %22 %22)%0A        %7D%0A        %0A    %7D\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-08_11-15-23",
+            "content": "package main\nimport \"fmt\"\nimport \"sort\"\n\nfunc contains(lista []int, valor int) bool{\n    for _, elem := range lista{\n        if elem == valor{\n            return true\n        }\n    }\n    return false\n}\n\nfunc separar_figurinhas(montante []int) ([]int){\n\n    especies := make([]int, 0)\n\n    for _, animal := range montante {\n\n        if !contains(especies, animal) {\n            especies = append(especies, animal)\n\n        }\n    }\n\n    return especies\n\n}\n\nfunc main() {\n    var qtd int\n    fmt.Scan(&qtd)\n    animais := make([]int, qtd)\n\n    for i := range animais{\n        fmt.Scan(&animais[i])\n    }\n\n    especies := separar_figurinhas(animais)\n    sort.Ints(especies)\n\n    for i, elem := range especies{\n        if i == len(especies) - 1 {\n            fmt.Println(elem)\n            break\n        } else {\n            fmt.Print(elem, \" \")\n        }\n        \n    }\n}\n",
+            "lines": "51"
+        }
+    ]
+}

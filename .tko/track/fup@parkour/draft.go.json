@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-08_11-16-40",
+            "content": "@@ -41,685 +41,35 @@\n     \n-var qtd, cont, res int%0A    fmt.Scan(&qtd)%0A    blocos := make (%5B%5Dint, qtd)%0A    for i := range blocos %7B%0A        fmt.Scan(&blocos%5Bi%5D)%0A    %7D%0A    res = blocos%5B0%5D%0A    for _, elem := range blocos %7B%0A        if elem %3E res %7B%0A            if elem - 1 %3E res %7B%0A                cont += 1%0A                res = elem%0A                continue%0A            %7D else %7B%0A                res = elem%0A                continue%0A            %7D%0A        %7D else if elem %3C res %7B%0A            if elem + 1 %3C res %7B%0A                cont += 1%0A                res = elem%0A                continue%0A            %7D else %7B%0A                res = elem%0A                continue%0A            %7D%0A        %7D%0A    %7D%0A%0A    fmt.Println(cont\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-08_11-16-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtd, cont, res int\n    fmt.Scan(&qtd)\n    blocos := make ([]int, qtd)\n    for i := range blocos {\n        fmt.Scan(&blocos[i])\n    }\n    res = blocos[0]\n    for _, elem := range blocos {\n        if elem > res {\n            if elem - 1 > res {\n                cont += 1\n                res = elem\n                continue\n            } else {\n                res = elem\n                continue\n            }\n        } else if elem < res {\n            if elem + 1 < res {\n                cont += 1\n                res = elem\n                continue\n            } else {\n                res = elem\n                continue\n            }\n        }\n    }\n\n    fmt.Println(cont)\n}\n",
+            "lines": "34"
+        }
+    ]
+}

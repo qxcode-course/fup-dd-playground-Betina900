@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_13-52-07",
+            "content": "@@ -41,111 +41,35 @@\n     \n-var valorReal int%0A    var chuteA int%0A    var chuteB int%0A    fmt.Scan(&valorReal, &chuteA, &chuteB)%0A%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_13-55-08",
+            "content": "@@ -23,81 +23,8 @@\n mt%22%0A\n-func abs(x int) int%7B%0A    if x%3C0%7B%0A        return -x%0A    %7D%0A    return x%0A%7D%0A%0A\n func\n@@ -141,238 +141,8 @@\n B)%0A%0A\n-    difA := abs(valorReal - chuteA)%0A    difB := abs(valorReal - chuteB)%0A%0A    if difA %3C difB%7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else if difB %3C difA%7B%0A        fmt.Println(%22segundo%22)%0A    %7D else%7B%0A        fmt.Println(%22empate%22)%0A    %7D\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-03_14-12-12",
+            "content": "package main\nimport \"fmt\"\nfunc abs(x int) int{\n    if x<0{\n        return -x\n    }\n    return x\n}\n\nfunc main() {\n    var valorReal int\n    var chuteA int\n    var chuteB int\n    fmt.Scan(&valorReal, &chuteA, &chuteB)\n\n    difA := abs(valorReal - chuteA)\n    difB := abs(valorReal - chuteB)\n\n    if difA < difB{\n        fmt.Println(\"primeiro\")\n    } else if difB < difA{\n        fmt.Println(\"segundo\")\n    } else{\n        fmt.Println(\"empate\")\n    }    \n}\n",
+            "lines": "26"
+        }
+    ]
+}
