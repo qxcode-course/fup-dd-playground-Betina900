@@ -66,3 +66,58 @@
 2026-06-09 00:51:00, MOVE, v:1, k:fup@xadrez, mode:EDIT
 2026-06-09 00:51:00, MOVE, v:1, k:fup@xadrez, mode:EDIT
 2026-06-09 00:51:03, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-06-09 16:56:26, MOVE, v:1, k:fup@troco, mode:DOWN
+2026-06-09 16:56:27, MOVE, v:1, k:fup@troco, mode:PICK
+2026-06-09 16:56:34, EXEC, v:1, k:fup@troco, mode:FULL, rate:0, size:5
+2026-06-09 16:56:35, EXEC, v:1, k:fup@troco, mode:FULL, rate:0
+2026-06-09 16:56:26, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 16:56:26, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 16:56:26, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 16:56:35, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 16:58:43, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:02:45, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:05:17, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:13:53, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:18:51, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:21:04, EXEC, v:1, k:fup@troco, mode:FULL, size:19, fail:COMP
+2026-06-09 17:21:05, EXEC, v:1, k:fup@troco, mode:FULL, size:19, fail:COMP
+2026-06-09 17:21:22, EXEC, v:1, k:fup@troco, mode:FULL, rate:0, size:19
+2026-06-09 17:23:54, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:21:20, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:24:14, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:33:00, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:37:44, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:46:48, EXEC, v:1, k:fup@troco, mode:FULL, rate:0, size:30
+2026-06-09 17:46:06, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:46:48, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:54:23, EXEC, v:1, k:fup@troco, mode:FULL, rate:20, size:34
+2026-06-09 17:55:04, EXEC, v:1, k:fup@troco, mode:FULL, rate:100, size:36
+2026-06-09 17:55:13, MOVE, v:1, k:fup@troco, mode:BACK
+2026-06-09 17:55:33, SELF, v:1, k:fup@troco, self:1, rate:100, study:62, friend:Hanna
+2026-06-09 17:55:33, MOVE, v:1, k:fup@troco, mode:PICK
+2026-06-09 17:55:34, MOVE, v:1, k:fup@troco, mode:BACK
+2026-06-09 17:58:09, MOVE, v:1, k:fup@xadrez, mode:PICK
+2026-06-09 17:58:10, EXEC, v:1, k:fup@xadrez, mode:FULL, rate:0
+2026-06-09 17:55:01, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:55:04, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:58:10, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-06-09 18:01:46, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-06-09 18:04:44, MOVE, v:1, k:fup@game10, mode:EDIT
+2026-06-09 18:11:41, EXEC, v:1, k:fup@xadrez, mode:FULL, rate:100, size:13
+2026-06-09 18:11:44, MOVE, v:1, k:fup@xadrez, mode:BACK
+2026-06-09 18:11:58, SELF, v:1, k:fup@xadrez, self:1, rate:100, study:6
+2026-06-09 18:11:59, MOVE, v:1, k:fup@xadrez, mode:PICK
+2026-06-09 18:12:01, MOVE, v:1, k:fup@xadrez, mode:BACK
+2026-06-09 18:13:09, MOVE, v:1, k:fup@americano, mode:DOWN
+2026-06-09 18:13:10, MOVE, v:1, k:fup@americano, mode:PICK
+2026-06-09 18:13:13, EXEC, v:1, k:fup@americano, mode:FULL, rate:0, size:5
+2026-06-09 18:11:39, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-06-09 18:11:40, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-06-09 18:13:09, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-09 18:13:09, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-09 18:13:09, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-09 18:13:13, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-09 18:18:28, EXEC, v:1, k:fup@americano, mode:FULL, rate:12, size:16
+2026-06-09 18:18:23, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-09 18:18:28, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-09 18:23:04, MOVE, v:1, k:fup@americano, mode:BACK

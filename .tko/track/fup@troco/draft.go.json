@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-09_16-56-34",
+            "content": "@@ -41,328 +41,35 @@\n     \n-var troco float64%0A%0A    fmt.Scan(&troco)%0A%0A    vetor := %5B%5Dfloat64%7B100.00, 50.00, 20.00, 2.00, 1.00, 0.50%7D%0A%0A    cedulas := make(%5B%5Dint, len(vetor))%0A%0A    for troco %3E 0 %7C%7C troco %3E 0.05 %7B%0A        for i := 0; i %3C len(vetor); i++%7B%0A            if(troco %3E vetor%5Bi%5D)%7B%0A                cedulas%5Bi%5D = troco/%0A            %7D%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-09_17-21-04",
+            "content": "@@ -328,23 +328,16 @@\n = troco/\n-(vetor)\n %0A       \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-09_17-21-05",
+            "content": "@@ -143,14 +143,8 @@\n 0.50\n-, 0.25\n %7D%0A%0A \n@@ -326,15 +326,8 @@\n %5D = \n-(int) (\n troc\n@@ -334,20 +334,16 @@\n o/(vetor\n-%5Bi%5D)\n )%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-09_17-21-22",
+            "content": "@@ -126,14 +126,8 @@\n .00,\n- 5.00,\n  2.0\n@@ -148,20 +148,8 @@\n  0.2\n-0, 0.10, 0.0\n 5%7D%0A%0A\n@@ -210,10 +210,10 @@\n %3E 0 \n-&&\n+%7C%7C\n  tro\n@@ -369,299 +369,19 @@\n     \n-    troco = troco - (vetor%5Bi%5D * float64(cedulas%5Bi%5D))%0A%0A            %7D else %7B%0A                cedulas%5Bi%5D = 0;%0A            %7D%0A        %7D%0A    %7D%0A%0A    for i := 0; i %3C len(cedulas); i++%7B%0A        if (cedulas%5Bi%5D == 0)%7B%0A            continue;%0A        %7D%0A        fmt.Printf(%22%25d de %25f%22, cedulas%5Bi%5D, vetor%5Bi%5D)\n+%7D%0A        %7D\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-09_17-46-48",
+            "content": "@@ -649,22 +649,17 @@\n %22%25d de %25\n-0.2f%5Cn\n+f\n %22, cedul\n@@ -684,91 +684,7 @@\n    %7D\n-%0A%0A    if troco %3E 0 && troco %3C 0.05%7B%0A        fmt.Printf(%22Falta %250.2f%5Cn%22, troco)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-09_17-54-23",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -126,15 +126,8 @@\n .00,\n- 10.00,\n  5.0\n@@ -150,17 +150,17 @@\n .50, 0.2\n-5\n+0\n , 0.10, \n@@ -234,17 +234,16 @@\n  troco %3E\n-=\n  0.05 %7B%0A\n@@ -277,25 +277,24 @@\n (vetor); i++\n- \n %7B%0A          \n@@ -301,17 +301,16 @@\n   if\n- \n+(\n troco %3E\n-=\n  vet\n@@ -314,17 +314,17 @@\n vetor%5Bi%5D\n- \n+)\n %7B%0A      \n@@ -355,17 +355,16 @@\n int)\n+ \n (troco\n- / \n+/\n (vet\n@@ -432,24 +432,25 @@\n edulas%5Bi%5D))%0A\n+%0A\n             \n@@ -488,16 +488,17 @@\n s%5Bi%5D = 0\n+;\n %0A       \n@@ -558,17 +558,16 @@\n as); i++\n- \n %7B%0A      \n@@ -571,16 +571,17 @@\n      if \n+(\n cedulas%5B\n@@ -587,17 +587,17 @@\n %5Bi%5D == 0\n- \n+)\n %7B%0A      \n@@ -610,16 +610,17 @@\n continue\n+;\n %0A       \n@@ -618,25 +618,24 @@\n ;%0A        %7D%0A\n-%0A\n         fmt.\n@@ -715,25 +715,24 @@\n troco %3C 0.05\n- \n %7B%0A        fm\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-09_17-55-04",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var troco float64\n\n    fmt.Scan(&troco)\n\n    vetor := []float64{100.00, 50.00, 20.00, 10.00, 5.00, 2.00, 1.00, 0.50, 0.25, 0.10, 0.05}\n\n    cedulas := make([]int, len(vetor))\n\n    for troco > 0 && troco >= 0.05 {\n        for i := 0; i < len(vetor); i++ {\n            if troco >= vetor[i] {\n                cedulas[i] = (int)(troco / (vetor[i]))\n                troco = troco - (vetor[i] * float64(cedulas[i]))\n            } else {\n                cedulas[i] = 0\n            }\n        }\n    }\n\n    for i := 0; i < len(cedulas); i++ {\n        if cedulas[i] == 0 {\n            continue\n        }\n\n        fmt.Printf(\"%d de %0.2f\\n\", cedulas[i], vetor[i])\n    }\n\n    if troco > 0 && troco < 0.05 {\n        fmt.Printf(\"Falta %0.2f\\n\", troco)\n    }\n}\n",
+            "lines": "36"
+        }
+    ]
+}
