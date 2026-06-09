@@ -82,8 +82,43 @@
         },
         {
             "label": "2026-06-08_15-06-30",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar pa, pg, ra, rg float64\n\tfmt.Scan(&pa, &pg, &ra, &rg)\n\n\tif ra > rg {\n\t\tfmt.Println(\"A\")\n\t} else {\n\t\tfmt.Println(\"G\")\n\t}\n}\n",
+            "content": "@@ -137,19 +137,8 @@\n lse \n-if ra %3C= rg\n %7B%0A%09%09\n",
             "lines": "12"
+        },
+        {
+            "label": "2026-06-08_16-37-42",
+            "content": "@@ -96,23 +96,8 @@\n g)%0A%0A\n-%09if pa %3E pg %7B%0A%09\n %09if \n@@ -106,17 +106,16 @@\n  %3E rg %7B%0A\n-%09\n %09%09fmt.Pr\n@@ -129,17 +129,16 @@\n A%22)%0A\n-%09\n %09%7D else \n %7B%0A%09%09\n@@ -133,19 +133,29 @@\n %09%7D else \n+if ra %3C= rg\n %7B%0A\n-%09\n %09%09fmt.Pr\n@@ -169,12 +169,8 @@\n G%22)%0A\n-%09%09%7D%0A\n %09%7D%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-08_16-39-37",
+            "content": "@@ -180,87 +180,8 @@\n %09%09%7D%0A\n-%09%7D else %7B%0A%09%09if ra %3E rg %7B%0A%09%09%09fmt.Println(%22A%22)%0A%09%09%7D else %7B%0A%09%09%09fmt.Println(%22G%22)%0A%09%7D%0A\n %09%7D%0A%7D\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-08_16-40-06",
+            "content": "@@ -97,12 +97,8 @@\n )%0A%0A%09\n-%0A%09/*\n if p\n@@ -256,15 +256,12 @@\n G%22)%0A\n-%09\n %09%7D%0A%09%7D\n-*/\n %0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-08_16-45-26",
+            "content": "@@ -96,72 +96,8 @@\n g)%0A%0A\n-%09if ra %3E rg %7B%0A%09%09fmt.Println(%22A%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22G%22)%0A%09%7D\n %09%0A%09/\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-08_16-45-55",
+            "content": "@@ -1,1319 +1,223 @@\n-Voc%C3%AA deve escrever um programa que, dados o pre%C3%A7o do litro de %C3%A1lcool, o pre%C3%A7o do litro de gasolina e os quil%C3%B4metros por litro que um carro bi-combust%C3%ADvel realiza com cada um desses combust%C3%ADveis, determine se %C3%A9 mais econ%C3%B4mico abastecer os carros da CTT com %C3%A1lcool ou com gasolina. No caso de n%C3%A3o haver diferen%C3%A7a de custo entre abastecer com %C3%A1lcool ou gasolina a CTT prefere utilizar gasolina.%0A%0AEntrada%0AA entrada %C3%A9 composta por quatro linhas contendo quatro n%C3%BAmeros reais com precis%C3%A3o de duas casas decimais A, G, Ra e Rg , representando respectivamente o pre%C3%A7o por litro do %C3%A1lcool, o pre%C3%A7o por litro da gasolina, o rendimento (km/l) do carro utilizando %C3%A1lcool e o rendimento (km/l) do carro utilizando gasolina. A entrada deve ser lida do dispositivo de entrada padr%C3%A3o (normalmente o teclado).%0A%0ASa%C3%ADda%0AA sa%C3%ADda deve ser composta por uma %C3%BAnica linha contendo o caractere 'A' se %C3%A9 mais econ%C3%B4mico abastecer a frota com %C3%A1lcool ou o caractere 'G' se %C3%A9 mais econ%C3%B4mico ou indiferente abastecer a frota com gasolina. A sa%C3%ADda deve ser escrita no dispositivo de sa%C3%ADda padr%C3%A3o (normalmente a tela).%0A%0Aesse %C3%A9 o meu c%C3%B3digo:%0Apackage main%0Aimport %22fmt%22%0Afunc main() %7B%0A%09var pa, pg, ra, rg float64%0A%09fmt.Scan(&pa, &pg, &ra, &rg)%0A%0A%09custoA := pa / ra%0A%09custoB := pg / rg%0A%09%0A%09if custoA %3C custoB%7B%0A%09%09fmt.Println(%22A%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22G%22)%0A%09%7D%0A%7D\n+@@ -96,16 +96,84 @@%0A g)%250A%250A%2509if %0A+ra %253E rg %257B%250A%2509%2509fmt.Println(%2522A%2522)%250A%2509%257D else %257B%250A%2509%2509fmt.Println(%2522G%2522)%250A%2509%257D%2509%250A%2509/*if %0A pa %253E pg %0A@@ -326,11 +326,13 @@%0A )%250A%2509%2509%257D%250A%2509%257D%0A+*/%0A %250A%257D%250A\n %0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-08_23-52-14",
+            "content": "@@ -1,8 +1,1114 @@\n+Voc%C3%AA deve escrever um programa que, dados o pre%C3%A7o do litro de %C3%A1lcool, o pre%C3%A7o do litro de gasolina e os quil%C3%B4metros por litro que um carro bi-combust%C3%ADvel realiza com cada um desses combust%C3%ADveis, determine se %C3%A9 mais econ%C3%B4mico abastecer os carros da CTT com %C3%A1lcool ou com gasolina. No caso de n%C3%A3o haver diferen%C3%A7a de custo entre abastecer com %C3%A1lcool ou gasolina a CTT prefere utilizar gasolina.%0A%0AEntrada%0AA entrada %C3%A9 composta por quatro linhas contendo quatro n%C3%BAmeros reais com precis%C3%A3o de duas casas decimais A, G, Ra e Rg , representando respectivamente o pre%C3%A7o por litro do %C3%A1lcool, o pre%C3%A7o por litro da gasolina, o rendimento (km/l) do carro utilizando %C3%A1lcool e o rendimento (km/l) do carro utilizando gasolina. A entrada deve ser lida do dispositivo de entrada padr%C3%A3o (normalmente o teclado).%0A%0ASa%C3%ADda%0AA sa%C3%ADda deve ser composta por uma %C3%BAnica linha contendo o caractere 'A' se %C3%A9 mais econ%C3%B4mico abastecer a frota com %C3%A1lcool ou o caractere 'G' se %C3%A9 mais econ%C3%B4mico ou indiferente abastecer a frota com gasolina. A sa%C3%ADda deve ser escrita no dispositivo de sa%C3%ADda padr%C3%A3o (normalmente a tela).%0A%0Aesse %C3%A9 o meu c%C3%B3digo:%0A\n package \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-08_23-53-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar pa, pg, ra, rg float64\n\tfmt.Scan(&pa, &pg, &ra, &rg)\n\n\tcustoA := pa / ra\n\tcustoB := pg / rg\n\t\n\tif custoA < custoB{\n\t\tfmt.Println(\"A\")\n\t} else {\n\t\tfmt.Println(\"G\")\n\t}\n}\n",
+            "lines": "15"
         }
     ]
 }

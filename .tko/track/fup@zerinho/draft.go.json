@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-09_00-28-24",
+            "content": "@@ -41,206 +41,35 @@\n     \n-var jog1 int%0A    var jog2 int%0A    var jog3 int%0A    fmt.Scan(&jog1, &jog2, &jog3)%0A%0A    if jog1 == 1 && jog2 == 1 && jog3 == 1%7C%7C jog1 == 0 && jog2 == 0 && jog3 == 0%7B%0A        fmt.Println(%22empate%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-09_00-32-49",
+            "content": "@@ -235,87 +235,8 @@\n e%22)%0A\n-    %7D else if jog1 == 1 && jog2 == 0 && jog3 == 0%7B%0A        fmt.Println(%22jog1%22)%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-09_00-33-50",
+            "content": "@@ -314,166 +314,8 @@\n 1%22)%0A\n-    %7D else if jog1 == 0 && jog2 == 1 && jog3 == 0%7B%0A        fmt.Println(%22jog2%22)%0A    %7D else if jog1 == 0 && jog2 == 0 && jog3 == 1%7B%0A        fmt.Println(%22jog3%22)%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-09_00-35-23",
+            "content": "@@ -284,47 +284,8 @@\n == 0\n- %7C%7C jog1 == 0 && jog2 == 1 && jog3 == 1\n %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-09_00-35-58",
+            "content": "@@ -402,47 +402,8 @@\n == 0\n- %7C%7C jog1 == 1 && jog2 == 0 && jog3 == 1\n %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-09_00-36-11",
+            "content": "@@ -520,47 +520,8 @@\n == 1\n- %7C%7C jog1 == 1 && jog2 == 1 && jog3 == 0\n %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-09_00-36-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var jog1 int\n    var jog2 int\n    var jog3 int\n    fmt.Scan(&jog1, &jog2, &jog3)\n\n    if jog1 == 1 && jog2 == 1 && jog3 == 1|| jog1 == 0 && jog2 == 0 && jog3 == 0{\n        fmt.Println(\"empate\")\n    } else if jog1 == 1 && jog2 == 0 && jog3 == 0 || jog1 == 0 && jog2 == 1 && jog3 == 1{\n        fmt.Println(\"jog1\")\n    } else if jog1 == 0 && jog2 == 1 && jog3 == 0 || jog1 == 1 && jog2 == 0 && jog3 == 1{\n        fmt.Println(\"jog2\")\n    } else if jog1 == 0 && jog2 == 0 && jog3 == 1 || jog1 == 1 && jog2 == 1 && jog3 == 0{\n        fmt.Println(\"jog3\")\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}

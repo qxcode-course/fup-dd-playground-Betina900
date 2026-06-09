@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-08_23-54-54",
+            "content": "@@ -41,208 +41,35 @@\n     \n-var chute float64%0A    var escolha string%0A    var real float64%0A    fmt.Scan(&chute, &escolha, &real)%0A%0A    if escolha == %22m%22%7B%0A        if chute == real%7B%0A            fmt.Println(%22primeiro%22)%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-09_00-04-54",
+            "content": "@@ -189,27 +189,8 @@\n real\n- %7C%7C escolha != %22m%22 \n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-09_00-09-56",
+            "content": "@@ -246,76 +246,8 @@\n o%22)%0A\n-        %7D else if chute != real%7B%0A            fmt.Println(%22segundo%22)%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-09_00-11-21",
+            "content": "@@ -257,16 +257,32 @@\n  %7D else \n+if chute != real\n %7B%0A      \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-09_00-11-52",
+            "content": "@@ -308,164 +308,8 @@\n   %7D%0A\n-    %7D else %7B%0A        if chute == real %7C%7C escolha != %22M%22 %7B%0A            fmt.Println(%22primeiro%22)%0A        %7D else %7B%0A            fmt.Println(%22segundo%22)%0A        %7D%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-09_00-13-29",
+            "content": "@@ -177,34 +177,53 @@\n if chute == real\n+ %7C%7C escolha != %22m%22 \n %7B%0A\n-\n             fmt.\n@@ -248,32 +248,33 @@\n )%0A        %7D else\n+ \n %7B%0A            fm\n@@ -341,16 +341,35 @@\n  == real\n+ %7C%7C escolha != %22M%22 \n %7B%0A      \n@@ -390,32 +390,32 @@\n tln(%22primeiro%22)%0A\n-\n         %7D else%7B%0A\n@@ -412,16 +412,17 @@\n   %7D else\n+ \n %7B%0A      \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-09_00-16-28",
+            "content": "@@ -243,101 +243,8 @@\n se%7B%0A\n-            if chute %3E real%7B%0A                fmt.Println(%22primeiro%22)%0A            %7D else%7B%0A    \n     \n@@ -278,22 +278,8 @@\n o%22)%0A\n-            %7D%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-09_00-19-48",
+            "content": "@@ -251,16 +251,145 @@\n         \n+if chute %3E real%7B%0A                fmt.Println(%22primeiro%22)%0A            %7D else%7B%0A                fmt.Println(%22segundo%22)%0A            %7D\n %0A       \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-09_00-21-23",
+            "content": "@@ -298,24 +298,8 @@\n e ==\n- real %7C%7C chute %3E\n  rea\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-09_00-23-06",
+            "content": "@@ -251,38 +251,16 @@\n         \n-fmt.Println(%22segundo%22)\n %0A       \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-09_00-23-39",
+            "content": "@@ -184,24 +184,8 @@\n e ==\n- real %7C%7C chute %3C\n  rea\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-09_00-24-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var chute float64\n    var escolha string\n    var real float64\n    fmt.Scan(&chute, &escolha, &real)\n\n    if escolha == \"m\"{\n        if chute == real || chute < real{\n            fmt.Println(\"primeiro\")\n        } else{\n            fmt.Println(\"segundo\")\n        }\n    } else {\n        if chute == real || chute > real{\n            fmt.Println(\"primeiro\")\n        } else{\n            fmt.Println(\"segundo\")\n        }\n    }\n}\n",
+            "lines": "22"
+        }
+    ]
+}

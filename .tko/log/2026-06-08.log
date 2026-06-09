@@ -90,3 +90,36 @@
 2026-06-08 15:06:57, MOVE, v:1, k:fup@taxi, mode:BACK
 2026-06-08 15:06:26, MOVE, v:1, k:fup@taxi, mode:EDIT
 2026-06-08 15:06:30, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-08 16:36:07, MOVE, v:1, k:fup@taxi, mode:PICK
+2026-06-08 16:36:10, EXEC, v:1, k:fup@taxi, mode:FULL, rate:76
+2026-06-08 16:37:42, EXEC, v:1, k:fup@taxi, mode:FULL, rate:76, size:12
+2026-06-08 16:39:37, EXEC, v:1, k:fup@taxi, mode:FULL, rate:33, size:14
+2026-06-08 16:40:06, EXEC, v:1, k:fup@taxi, mode:FULL, rate:76, size:20
+2026-06-08 16:40:06, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-08 16:40:07, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-08 16:45:26, EXEC, v:1, k:fup@taxi, mode:FULL, rate:0, size:21
+2026-06-08 16:45:43, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-08 16:45:26, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-08 16:45:55, EXEC, v:1, k:fup@taxi, mode:FULL, rate:76, size:25
+2026-06-08 16:46:51, MOVE, v:1, k:fup@taxi, mode:BACK
+2026-06-08 23:35:03, MOVE, v:1, k:fup@taxi, mode:PICK
+2026-06-08 23:35:07, EXEC, v:1, k:fup@taxi, mode:FULL, rate:76, size:20
+2026-06-08 23:35:07, EXEC, v:1, k:fup@taxi, mode:FULL, rate:76, size:20
+2026-06-08 23:35:07, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-08 23:40:23, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-08 23:42:59, MOVE, v:1, k:fup@taxi, mode:BACK
+2026-06-08 23:52:14, MOVE, v:1, k:fup@taxi, mode:PICK
+2026-06-08 23:52:14, EXEC, v:1, k:fup@taxi, mode:FULL, size:24, fail:COMP
+2026-06-08 23:52:20, EXEC, v:1, k:fup@taxi, mode:FULL, fail:COMP
+2026-06-08 23:53:12, EXEC, v:1, k:fup@taxi, mode:FULL, rate:100, size:15
+2026-06-08 23:53:22, MOVE, v:1, k:fup@taxi, mode:BACK
+2026-06-08 23:54:19, SELF, v:1, k:fup@taxi, self:1, rate:100, study:106
+2026-06-08 23:53:08, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-08 23:53:12, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-08 23:54:50, MOVE, v:1, k:fup@maior, mode:DOWN
+2026-06-08 23:54:52, MOVE, v:1, k:fup@maior, mode:PICK
+2026-06-08 23:54:54, EXEC, v:1, k:fup@maior, mode:FULL, rate:0, size:5
+2026-06-08 23:54:50, MOVE, v:1, k:fup@maior, mode:EDIT
+2026-06-08 23:54:50, MOVE, v:1, k:fup@maior, mode:EDIT
+2026-06-08 23:58:31, MOVE, v:1, k:fup@maior, mode:EDIT
+2026-06-08 23:54:53, MOVE, v:1, k:fup@maior, mode:EDIT

@@ -1,0 +1,68 @@
+2026-06-09 00:04:28, MOVE, v:1, k:fup@maior, mode:EDIT
+2026-06-09 00:04:54, EXEC, v:1, k:fup@maior, mode:FULL, rate:0, size:14
+2026-06-09 00:09:35, MOVE, v:1, k:fup@maior, mode:EDIT
+2026-06-09 00:04:54, MOVE, v:1, k:fup@maior, mode:EDIT
+2026-06-09 00:09:56, EXEC, v:1, k:fup@maior, mode:FULL, rate:0, size:14
+2026-06-09 00:11:21, EXEC, v:1, k:fup@maior, mode:FULL, rate:20, size:16
+2026-06-09 00:11:52, EXEC, v:1, k:fup@maior, mode:FULL, rate:20, size:16
+2026-06-09 00:13:29, EXEC, v:1, k:fup@maior, mode:FULL, rate:60, size:22
+2026-06-09 00:13:27, MOVE, v:1, k:fup@maior, mode:EDIT
+2026-06-09 00:13:29, MOVE, v:1, k:fup@maior, mode:EDIT
+2026-06-09 00:16:28, EXEC, v:1, k:fup@maior, mode:FULL, rate:60, size:22
+2026-06-09 00:19:35, MOVE, v:1, k:fup@maior, mode:EDIT
+2026-06-09 00:16:28, MOVE, v:1, k:fup@maior, mode:EDIT
+2026-06-09 00:19:48, EXEC, v:1, k:fup@maior, mode:FULL, rate:40, size:26
+2026-06-09 00:21:23, EXEC, v:1, k:fup@maior, mode:FULL, rate:40, size:22
+2026-06-09 00:23:06, EXEC, v:1, k:fup@maior, mode:FULL, rate:60, size:22
+2026-06-09 00:23:39, EXEC, v:1, k:fup@maior, mode:FULL, rate:80, size:22
+2026-06-09 00:24:03, EXEC, v:1, k:fup@maior, mode:FULL, rate:100, size:22
+2026-06-09 00:24:05, MOVE, v:1, k:fup@maior, mode:BACK
+2026-06-09 00:24:20, SELF, v:1, k:fup@maior, self:1, rate:100, study:40
+2026-06-09 00:24:01, MOVE, v:1, k:fup@maior, mode:EDIT
+2026-06-09 00:24:03, MOVE, v:1, k:fup@maior, mode:EDIT
+2026-06-09 00:28:21, MOVE, v:1, k:fup@zerinho, mode:DOWN
+2026-06-09 00:28:23, MOVE, v:1, k:fup@zerinho, mode:PICK
+2026-06-09 00:28:24, EXEC, v:1, k:fup@zerinho, mode:FULL, rate:0, size:5
+2026-06-09 00:28:21, MOVE, v:1, k:fup@zerinho, mode:EDIT
+2026-06-09 00:28:21, MOVE, v:1, k:fup@zerinho, mode:EDIT
+2026-06-09 00:28:24, MOVE, v:1, k:fup@zerinho, mode:EDIT
+2026-06-09 00:29:36, MOVE, v:1, k:fup@zerinho, mode:EDIT
+2026-06-09 00:32:49, EXEC, v:1, k:fup@zerinho, mode:FULL, rate:25, size:12
+2026-06-09 00:33:50, EXEC, v:1, k:fup@zerinho, mode:FULL, rate:37, size:14
+2026-06-09 00:34:33, MOVE, v:1, k:fup@zerinho, mode:EDIT
+2026-06-09 00:33:50, MOVE, v:1, k:fup@zerinho, mode:EDIT
+2026-06-09 00:35:23, EXEC, v:1, k:fup@zerinho, mode:FULL, rate:62, size:18
+2026-06-09 00:35:58, EXEC, v:1, k:fup@zerinho, mode:FULL, rate:75, size:18
+2026-06-09 00:36:11, EXEC, v:1, k:fup@zerinho, mode:FULL, rate:87, size:18
+2026-06-09 00:36:24, EXEC, v:1, k:fup@zerinho, mode:FULL, rate:100, size:18
+2026-06-09 00:37:31, MOVE, v:1, k:fup@zerinho, mode:BACK
+2026-06-09 00:37:43, SELF, v:1, k:fup@zerinho, self:1, rate:100, study:8
+2026-06-09 00:38:24, MOVE, v:1, k:fup@divisiveis, mode:DOWN
+2026-06-09 00:38:25, MOVE, v:1, k:fup@divisiveis, mode:PICK
+2026-06-09 00:38:26, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:0, size:5
+2026-06-09 00:36:22, MOVE, v:1, k:fup@zerinho, mode:EDIT
+2026-06-09 00:36:24, MOVE, v:1, k:fup@zerinho, mode:EDIT
+2026-06-09 00:38:24, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-06-09 00:38:24, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-06-09 00:38:26, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-06-09 00:39:35, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-06-09 00:42:42, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:62, size:12
+2026-06-09 00:42:41, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-06-09 00:42:41, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-06-09 00:49:36, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-06-09 00:49:50, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:62, size:12
+2026-06-09 00:50:09, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:100, size:14
+2026-06-09 00:50:11, MOVE, v:1, k:fup@divisiveis, mode:BACK
+2026-06-09 00:50:19, SELF, v:1, k:fup@divisiveis, self:1, rate:100, study:11
+2026-06-09 00:50:19, MOVE, v:1, k:fup@divisiveis, mode:PICK
+2026-06-09 00:50:20, MOVE, v:1, k:fup@divisiveis, mode:BACK
+2026-06-09 00:51:00, MOVE, v:1, k:fup@xadrez, mode:DOWN
+2026-06-09 00:51:01, MOVE, v:1, k:fup@xadrez, mode:PICK
+2026-06-09 00:51:03, EXEC, v:1, k:fup@xadrez, mode:FULL, rate:0, size:5
+2026-06-09 00:53:43, MOVE, v:1, k:fup@xadrez, mode:BACK
+2026-06-09 00:50:08, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-06-09 00:50:09, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-06-09 00:51:00, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-06-09 00:51:00, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-06-09 00:51:00, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-06-09 00:51:03, MOVE, v:1, k:fup@xadrez, mode:EDIT
