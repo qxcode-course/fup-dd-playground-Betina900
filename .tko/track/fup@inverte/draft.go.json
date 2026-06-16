@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_11-30-05",
+            "content": "@@ -41,233 +41,35 @@\n     \n-var letra rune%0A    fmt.Scan(&letra)%0A%0A    if letra %3E= 'a' && letra %3C= 'z'%7B%0A        fmt.Println(letra - 32)%0A    %7D else if letra %3E= 'A' && letra %3C= 'Z'%7B%0A        fmt.Println(letra + 32)%0A    %7D else%5B%0A        fmt.Println(letra)%0A    %5D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_12-17-06",
+            "content": "@@ -229,17 +229,17 @@\n   %7D else\n-%7B\n+%5B\n %0A       \n@@ -262,12 +262,12 @@\n ra)%0A    \n-%7D\n+%5D\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-16_12-17-26",
+            "content": "@@ -135,16 +135,8 @@\n tln(\n-%22%25c%5Cn%22, \n letr\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-16_12-20-45",
+            "content": "@@ -129,17 +129,17 @@\n t.Printl\n-f\n+n\n (%22%25c%5Cn%22,\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-16_12-20-58",
+            "content": "@@ -128,16 +128,17 @@\n mt.Print\n+l\n f(%22%25c%5Cn%22\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-16_12-21-04",
+            "content": "@@ -134,15 +134,16 @@\n ntf(\n-string(\n+%22%25c%5Cn%22, \n letr\n@@ -149,17 +149,16 @@\n ra - 32)\n-)\n %0A    %7D e\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-16_12-21-38",
+            "content": "@@ -214,23 +214,16 @@\n Println(\n-string(\n letra + \n@@ -221,25 +221,24 @@\n (letra + 32)\n-)\n %0A    %7D else%7B\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-16_12-21-52",
+            "content": "@@ -270,22 +270,14 @@\n tln(\n-string(\n letra)\n-)\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-16_12-22-28",
+            "content": "@@ -203,33 +203,34 @@\n        fmt.Print\n-f\n+ln\n (string(letra + \n@@ -255,33 +255,34 @@\n        fmt.Print\n-f\n+ln\n (string(letra))%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-16_12-23-58",
+            "content": "@@ -51,14 +51,12 @@\n tra \n-string\n+rune\n %0A   \n@@ -82,31 +82,16 @@\n     \n-c :=\n+if\n  letra\n-%5B0%5D%0A%0A    if c\n  %3E= \n@@ -93,25 +93,29 @@\n a %3E= 'a' && \n-c\n+letra\n  %3C= 'z'%7B%0A   \n@@ -132,18 +132,29 @@\n rint\n-ln(c\n+f(string(letra\n  - 32)\n+)\n %0A   \n@@ -164,17 +164,21 @@\n else if \n-c\n+letra\n  %3E= 'A' \n@@ -180,17 +180,21 @@\n  'A' && \n-c\n+letra\n  %3C= 'Z'%7B\n@@ -215,18 +215,29 @@\n rint\n-ln(c\n+f(string(letra\n  + 32)\n+)\n %0A   \n@@ -266,12 +266,23 @@\n rint\n-ln(c\n+f(string(letra)\n )%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-16_12-29-58",
+            "content": "@@ -148,23 +148,15 @@\n tln(\n-string(\n c - 32)\n-)\n %0A   \n@@ -212,23 +212,15 @@\n tln(\n-string(\n c + 32)\n-)\n %0A   \n@@ -252,17 +252,9 @@\n tln(\n-string(c)\n+c\n )%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-16_12-31-04",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var letra string\n    fmt.Scan(&letra)\n\n    c := letra[0]\n\n    if c >= 'a' && c <= 'z'{\n        fmt.Println(string(c - 32))\n    } else if c >= 'A' && c <= 'Z'{\n        fmt.Println(string(c + 32))\n    } else{\n        fmt.Println(string(c))\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_13-09-27",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -41,382 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    largura := 2*n - 1%0A%0A    for linha := 0; linha %3C n; linha++ %7B%0A%0A        inicio := n - 1 - linha%0A%0A        for coluna := 0; coluna %3C largura; coluna++ %7B%0A%0A            if coluna %3E= inicio && (coluna-inicio)%252 == 0 %7B%0A                fmt.Print(n)%0A            %7D else %7B%0A                fmt.Print(%22.%22)%0A            %7D%0A        %7D%0A%0A        fmt.Println()%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_13-23-49",
+            "content": "@@ -67,16 +67,40 @@\n an(&n)%0A%0A\n+    largura := 2*n - 1%0A%0A\n     for \n@@ -145,127 +145,32 @@\n     \n-// pontos da esquerda%0A        for i := 0; i %3C n-linha-1; i++ %7B%0A            fmt.Print(%22.%22)%0A        %7D%0A%0A        // n%C3%BAmeros\n+inicio := n - 1 - linha%0A\n %0A   \n@@ -182,35 +182,51 @@\n for \n-i\n+coluna\n  := 0; \n-i %3C linha+1; i\n+coluna %3C largura; coluna\n ++ %7B%0A\n+%0A\n     \n@@ -240,167 +240,107 @@\n  if \n-i %3E 0 %7B%0A                fmt.Print(%22.%22)%0A            %7D%0A            fmt.Print(n)%0A        %7D%0A%0A        // pontos da direita%0A        for i := 0; i %3C n-linha-1; i++ %7B%0A\n+coluna %3E= inicio && (coluna-inicio)%252 == 0 %7B%0A                fmt.Print(n)%0A            %7D else %7B%0A    \n     \n@@ -362,16 +362,30 @@\n nt(%22.%22)%0A\n+            %7D%0A\n         \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-16_13-27-49",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    for linha := 0; linha < n; linha++ {\n\n        // pontos da esquerda\n        for i := 0; i < n-linha-1; i++ {\n            fmt.Print(\".\")\n        }\n\n        // n\u00fameros\n        for i := 0; i < linha+1; i++ {\n            if i > 0 {\n                fmt.Print(\".\")\n            }\n            fmt.Print(n)\n        }\n\n        // pontos da direita\n        for i := 0; i < n-linha-1; i++ {\n            fmt.Print(\".\")\n        }\n\n        fmt.Println()\n    }\n}\n",
+            "lines": "31"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-14_14-09-50",
+            "content": "@@ -41,121 +41,35 @@\n     \n-var frase string%0A    fmt.Scan(&frase)%0A%0A    for i := len(frase) - 1; i %3E= 0; i--%7B%0A        fmt.Print(frase%5Bi%5D)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-14_14-23-26",
+            "content": "@@ -140,15 +140,8 @@\n int(\n-string(\n fras\n@@ -145,17 +145,16 @@\n rase%5Bi%5D)\n-)\n %0A    %7D%0A%7D\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-14_14-25-10",
+            "content": "@@ -70,10 +70,8 @@\n Scan\n-ln\n (&fr\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-14_14-26-03",
+            "content": "@@ -70,20 +70,11 @@\n Scan\n-f(%22%25%5B%5E%5Cn%5D%22, \n+ln(\n &fra\n@@ -165,26 +165,7 @@\n    %7D\n-%0A%0A    fmt.Println()\n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-14_14-27-16",
+            "content": "@@ -17,146 +17,79 @@\n ort \n-(%0A    %22bufio%22%0A    %22fmt%22%0A    %22os%22%0A)%0A%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A%0A    scanner.Scan()%0A    frase := scanner.Text(\n+%22fmt%22%0Afunc main() %7B%0A    var frase string%0A    fmt.Scanf(%22%25%5B%5E%5Cn%5D%22, &frase\n )%0A%0A \n@@ -110,17 +110,19 @@\n n(frase)\n--\n+ - \n 1; i %3E= \n@@ -127,17 +127,16 @@\n = 0; i--\n- \n %7B%0A      \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-14_14-33-24",
+            "content": "package main\nimport (\n    \"bufio\"\n    \"fmt\"\n    \"os\"\n)\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n\n    scanner.Scan()\n    frase := scanner.Text()\n\n    for i := len(frase)-1; i >= 0; i-- {\n        fmt.Print(string(frase[i]))\n    }\n\n    fmt.Println()\n}\n",
+            "lines": "19"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_12-33-58",
+            "content": "@@ -41,33 +41,35 @@\n     \n-var l int%0A    fmt.Scan(&l\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_12-37-05",
+            "content": "@@ -67,67 +67,7 @@\n (&l)\n-%0A%0A    if l == 0%7B%0A        fmt.Println(%22joguem de novo%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-06-16_12-37-52",
+            "content": "@@ -122,60 +122,8 @@\n o%22)%0A\n-    %7D else if l %25 25 == 1%7B%0A        fmt.Println(%22a%22)%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-16_12-50-15",
+            "content": "@@ -141,9 +141,9 @@\n  %25 2\n-6\n+5\n  == \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-16_12-51-09",
+            "content": "@@ -174,789 +174,8 @@\n a%22)%0A\n-    %7D else if l %25 26 == 2%7B%0A        fmt.Println(%22b%22)%0A    %7D else if l %25 26 == 3%7B%0A        fmt.Println(%22c%22)%0A    %7D else if l %25 26 == 4%7B%0A        fmt.Println(%22d%22)%0A    %7D else if l %25 26 == 5%7B%0A%0A    %7D else if l %25 26 == 6%7B%0A%0A    %7D else if l %25 26 == 7%7B%0A%0A    %7D else if l %25 26 == 8%7B%0A%0A    %7D else if l %25 26 == 9%7B%0A%0A    %7D else if l %25 26 == 10%7B%0A%0A    %7D else if l %25 26 == 11%7B%0A%0A    %7D else if l %25 26 == 12%7B%0A%0A    %7D else if l %25 26 == 13%7B%0A%0A    %7D else if l %25 26 == 14%7B%0A%0A    %7D else if l %25 26 == 15%7B%0A%0A    %7D else if l %25 26 == 16%7B%0A%0A    %7D else if l %25 26 == 17%7B%0A%0A    %7D else if l %25 26 == 18%7B%0A%0A    %7D else if l %25 26 == 19%7B%0A%0A    %7D else if l %25 26 == 20%7B%0A%0A    %7D else if l %25 26 == 21%7B%0A%0A    %7D else if l %25 26 == 22%7B%0A%0A    %7D else if l %25 26 == 23%7B%0A        %0A    %7D else if l %25 26 == 24%7B%0A%0A    %7D else if l %25 26 == 25%7B%0A%0A    %7D else%7B%0A%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-16_12-56-49",
+            "content": "@@ -357,33 +357,9 @@\n  5%7B%0A\n-        fmt.Println(%22e%22)\n %0A\n+\n     \n@@ -385,33 +385,9 @@\n  6%7B%0A\n-        fmt.Println(%22f%22)\n %0A\n+\n     \n@@ -413,33 +413,9 @@\n  7%7B%0A\n-        fmt.Println(%22g%22)\n %0A\n+\n     \n@@ -441,33 +441,9 @@\n  8%7B%0A\n-        fmt.Println(%22h%22)\n %0A\n+\n     \n@@ -469,33 +469,9 @@\n  9%7B%0A\n-        fmt.Println(%22i%22)\n %0A\n+\n     \n@@ -498,33 +498,9 @@\n 10%7B%0A\n-        fmt.Println(%22j%22)\n %0A\n+\n     \n@@ -527,33 +527,9 @@\n 11%7B%0A\n-        fmt.Println(%22k%22)\n %0A\n+\n     \n@@ -556,33 +556,9 @@\n 12%7B%0A\n-        fmt.Println(%22l%22)\n %0A\n+\n     \n@@ -585,33 +585,9 @@\n 13%7B%0A\n-        fmt.Println(%22m%22)\n %0A\n+\n     \n@@ -614,33 +614,9 @@\n 14%7B%0A\n-        fmt.Println(%22n%22)\n %0A\n+\n     \n@@ -643,32 +643,8 @@\n 15%7B%0A\n-        fmt.Println(%22o%22)\n %0A   \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-06-16_12-58-30",
+            "content": "@@ -936,32 +936,8 @@\n 16%7B%0A\n-        fmt.Println(%22p%22)\n %0A   \n@@ -965,32 +965,8 @@\n 17%7B%0A\n-        fmt.Println(%22q%22)\n %0A   \n@@ -994,32 +994,8 @@\n 18%7B%0A\n-        fmt.Println(%22r%22)\n %0A   \n@@ -1023,32 +1023,8 @@\n 19%7B%0A\n-        fmt.Println(%22s%22)\n %0A   \n@@ -1052,32 +1052,8 @@\n 20%7B%0A\n-        fmt.Println(%22t%22)\n %0A   \n@@ -1081,32 +1081,8 @@\n 21%7B%0A\n-        fmt.Println(%22u%22)\n %0A   \n@@ -1110,32 +1110,8 @@\n 22%7B%0A\n-        fmt.Println(%22v%22)\n %0A   \n@@ -1147,24 +1147,8 @@\n     \n-fmt.Println(%22w%22)\n %0A   \n@@ -1176,32 +1176,8 @@\n 24%7B%0A\n-        fmt.Println(%22x%22)\n %0A   \n@@ -1205,69 +1205,21 @@\n 25%7B%0A\n-        fmt.Println(%22y%22)%0A    %7D else%7B%0A        fmt.Println(%22z%22)\n+%0A    %7D else%7B%0A\n %0A   \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-06-16_13-00-10",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -74,25 +74,24 @@\n    if l == 0\n- \n %7B%0A        fm\n@@ -137,17 +137,646 @@\n if l\n-%2526 == 0 \n+ %25 26 == 1%7B%0A        fmt.Println(%22a%22)%0A    %7D else if l %25 26 == 2%7B%0A        fmt.Println(%22b%22)%0A    %7D else if l %25 26 == 3%7B%0A        fmt.Println(%22c%22)%0A    %7D else if l %25 26 == 4%7B%0A        fmt.Println(%22d%22)%0A    %7D else if l %25 26 == 5%7B%0A        fmt.Println(%22e%22)%0A    %7D else if l %25 26 == 6%7B%0A        fmt.Println(%22f%22)%0A    %7D else if l %25 26 == 7%7B%0A        fmt.Println(%22g%22)%0A    %7D else if l %25 26 == 8%7B%0A        fmt.Println(%22h%22)%0A    %7D else if l %25 26 == 9%7B%0A        fmt.Println(%22i%22)%0A    %7D else if l %25 26 == 10%7B%0A        fmt.Println(%22j%22)%0A    %7D else if l %25 26 == 11%7B%0A        fmt.Println(%22k%22)%0A    %7D else if l %25 26 == 12%7B%0A        fmt.Println(%22l%22)%0A    %7D else if l %25 26 == 13\n %7B%0A  \n@@ -798,9 +798,9 @@\n ln(%22\n-z\n+m\n %22)%0A \n@@ -809,16 +809,31 @@\n  %7D else \n+if l %25 26 == 14\n %7B%0A      \n@@ -850,32 +850,631 @@\n tln(\n-string('a' + (l%2526) - 1)\n+%22n%22)%0A    %7D else if l %25 26 == 15%7B%0A        fmt.Println(%22o%22)%0A    %7D else if l %25 26 == 16%7B%0A        fmt.Println(%22p%22)%0A    %7D else if l %25 26 == 17%7B%0A        fmt.Println(%22q%22)%0A    %7D else if l %25 26 == 18%7B%0A        fmt.Println(%22r%22)%0A    %7D else if l %25 26 == 19%7B%0A        fmt.Println(%22s%22)%0A    %7D else if l %25 26 == 20%7B%0A        fmt.Println(%22t%22)%0A    %7D else if l %25 26 == 21%7B%0A        fmt.Println(%22u%22)%0A    %7D else if l %25 26 == 22%7B%0A        fmt.Println(%22v%22)%0A    %7D else if l %25 26 == 23%7B%0A        fmt.Println(%22w%22)%0A    %7D else if l %25 26 == 24%7B%0A        fmt.Println(%22x%22)%0A    %7D else if l %25 26 == 25%7B%0A        fmt.Println(%22y%22)%0A    %7D else%7B%0A        fmt.Println(%22z%22\n )%0A  \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-06-16_13-03-50",
+            "content": "@@ -205,16 +205,22 @@\n Println(\n+string\n ('a' + (\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-16_13-04-30",
+            "content": "@@ -209,14 +209,8 @@\n tln(\n-string\n ('a'\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-16_13-05-19",
+            "content": "@@ -6,16 +6,17 @@\n ge main%0A\n+%0A\n import %22\n@@ -20,16 +20,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-16_13-05-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var l int\n    fmt.Scan(&l)\n\n    if l == 0 {\n        fmt.Println(\"joguem de novo\")\n    } else if l%26 == 0 {\n        fmt.Println(\"z\")\n    } else {\n        fmt.Println(string('a' + (l%26) - 1))\n    }\n}\n",
+            "lines": "14"
+        }
+    ]
+}

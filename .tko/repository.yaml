@@ -19,13 +19,13 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@if2
+- fup@list
 flags:
   inbox: all
   panel: graph
-  show_panel: 'true'
+  show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@americano
-selected_index: 27
+selected: fup@paredes
+selected_index: 44

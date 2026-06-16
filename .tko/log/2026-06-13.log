@@ -1,0 +1,27 @@
+2026-06-13 22:26:26, MOVE, v:1, k:fup@americano, mode:PICK
+2026-06-13 22:26:34, EXEC, v:1, k:fup@americano, mode:FULL, rate:12, size:18
+2026-06-13 22:26:34, EXEC, v:1, k:fup@americano, mode:FULL, rate:12, size:18
+2026-06-13 22:27:03, EXEC, v:1, k:fup@americano, mode:FULL, rate:12, size:18
+2026-06-13 22:27:07, EXEC, v:1, k:fup@americano, mode:FULL, rate:12
+2026-06-13 22:27:06, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-13 22:29:30, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-13 22:33:24, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-13 22:50:06, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-13 22:52:18, EXEC, v:1, k:fup@americano, mode:FULL, rate:25, size:22
+2026-06-13 22:55:07, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-13 22:52:18, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-13 22:55:25, EXEC, v:1, k:fup@americano, mode:FULL, rate:37, size:23
+2026-06-13 22:59:21, EXEC, v:1, k:fup@americano, mode:FULL, rate:25, size:25
+2026-06-13 22:59:46, EXEC, v:1, k:fup@americano, mode:FULL, size:25, fail:COMP
+2026-06-13 22:59:55, EXEC, v:1, k:fup@americano, mode:FULL, rate:25, size:25
+2026-06-13 22:59:54, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-13 22:59:55, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-13 23:02:16, EXEC, v:1, k:fup@americano, mode:FULL, rate:25, size:23
+2026-06-13 23:03:10, EXEC, v:1, k:fup@americano, mode:FULL, rate:37, size:23
+2026-06-13 23:04:43, EXEC, v:1, k:fup@americano, mode:FULL, rate:37
+2026-06-13 23:04:59, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-13 23:04:43, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-13 23:06:59, EXEC, v:1, k:fup@americano, mode:FULL, rate:12, size:18
+2026-06-13 23:09:13, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-13 23:06:59, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-06-13 23:11:11, MOVE, v:1, k:fup@americano, mode:BACK

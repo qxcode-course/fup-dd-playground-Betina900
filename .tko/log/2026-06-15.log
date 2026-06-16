@@ -1,0 +1,4 @@
+2026-06-15 17:21:17, MOVE, v:1, k:fup@primo, mode:PICK
+2026-06-15 17:21:25, EXEC, v:1, k:fup@primo, mode:FULL, rate:100
+2026-06-15 17:21:26, EXEC, v:1, k:fup@primo, mode:FULL, rate:100
+2026-06-15 17:21:45, MOVE, v:1, k:fup@primo, mode:BACK

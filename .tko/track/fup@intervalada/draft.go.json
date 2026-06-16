@@ -2,8 +2,38 @@
     "patches": [
         {
             "label": "2026-05-26_16-40-03",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,153 +41,35 @@\n     \n-var t int%0A    var l1, l2 int%0A    fmt.Scan(&t, &l1, &l2)%0A%0A    vetor := make(%5B%5Dint, t)%0A    for i := 0; i %3C= t; i++%7B%0A        fmt.Scan(vetor%5Bi%5D)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-14_13-58-27",
+            "content": "@@ -126,25 +126,8 @@\n  t)%0A\n-%0A    count := 0%0A%0A\n     \n@@ -182,117 +182,12 @@\n i%5D)%0A\n-%0A        if (vetor%5Bi%5D == l1 %7C%7C vetor%5Bi%5D == l2)%7B%0A            count += 1%0A        %7D%0A    %7D%0A%0A    fmt.Println(count)\n+    %7D\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-14_14-01-54",
+            "content": "@@ -185,17 +185,16 @@\n mt.Scan(\n-&\n vetor%5Bi%5D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-14_14-02-52",
+            "content": "@@ -164,18 +164,9 @@\n  %3C= \n-len(vetor)\n+t\n ; i+\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-14_14-03-22",
+            "content": "@@ -158,16 +158,17 @@\n = 0; i %3C\n+=\n  len(vet\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-14_14-03-34",
+            "content": "@@ -230,16 +230,16 @@\n %5Bi%5D \n-%3E\n+=\n = l1 \n-&&\n+%7C%7C\n  vet\n@@ -244,17 +244,17 @@\n etor%5Bi%5D \n-%3C\n+=\n = l2)%7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-14_14-08-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var t int\n    var l1, l2 int\n    fmt.Scan(&t, &l1, &l2)\n\n    vetor := make([]int, t)\n\n    count := 0\n\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n\n        if (vetor[i] >= l1 && vetor[i] <= l2){\n            count += 1\n        }\n    }\n\n    fmt.Println(count)\n}\n",
+            "lines": "21"
         }
     ]
 }
