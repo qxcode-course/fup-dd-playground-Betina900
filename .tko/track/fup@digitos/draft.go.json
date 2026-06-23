@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_13-37-57",
+            "content": "@@ -41,372 +41,35 @@\n     \n-var a int //saber quantas vezes aparece (entre 1 e 9)%0A    var b int //n%C3%BAmero do contato%0A    fmt.Scan(&a)%0A    fmt.Scan(&b)%0A%0A    cont := 0%0A%0A    for b %3E 0%7B%0A        digitos := b %25 10%0A%0A        if a == 0 && b == 0%7B%0A            fmt.Println(1)%0A            return%0A        %7D%0A%0A        if digitos == a%7B%0A            cont++%0A        %7D%0A%0A        b /= 10%0A    %7D%0A%0A    fmt.Println(cont\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-23_13-54-53",
+            "content": "@@ -270,17 +270,17 @@\n Println(\n-0\n+1\n )%0A      \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-23_13-55-32",
+            "content": "@@ -160,16 +160,77 @@\n an(&b)%0A%0A\n+    cont := 0%0A%0A    for b %3E 0%7B%0A        digitos := b %25 10%0A%0A    \n     if a\n@@ -250,24 +250,28 @@\n  0%7B%0A        \n+ \n+   \n fmt.Println(\n@@ -285,77 +285,28 @@\n     \n-return%0A    %7D%0A%0A    cont := 0%0A%0A    for b %3E 0%7B%0A        digitos := b %25 10\n+    return%0A        %7D\n %0A%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-23_13-56-09",
+            "content": "@@ -205,17 +205,17 @@\n Println(\n-1\n+0\n )%0A      \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-23_13-56-18",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int //saber quantas vezes aparece (entre 1 e 9)\n    var b int //n\u00famero do contato\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n\n    if a == 0 && b == 0{\n        fmt.Println(1)\n        return\n    }\n\n    cont := 0\n\n    for b > 0{\n        digitos := b % 10\n\n        if digitos == a{\n            cont++\n        }\n\n        b /= 10\n    }\n\n    fmt.Println(cont)\n}\n",
+            "lines": "27"
+        }
+    ]
+}

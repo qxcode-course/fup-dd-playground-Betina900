@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_16-45-35",
+            "content": "@@ -246,21 +246,13 @@\n int(\n-string(\n p%5Bi%5D)\n-)\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-16_16-46-09",
+            "content": "@@ -260,29 +260,8 @@\n %5D))%0A\n-        fmt.Print(i)%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-16_16-46-53",
+            "content": "@@ -214,16 +214,17 @@\n = c; i %3C\n+=\n  q; i++%7B\n@@ -256,16 +256,37 @@\n (p%5Bi%5D))%0A\n+        fmt.Print(i)%0A\n     %7D%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-16_16-47-13",
+            "content": "@@ -40,17 +40,16 @@\n %09%22os%22%0A)%0A\n-%0A\n func mai\n@@ -54,17 +54,20 @@\n ain() %7B%0A\n-%09\n+    \n var p st\n@@ -71,17 +71,20 @@\n  string%0A\n-%09\n+    \n var c, q\n@@ -88,17 +88,20 @@\n , q int%0A\n-%09\n+    \n scanner \n@@ -130,17 +130,20 @@\n .Stdin)%0A\n-%09\n+    \n scanner.\n@@ -149,17 +149,20 @@\n .Scan()%0A\n-%09\n+    \n p = scan\n@@ -173,17 +173,20 @@\n Text()%0A%0A\n-%09\n+    \n fmt.Scan\n@@ -199,18 +199,34 @@\n q)%0A%0A\n-%09for q %3E 0\n+    for i := c; i %3C q; i++\n %7B%0A  \n@@ -250,17 +250,17 @@\n tring(p%5B\n-c\n+i\n %5D))%0A    \n@@ -261,17 +261,20 @@\n )%0A    %7D%0A\n-%09\n+    \n fmt.Prin\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-16_16-51-39",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\tvar p string\n\tvar c, q int\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tp = scanner.Text()\n\n\tfmt.Scan(&c, &q)\n\n\tfor q > 0{\n        fmt.Print(string(p[c]))\n    }\n\tfmt.Println()\n}\n",
+            "lines": "22"
+        }
+    ]
+}

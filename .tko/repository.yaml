@@ -18,14 +18,15 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded:
-- fup@list
+expanded: []
 flags:
   inbox: all
-  panel: graph
-  show_panel: 'false'
-  task_graph_mode: executions
+  panel: skills
+  task_graph_mode: time
   show_time: 'true'
+audit:
+  enabled: true
+  interval_seconds: null
 lang: go
-selected: fup@paredes
-selected_index: 44
+selected: fup@mat
+selected_index: 8

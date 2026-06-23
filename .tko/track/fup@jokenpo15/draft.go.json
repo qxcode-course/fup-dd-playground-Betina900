@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_13-00-03",
+            "content": "@@ -41,71 +41,35 @@\n     \n-var a, b int%0A    fmt.Scan(&a, &b)%0A%0A    dist := (a - b + 15) %25 15\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-23_13-13-59",
+            "content": "@@ -105,165 +105,7 @@\n %25 15\n-%0A%0A    if dist == 0%7B%0A        fmt.Println(%22empate%22)%0A    %7D else if dist %3C= 7%7B%0A        fmt.Println(%22Jogador 1%22)%0A    %7D else%7B%0A        fmt.Println(%22Jogador 2%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-23_13-17-09",
+            "content": "@@ -209,9 +209,9 @@\n dor \n-2\n+1\n %22)%0A \n@@ -242,28 +242,28 @@\n rintln(%22Jogador \n-1\n+2\n %22)%0A    %7D%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-23_13-17-24",
+            "content": "@@ -146,9 +146,9 @@\n ln(%22\n-E\n+e\n mpat\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-23_13-17-50",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n    dist := (a - b + 15) % 15\n\n    if dist == 0{\n        fmt.Println(\"Empate\")\n    } else if dist <= 7{\n        fmt.Println(\"Jogador 2\")\n    } else{\n        fmt.Println(\"Jogador 1\")\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

@@ -115,3 +115,38 @@
 2026-06-16 13:46:02, EXEC, v:1, k:fup@paredes, mode:FULL, rate:0, size:19
 2026-06-16 13:46:24, EXEC, v:1, k:fup@paredes, mode:FULL, rate:0, size:21
 2026-06-16 13:46:29, MOVE, v:1, k:fup@paredes, mode:BACK
+2026-06-16 13:49:47, MOVE, v:1, k:fup@paredes, mode:PICK
+2026-06-16 13:49:48, EXEC, v:1, k:fup@paredes, mode:FULL, rate:0
+2026-06-16 13:53:43, EXEC, v:1, k:fup@paredes, mode:FULL, rate:0, size:21
+2026-06-16 13:53:43, MOVE, v:1, k:fup@paredes, mode:EDIT
+2026-06-16 13:54:40, MOVE, v:1, k:fup@paredes, mode:EDIT
+2026-06-16 13:59:44, MOVE, v:1, k:fup@paredes, mode:EDIT
+2026-06-16 13:59:47, EXEC, v:1, k:fup@paredes, mode:FULL, rate:0, size:23
+2026-06-16 14:00:46, EXEC, v:1, k:fup@paredes, mode:FULL, rate:100, size:23
+2026-06-16 14:00:53, MOVE, v:1, k:fup@paredes, mode:BACK
+2026-06-16 14:01:08, SELF, v:1, k:fup@paredes, self:1, rate:100, study:30
+2026-06-16 14:00:46, MOVE, v:1, k:fup@paredes, mode:EDIT
+2026-06-16 14:00:45, MOVE, v:1, k:fup@paredes, mode:EDIT
+2026-06-16 16:34:42, MOVE, v:1, k:fup@substring, mode:DOWN
+2026-06-16 16:34:43, MOVE, v:1, k:fup@substring, mode:PICK
+2026-06-16 16:34:51, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:5
+2026-06-16 16:34:51, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:5
+2026-06-16 16:34:42, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 16:34:42, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 16:34:42, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 16:39:30, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 16:34:51, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 16:44:28, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 16:45:35, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:21
+2026-06-16 16:46:09, EXEC, v:1, k:fup@substring, mode:FULL, rate:14, size:21
+2026-06-16 16:46:53, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:22
+2026-06-16 16:47:13, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:21
+2026-06-16 16:47:22, EXEC, v:1, k:fup@substring, mode:FREE
+2026-06-16 16:47:51, EXEC, v:1, k:fup@substring, mode:FULL, rate:0
+2026-06-16 16:47:58, EXEC, v:1, k:fup@substring, mode:FREE
+2026-06-16 16:49:12, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 16:49:23, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 16:51:39, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:22
+2026-06-16 16:51:33, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 16:51:38, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 17:18:06, MOVE, v:1, k:fup@substring, mode:BACK

@@ -22,8 +22,23 @@
         },
         {
             "label": "2026-06-16_13-46-24",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    maior := 1\n    count := 1\n\n    vetor := make([]int, n)\n    for i := 0; i <= n; i++{\n        fmt.Scan(&vetor[i])\n\n        if vetor[i] > maior{\n            count++\n            maior = vetor[i]\n        }\n    }\n\n    fmt.Println(count)\n}\n",
+            "content": "@@ -149,18 +149,9 @@\n  %3C= \n-len(vetor)\n+n\n ; i+\n",
             "lines": "21"
+        },
+        {
+            "label": "2026-06-16_13-53-43",
+            "content": "@@ -65,16 +65,47 @@\n an(&n)%0A%0A\n+    maior := 1%0A    count := 1%0A%0A\n     veto\n@@ -194,94 +194,8 @@\n i%5D)%0A\n-    %7D%0A%0A    maior := vetor%5B0%5D%0A    count := 1%0A    %0A    for i := 1; i %3C len(vetor); i++ %7B\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-16_13-59-47",
+            "content": "@@ -108,24 +108,25 @@\n  i := 0; i %3C\n+=\n  len(vetor);\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-16_14-00-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    vetor := make([]int, n)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n\n    maior := vetor[0]\n    count := 1\n    \n    for i := 1; i < len(vetor); i++ {\n        if vetor[i] > maior{\n            count++\n            maior = vetor[i]\n        }\n    }\n\n    fmt.Println(count)\n}\n",
+            "lines": "23"
         }
     ]
 }
