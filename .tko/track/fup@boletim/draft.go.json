@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_14-11-59",
+            "content": "@@ -41,307 +41,35 @@\n     \n-var num, s int%0A    var matriz%5B2%5D%5B3%5Dint%0A%0A    for i := 0; i %3C 2; i++%7B%0A        for j := 0; j %3C 3; j++%7B%0A            fmt.Scan(&num)%0A            matriz%5Bi%5D%5Bj%5D = num%0A        %7D%0A    %7D%0A%0A    for i := 0; i %3C 2; i++%7B%0A        for j := 0; j %3C 3; j++%7B%0A            s += matriz%5Bi%5D%5Bj%5D%0A        %7D%0A    %7D%0A%0A    fmt.Println(s\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-24_14-17-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num, s int\n    var matriz[2][3]int\n\n    for i := 0; i < 2; i++{\n        for j := 0; j < 3; j++{\n            fmt.Scan(&num)\n            matriz[i][j] = num\n        }\n    }\n\n    for i := 0; i < 2; i++{\n        for j := 0; j < 3; j++{\n            s += matriz[i][j]\n        }\n    }\n\n    fmt.Println(s)\n}\n",
+            "lines": "21"
+        }
+    ]
+}

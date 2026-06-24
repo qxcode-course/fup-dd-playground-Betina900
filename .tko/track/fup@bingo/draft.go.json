@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_14-05-27",
+            "content": "@@ -41,509 +41,35 @@\n     \n-bingo := %5B4%5D%5B4%5Dint%7B%0A        %7B1, 9, 27, 23%7D,%0A        %7B34, 20, 37, 47%7D%0A        %7B30, 87, 55, 69%7D%0A        %7B13, 60, 99, 66%7D%0A    %7D%0A%0A    var chutes%5B6%5Dint%0A    nums := 0%0A    c := 0%0A%0A    for i := range chutes%7B%0A        fmt.Scan(&nums)%0A        chutes%5Bi%5D = nums%0A    %7D%0A%0A    for _, numSorteado := range chutes%7B%0A        for i := 0; i %3C 4; i++%7B%0A            for j := 0; j %3C 4; j++%7B%0A                if bingo%5Bi%5D%5Bj%5D == numSorteado%7B%0A                    c++%0A                %7D%0A            %7D%0A        %7D%0A    %7D%0A%0A    fmt.Println(c\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-24_14-11-17",
+            "content": "@@ -105,17 +105,16 @@\n  37, 47%7D\n-,\n %0A       \n@@ -130,17 +130,16 @@\n  55, 69%7D\n-,\n %0A       \n@@ -155,17 +155,16 @@\n  99, 66%7D\n-,\n %0A    %7D%0A%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-24_14-11-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    bingo := [4][4]int{\n        {1, 9, 27, 23},\n        {34, 20, 37, 47},\n        {30, 87, 55, 69},\n        {13, 60, 99, 66},\n    }\n\n    var chutes[6]int\n    nums := 0\n    c := 0\n\n    for i := range chutes{\n        fmt.Scan(&nums)\n        chutes[i] = nums\n    }\n\n    for _, numSorteado := range chutes{\n        for i := 0; i < 4; i++{\n            for j := 0; j < 4; j++{\n                if bingo[i][j] == numSorteado{\n                    c++\n                }\n            }\n        }\n    }\n\n    fmt.Println(c)\n}\n",
+            "lines": "31"
+        }
+    ]
+}

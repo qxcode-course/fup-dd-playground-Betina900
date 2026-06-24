@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_14-29-36",
+            "content": "@@ -41,603 +41,35 @@\n     \n-var transposta%5B3%5D%5B3%5Dint%0A    var matriz%5B3%5D%5B3%5Dint%0A%0A    for i := 0; i %3C 3; i++%7B%0A        for j := 0; j %3C 3; j++%7B%0A            fmt.Scan(&matriz%5Bi%5D%5Bj%5D)%0A        %7D%0A    %7D%0A%0A    for j := 0; j %3C 3; j++%7B%0A        for i := 0; i %3C 3; i++%7B%0A            transposta%5Bj%5D%5Bi%5D = matriz%5Bi%5D%5Bj%5D%0A        %7D%0A    %7D%0A%0A    simetrik := true%0A%0A    for i := 0; i %3C 3; i++%7B%0A        for j := 0; j %3C 3; j++%7B%0A            if matriz%5Bi%5D%5Bj%5D != transposta%5Bi%5D%5Bj%5D%7B%0A                simetrik = false%0A                break%0A            %7D%0A        %7D%0A    %7D%0A%0A    if simetrik == true%7B%0A        fmt.Println(%22sim%22)%0A    %7D else%7B%0A        fmt.Println(%22nao%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-24_14-36-18",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var transposta[3][3]int\n    var matriz[3][3]int\n\n    for i := 0; i < 3; i++{\n        for j := 0; j < 3; j++{\n            fmt.Scan(&matriz[i][j])\n        }\n    }\n\n    for j := 0; j < 3; j++{\n        for i := 0; i < 3; i++{\n            transposta[j][i] = matriz[i][j]\n        }\n    }\n\n    simetrik := true\n\n    for i := 0; i < 3; i++{\n        for j := 0; j < 3; j++{\n            if matriz[i][j] != transposta[i][j]{\n                simetrik = false\n                break\n            }\n        }\n    }\n\n    if simetrik == true{\n        fmt.Println(\"sim\")\n    } else{\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "35"
+        }
+    ]
+}

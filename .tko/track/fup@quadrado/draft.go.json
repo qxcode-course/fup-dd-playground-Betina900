@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_13-44-53",
+            "content": "@@ -41,894 +41,35 @@\n     \n-var n int%0A    var matriz%5B3%5D%5B3%5Dint%0A    %0A    for i := range matriz%7B%0A        for j := range matriz%7B%0A            fmt.Scan(&n)%0A            matriz%5Bi%5D%5Bj%5D = n%0A        %7D%0A    %7D%0A%0A    var l%5B3%5Dint%0A    var c%5B3%5Dint%0A    dp := 0%0A    ds := 0%0A%0A    for i := 0; i %3C 3; i++%7B%0A        for j := 0; j %3C 3; j++%7B%0A            c%5Bj%5D += matriz%5Bi%5D%5Bj%5D%0A        %7D%0A    %7D%0A    for j := 0; j %3C 3; j++%7B%0A        for i := 0; i %3C 3; i++%7B%0A            l%5Bi%5D += matriz%5Bi%5D%5Bj%5D%0A        %7D%0A    %7D%0A    for i := 0; i %3C 3; i++%7B%0A        for j := 0; j %3C 3; j++%7B%0A            if i == j%7B%0A                dp += matriz%5Bi%5D%5Bj%5D%0A            %7D%0A        %7D%0A    %7D%0A    for i := 0; i %3C 3; i++%7B%0A        ds += matriz%5Bi%5D%5B3-1-i%5D%0A    %7D%0A%0A    if l%5B0%5D != l%5B1%5D && l%5B1%5D != l%5B2%5D%7B%0A        fmt.Println(%22nao%22)%0A    %7D else if c%5B0%5D != c%5B1%5D && c%5B1%5D != c%5B2%5D%7B%0A        fmt.Println(%22nao%22)%0A    %7D else if dp != ds%7B%0A        fmt.Println(%22nao%22)%0A    %7D else%7B%0A        fmt.Println(%22sim%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-24_14-02-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    var matriz[3][3]int\n    \n    for i := range matriz{\n        for j := range matriz{\n            fmt.Scan(&n)\n            matriz[i][j] = n\n        }\n    }\n\n    var l[3]int\n    var c[3]int\n    dp := 0\n    ds := 0\n\n    for i := 0; i < 3; i++{\n        for j := 0; j < 3; j++{\n            c[j] += matriz[i][j]\n        }\n    }\n    for j := 0; j < 3; j++{\n        for i := 0; i < 3; i++{\n            l[i] += matriz[i][j]\n        }\n    }\n    for i := 0; i < 3; i++{\n        for j := 0; j < 3; j++{\n            if i == j{\n                dp += matriz[i][j]\n            }\n        }\n    }\n    for i := 0; i < 3; i++{\n        ds += matriz[i][3-1-i]\n    }\n\n    if l[0] != l[1] && l[1] != l[2]{\n        fmt.Println(\"nao\")\n    } else if c[0] != c[1] && c[1] != c[2]{\n        fmt.Println(\"nao\")\n    } else if dp != ds{\n        fmt.Println(\"nao\")\n    } else{\n        fmt.Println(\"sim\")\n    }\n}\n",
+            "lines": "49"
+        }
+    ]
+}

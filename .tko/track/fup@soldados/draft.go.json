@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_14-18-39",
+            "content": "@@ -41,477 +41,35 @@\n     \n-var l, c int%0A    fmt.Scan(&l, &c)%0A    matriz := make(%5B%5D%5B%5Dint, l)%0A%0A    for i := 0; i %3Cl; i++%7B%0A        matriz%5Bi%5D = make(%5B%5Dint, c)%0A    %7D%0A%0A    for i := 0; i %3C l; i++%7B%0A        for j := 0; j %3C c; j++%7B%0A            fmt.Scan(&matriz%5Bi%5D%5Bj%5D)%0A        %7D%0A    %7D%0A%0A    soldadoMenor := 0%0A%0A    for j := 0; j %3C c; j++%7B%0A        for i := 0; i %3C l-1; i++%7B%0A            if matriz%5Bi+1%5D%5Bj%5D %3C matriz%5Bi%5D%5Bj%5D%7B%0A                soldadoMenor++%0A            %7D%0A        %7D%0A    %7D%0A%0A    fmt.Println(soldadoMenor\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-24_14-28-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var l, c int\n    fmt.Scan(&l, &c)\n    matriz := make([][]int, l)\n\n    for i := 0; i <l; i++{\n        matriz[i] = make([]int, c)\n    }\n\n    for i := 0; i < l; i++{\n        for j := 0; j < c; j++{\n            fmt.Scan(&matriz[i][j])\n        }\n    }\n\n    soldadoMenor := 0\n\n    for j := 0; j < c; j++{\n        for i := 0; i < l-1; i++{\n            if matriz[i+1][j] < matriz[i][j]{\n                soldadoMenor++\n            }\n        }\n    }\n\n    fmt.Println(soldadoMenor)\n}\n",
+            "lines": "29"
+        }
+    ]
+}

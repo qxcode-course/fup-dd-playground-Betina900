@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_13-24-26",
+            "content": "@@ -41,710 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    for t := 0; t %3C n; t++%7B%0A        var numero string%0A        fmt.Scan(&numero)%0A        %0A        led := 0%0A        for i := 0; i %3C len(numero); i++%7B%0A            switch numero%5Bi%5D%7B%0A            case '0':%0A                led += 6%0A            case'1':%0A                led += 2%0A            case '2':%0A                led += 5%0A            case '3':%0A                led += 5%0A            case '4':%0A                led += 4%0A            case '5':%0A                led += 5%0A            case'6':%0A                led += 6%0A            case '7':%0A                led += 3%0A            case '8':%0A                led += 7%0A            case '9':%0A                led += 6%0A            %7D%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-24_13-37-15",
+            "content": "@@ -738,42 +738,8 @@\n    %7D\n-%0A%0A        fmt.Println(led, %22leds%22)\n %0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-24_13-38-01",
+            "content": "@@ -145,16 +145,24 @@\n numero)%0A\n+        \n %0A       \n@@ -165,17 +165,16 @@\n      led\n-s\n  := 0%0A  \n@@ -183,93 +183,472 @@\n     \n-led := %5B%5Dint%7B6, 2, 5, 5, 4, 5, 6, 3, 7,6%7D%0A%0A        for i := 0; i %3C len(numero); i++%7B%0A\n+for i := 0; i %3C len(numero); i++%7B%0A            switch numero%5Bi%5D%7B%0A            case '0':%0A                led += 6%0A            case'1':%0A                led += 2%0A            case '2':%0A                led += 5%0A            case '3':%0A                led += 5%0A            case '4':%0A                led += 4%0A            case '5':%0A                led += 5%0A            case'6':%0A                led += 6%0A            case '7':%0A                led += 3%0A            case '8':%0A    \n     \n@@ -662,43 +662,118 @@\n  led\n-s\n  += \n-led%5Bnumero%5Bi%5D - '0'%5D%0A        %7D\n+7%0A            case '9':%0A                led += 6%0A            %7D%0A        %7D%0A%0A        fmt.Println(led, %22leds%22)\n %0A   \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-24_13-43-15",
+            "content": "@@ -311,43 +311,8 @@\n    %7D\n-%0A%0A        fmt.Println(leds, %22leds%22)\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-24_13-43-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    for t := 0; t < n; t++{\n        var numero string\n        fmt.Scan(&numero)\n\n        leds := 0\n        led := []int{6, 2, 5, 5, 4, 5, 6, 3, 7,6}\n\n        for i := 0; i < len(numero); i++{\n            leds += led[numero[i] - '0']\n        }\n\n        fmt.Println(leds, \"leds\")\n    }\n}\n",
+            "lines": "20"
+        }
+    ]
+}

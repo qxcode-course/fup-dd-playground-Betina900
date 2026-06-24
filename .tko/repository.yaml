@@ -19,7 +19,7 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@list
+- fup@mat
 flags:
   inbox: all
   panel: skills
@@ -29,5 +29,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@pmg
-selected_index: 31
+selected: fup@simetrica
+selected_index: 16

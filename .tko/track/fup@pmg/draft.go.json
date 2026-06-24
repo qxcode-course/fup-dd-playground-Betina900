@@ -2,8 +2,43 @@
     "patches": [
         {
             "label": "2026-06-24_01-29-42",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,234 +41,35 @@\n     \n-var soldados int%0A    fmt.Scan(&soldados)%0A%0A    alturas := make(%5B%5Dfloat64, soldados)%0A    media := 0.0%0A    for i := 0; i %3C len(alturas); i++%7B%0A        fmt.Scan(&alturas%5Bi%5D)%0A%0A        media += alturas%5Bi%5D%0A    %7D%0A%0A    fmt.Println(media\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-24_13-08-39",
+            "content": "@@ -124,19 +124,20 @@\n os)%0A    \n-som\n+medi\n a := 0.0\n@@ -215,19 +215,20 @@\n         \n-som\n+medi\n a += alt\n@@ -246,38 +246,8 @@\n  %7D%0A%0A\n-    media := soma / soldados%0A%0A\n     \n@@ -262,18 +262,8 @@\n tln(\n-%22%25.2f%5Cn%22, \n medi\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-24_13-11-13",
+            "content": "@@ -264,24 +264,16 @@\n a / \n-float64(\n soldados\n )%0A%0A \n@@ -264,25 +264,24 @@\n a / soldados\n-)\n %0A%0A    fmt.Pr\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-24_13-11-42",
+            "content": "@@ -292,17 +292,18 @@\n mt.Print\n-f\n+ln\n (%22%25.2f%5Cn\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-24_13-11-52",
+            "content": "@@ -205,16 +205,17 @@\n ras%5Bi%5D)%0A\n+%0A\n         \n@@ -274,24 +274,25 @@\n 4(soldados)%0A\n+%0A\n     fmt.Prin\n@@ -314,248 +314,7 @@\n dia)\n-%0A%0A    for i := 0; i %3C len(alturas); i++%7B%0A        if alturas%5Bi%5D == media%7B%0A            fmt.Print(%22M%22)%0A        %7D else if alturas%5Bi%5D %3C media%7B%0A            fmt.Print(%22P%22)%0A        %7D else%7B%0A            fmt.Print(%22G%22)%0A        %7D%0A    %7D%0A    fmt.Println()\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-24_13-15-20",
+            "content": "@@ -405,17 +405,16 @@\n Print(%22M\n- \n %22)%0A     \n@@ -470,17 +470,16 @@\n Print(%22P\n- \n %22)%0A     \n@@ -513,17 +513,16 @@\n Print(%22G\n- \n %22)%0A     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-24_13-15-32",
+            "content": "@@ -353,34 +353,8 @@\n ++%7B%0A\n-        var letra string%0A%0A\n     \n@@ -397,19 +397,23 @@\n     \n-letra = %22M%22\n+fmt.Print(%22M %22)\n %0A   \n@@ -451,117 +451,8 @@\n ia%7B%0A\n-            letra = %22P%22%0A        %7D else%7B%0A            letra = %22G%22%0A        %7D%0A%0A        if i == len(alturas) - 1%7B%0A\n     \n@@ -469,21 +469,20 @@\n t.Print(\n-letra\n+%22P %22\n )%0A      \n@@ -517,16 +517,10 @@\n int(\n-letra, \n %22\n+G\n  %22)%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-24_13-23-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var soldados int\n    fmt.Scan(&soldados)\n\n    alturas := make([]float64, soldados)\n    soma := 0.0\n    for i := 0; i < len(alturas); i++{\n        fmt.Scan(&alturas[i])\n        soma += alturas[i]\n    }\n\n    media := soma / float64(soldados)\n    fmt.Printf(\"%.2f\\n\", media)\n\n    for i := 0; i < len(alturas); i++{\n        var letra string\n\n        if alturas[i] == media{\n            letra = \"M\"\n        } else if alturas[i] < media{\n            letra = \"P\"\n        } else{\n            letra = \"G\"\n        }\n\n        if i == len(alturas) - 1{\n            fmt.Print(letra)\n        } else{\n            fmt.Print(letra, \" \")\n        }\n    }\n    fmt.Println()\n}\n",
+            "lines": "35"
         }
     ]
 }
