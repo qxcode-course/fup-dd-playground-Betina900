@@ -7,16 +7,29 @@ import (
 )
 
 func main() {
-	var p string
-	var c, q int
 	scanner := bufio.NewScanner(os.Stdin)
+
 	scanner.Scan()
-	p = scanner.Text()
+	texto := scanner.Text()
 
-	fmt.Scan(&c, &q)
+	var c, q int
 
-	for q > 0{
-        fmt.Print(string(p[c]))
-    }
-	fmt.Println()
+	scanner.Scan()
+	fmt.Sscanf(scanner.Text(), "%d", &c)
+
+	scanner.Scan()
+	fmt.Sscanf(scanner.Text(), "%d", &q)
+
+	if c < 0 || c >= len(texto) || q < 0 {
+		fmt.Println("")
+		return
+	}
+
+	fim := c + q
+
+	if fim > len(texto) {
+		fim = len(texto)
+	}
+
+	fmt.Println(texto[c:fim])
 }

@@ -22,8 +22,43 @@
         },
         {
             "label": "2026-06-16_16-51-39",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\tvar p string\n\tvar c, q int\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tp = scanner.Text()\n\n\tfmt.Scan(&c, &q)\n\n\tfor q > 0{\n        fmt.Print(string(p[c]))\n    }\n\tfmt.Println()\n}\n",
+            "content": "@@ -40,16 +40,17 @@\n %09%22os%22%0A)%0A\n+%0A\n func mai\n@@ -225,15 +225,8 @@\n c%5D))\n-%0A%0A%09%09q--\n %0A   \n",
             "lines": "22"
+        },
+        {
+            "label": "2026-06-24_01-12-31",
+            "content": "@@ -54,16 +54,44 @@\n ain() %7B%0A\n+%09var p string%0A%09var c, q int%0A\n %09scanner\n@@ -121,17 +121,16 @@\n .Stdin)%0A\n-%0A\n %09scanner\n@@ -142,15 +142,10 @@\n ()%0A%09\n-texto :\n+p \n = sc\n@@ -158,30 +158,16 @@\n Text()%0A%0A\n-%09var c, q int%0A\n %09fmt.Sca\n@@ -182,136 +182,63 @@\n )%0A%0A%09\n-if c %3C 0 %7C%7C c %3E= len(texto) %7C%7C q %3C 0%7B%0A%09%09fmt.Println(%22%22)%0A%09%09return%0A%09%7D%0A%0A%09fim := c + q%0A%0A%09if fim %3E len(texto)%7B%0A%09%09fim = len(texto)%0A%09%7D%0A\n+for q %3E 0%7B%0A        fmt.Print(string(p%5Bc%5D))%0A%0A%09%09q--%0A    %7D\n %0A%09fm\n@@ -251,20 +251,8 @@\n tln(\n-texto%5Bc:fim%5D\n )%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-24_01-18-31",
+            "content": "@@ -173,83 +173,8 @@\n q)%0A%0A\n-%09fmt.Println(%22texto:%22, texto)%0A%09fmt.Println(%22c:%22, c)%0A%09fmt.Println(%22q:%22, q)%0A%0A\n %09if \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-24_01-20-51",
+            "content": "@@ -169,16 +169,91 @@\n c, &q)%0A%0A\n+%09fmt.Println(%22texto:%22, texto)%0A%09fmt.Println(%22c:%22, c)%0A%09fmt.Println(%22q:%22, q)%0A%0A\n %09if c %3C \n@@ -405,33 +405,6 @@\n m%5D)%0A\n-%09fmt.Println(%22fim =%22, fim)%0A\n %7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-24_01-23-11",
+            "content": "@@ -326,10 +326,37 @@\n c:fim%5D)%0A\n+%09fmt.Println(%22fim =%22, fim)%0A\n %7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-24_01-26-06",
+            "content": "@@ -166,20 +166,10 @@\n n(&c\n-)%0A%09fmt.Scan(\n+, \n &q)%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-24_01-26-34",
+            "content": "@@ -40,17 +40,16 @@\n %09%22os%22%0A)%0A\n-%0A\n func mai\n@@ -153,87 +153,29 @@\n  int\n-%0A%0A%09scanner.Scan()\n %0A%09fmt.S\n-s\n can\n-f(scanner.Text(), %22%25d%22, &c)%0A%0A%09scanner.Scan(\n+(&c\n )%0A%09fmt.S\n scan\n@@ -174,36 +174,12 @@\n mt.S\n-s\n can\n-f(scanner.Text(), %22%25d%22, \n+(\n &q)%0A\n@@ -216,17 +216,16 @@\n %7C%7C q %3C 0\n- \n %7B%0A%09%09fmt.\n@@ -284,17 +284,16 @@\n n(texto)\n- \n %7B%0A%09%09fim \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-24_01-27-44",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\tscanner.Scan()\n\ttexto := scanner.Text()\n\n\tvar c, q int\n\n\tscanner.Scan()\n\tfmt.Sscanf(scanner.Text(), \"%d\", &c)\n\n\tscanner.Scan()\n\tfmt.Sscanf(scanner.Text(), \"%d\", &q)\n\n\tif c < 0 || c >= len(texto) || q < 0 {\n\t\tfmt.Println(\"\")\n\t\treturn\n\t}\n\n\tfim := c + q\n\n\tif fim > len(texto) {\n\t\tfim = len(texto)\n\t}\n\n\tfmt.Println(texto[c:fim])\n}\n",
+            "lines": "35"
         }
     ]
 }

@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_00-14-02",
+            "content": "@@ -41,68 +41,35 @@\n     \n-var jogada int%0A    fmt.Scan(&jogada)%0A%0A    fmt.Println(jogada\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-24_00-22-32",
+            "content": "@@ -37,27 +37,8 @@\n ) %7B%0A\n-    var limite int%0A\n     \n@@ -46,20 +46,17 @@\n ar jogad\n-ores\n+a\n  int%0A   \n@@ -69,54 +69,18 @@\n can(\n-&limite, \n &jogad\n-ores\n+a\n )%0A%0A\n-    fmt.Println(limite)%0A\n     \n@@ -100,12 +100,9 @@\n ogad\n-ores\n+a\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-24_00-27-37",
+            "content": "@@ -60,20 +60,25 @@\n     var \n-qntd\n+jogadores\n  int%0A   \n@@ -101,100 +101,52 @@\n e, &\n-qntd)%0A%0A    jogadas := make(%5B%5Dint, qntd)%0A    for i := 0; i %3C= len(jogadas); i++%7B%0A    \n+jogadores)%0A%0A    fmt.Println(limite)%0A\n     fmt.\n Scan\n@@ -145,29 +145,25 @@\n fmt.\n-Sca\n+Printl\n n(jogad\n-as%5Bi%5D)%0A    %7D\n+ores)\n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-24_00-30-23",
+            "content": "@@ -210,33 +210,7 @@\n    %7D\n-%0A%0A    fmt.Println(jogadas)\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-24_00-30-55",
+            "content": "@@ -206,11 +206,37 @@\n %5D)%0A    %7D\n+%0A%0A    fmt.Println(jogadas)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-24_00-34-46",
+            "content": "@@ -151,16 +151,17 @@\n = 0; i %3C\n+=\n  len(jog\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-24_00-34-48",
+            "content": "@@ -188,17 +188,16 @@\n mt.Scan(\n-&\n jogadas%5B\n@@ -209,33 +209,7 @@\n    %7D\n-%0A%0A    fmt.Println(jogadas)\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-24_00-35-24",
+            "content": "@@ -136,663 +136,107 @@\n td)%0A\n-%0A    ganhador := -1%0A    menorDist := limite +1%0A    perdedor := 0%0A    maiorDist := -1%0A%0A    for i := 0; i %3C len(jogadas); i++%7B%0A        fmt.Scan(&jogadas%5Bi%5D)%0A%0A        distancia := jogadas%5Bi%5D%0A        if distancia %3C 0%7B%0A            distancia = -distancia%0A        %7D%0A%0A        if distancia %3C= limite%7B%0A            if distancia %3C= menorDist%7B%0A                menorDist = distancia%0A                ganhador =1%0A            %7D%0A        %7D%0A%0A        if distancia %3E= limite%7B%0A            maiorDist = distancia%0A            perdedor = 1%0A        %7D%0A    %7D%0A%0A    if ganhador == 1%7B%0A        fmt.Println(%22nenhum%22)%0A    %7D else%7B%0A        fmt.Println(ganhador)%0A    %7D%0A%0A    fmt.Println(perdedor\n+    for i := 0; i %3C len(jogadas); i++%7B%0A        fmt.Scan(&jogadas%5Bi%5D)%0A    %7D%0A%0A    fmt.Println(jogadas\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-24_00-53-25",
+            "content": "@@ -527,18 +527,17 @@\n nhador =\n- i\n+1\n %0A       \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-24_01-03-58",
+            "content": "@@ -177,17 +177,16 @@\n limite +\n- \n 1%0A    pe\n@@ -579,25 +579,22 @@\n ncia %3E= \n-maiorDist\n+limite\n %7B%0A      \n@@ -640,25 +640,25 @@\n  perdedor = \n-i\n+1\n %0A        %7D%0A \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-24_01-06-30",
+            "content": "@@ -686,17 +686,16 @@\n ador == \n--\n 1%7B%0A     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-24_01-07-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var limite int\n    var qntd int\n    fmt.Scan(&limite, &qntd)\n\n    jogadas := make([]int, qntd)\n\n    ganhador := -1\n    menorDist := limite + 1\n    perdedor := 0\n    maiorDist := -1\n\n    for i := 0; i < len(jogadas); i++{\n        fmt.Scan(&jogadas[i])\n\n        distancia := jogadas[i]\n        if distancia < 0{\n            distancia = -distancia\n        }\n\n        if distancia <= limite{\n            if distancia <= menorDist{\n                menorDist = distancia\n                ganhador = i\n            }\n        }\n\n        if distancia >= maiorDist{\n            maiorDist = distancia\n            perdedor = i\n        }\n    }\n\n    if ganhador == -1{\n        fmt.Println(\"nenhum\")\n    } else{\n        fmt.Println(ganhador)\n    }\n\n    fmt.Println(perdedor)\n}\n",
+            "lines": "43"
+        }
+    ]
+}
