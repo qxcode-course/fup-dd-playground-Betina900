@@ -1,0 +1,45 @@
+2026-06-25 21:49:41, MOVE, v:1, k:fup@matrizes, mode:PICK
+2026-06-25 21:49:46, EXEC, v:1, k:fup@matrizes, mode:FULL, fail:COMP
+2026-06-25 21:51:42, EXEC, v:1, k:fup@matrizes, mode:FULL, rate:100, size:39
+2026-06-25 21:51:43, MOVE, v:1, k:fup@matrizes, mode:BACK
+2026-06-25 21:52:59, SELF, v:1, k:fup@matrizes, self:1, rate:100, study:16
+2026-06-25 21:53:03, MOVE, v:1, k:fup@subdiagonais, mode:DOWN
+2026-06-25 21:53:04, MOVE, v:1, k:fup@subdiagonais, mode:PICK
+2026-06-25 21:53:06, EXEC, v:1, k:fup@subdiagonais, mode:FULL, rate:0, size:5
+2026-06-25 21:51:39, MOVE, v:1, k:fup@matrizes, mode:EDIT
+2026-06-25 21:51:41, MOVE, v:1, k:fup@matrizes, mode:EDIT
+2026-06-25 21:53:03, MOVE, v:1, k:fup@subdiagonais, mode:EDIT
+2026-06-25 21:53:06, MOVE, v:1, k:fup@subdiagonais, mode:EDIT
+2026-06-25 21:54:18, MOVE, v:1, k:fup@subdiagonais, mode:EDIT
+2026-06-25 21:55:08, EXEC, v:1, k:fup@subdiagonais, mode:FULL, rate:0, size:11
+2026-06-25 21:59:16, EXEC, v:1, k:fup@subdiagonais, mode:FULL, rate:0, size:20
+2026-06-25 21:59:12, MOVE, v:1, k:fup@subdiagonais, mode:EDIT
+2026-06-25 21:59:16, MOVE, v:1, k:fup@subdiagonais, mode:EDIT
+2026-06-25 22:02:25, MOVE, v:1, k:fup@subdiagonais, mode:EDIT
+2026-06-25 22:05:50, EXEC, v:1, k:fup@subdiagonais, mode:FULL, rate:100, size:28
+2026-06-25 22:05:53, MOVE, v:1, k:fup@subdiagonais, mode:BACK
+2026-06-25 22:07:14, SELF, v:1, k:fup@subdiagonais, self:1, rate:100, study:12
+2026-06-25 22:08:01, MOVE, v:1, k:fup@codigo, mode:DOWN
+2026-06-25 22:08:02, MOVE, v:1, k:fup@codigo, mode:PICK
+2026-06-25 22:10:00, MOVE, v:1, k:fup@codigo, mode:PICK
+2026-06-25 22:10:01, EXEC, v:1, k:fup@codigo, mode:FULL, rate:0, size:5
+2026-06-25 22:10:38, EXEC, v:1, k:fup@codigo, mode:FULL, rate:0, size:6
+2026-06-25 22:10:38, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-25 22:14:00, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-25 22:15:26, EXEC, v:1, k:fup@codigo, mode:FULL, rate:0, size:11
+2026-06-25 22:19:07, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-25 22:15:26, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-25 22:21:21, EXEC, v:1, k:fup@codigo, mode:FULL, size:19, fail:COMP
+2026-06-25 22:21:43, EXEC, v:1, k:fup@codigo, mode:FULL, rate:0, size:19
+2026-06-25 22:23:14, EXEC, v:1, k:fup@codigo, mode:FULL, rate:100, size:21
+2026-06-25 22:23:16, MOVE, v:1, k:fup@codigo, mode:BACK
+2026-06-25 22:23:28, SELF, v:1, k:fup@codigo, self:1, rate:100, study:18
+2026-06-25 22:23:13, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-25 22:23:14, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-25 22:42:28, MOVE, v:1, k:fup@mercantil, mode:DOWN
+2026-06-25 22:42:30, MOVE, v:1, k:fup@mercantil, mode:PICK
+2026-06-25 22:42:33, EXEC, v:1, k:fup@mercantil, mode:FULL, rate:0, size:5
+2026-06-25 22:42:28, MOVE, v:1, k:fup@mercantil, mode:EDIT
+2026-06-25 22:42:33, MOVE, v:1, k:fup@mercantil, mode:EDIT
+2026-06-25 22:44:07, MOVE, v:1, k:fup@mercantil, mode:EDIT
+2026-06-25 22:47:27, MOVE, v:1, k:fup@mercantil, mode:BACK

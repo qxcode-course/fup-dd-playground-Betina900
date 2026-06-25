@@ -1,0 +1,2 @@
+{"ts":1782427447,"hash":"07498fcc526f3fbe3e4d60179a294089e389cfa0f2a222e29719d7ee5b407d1b","mode":"full","content":"H4sIAESvPWoC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFXLRcAk2NUei8AAAA="}
+{"ts":1782427640,"hash":"db3b03f6fbe0dc132b6c32a2c7aa83378f95cb6a1a54ff9c1f1243dd3ad41413","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":4,"text":"    fmt.Println(\"Hello, World!\")\n"}]}
