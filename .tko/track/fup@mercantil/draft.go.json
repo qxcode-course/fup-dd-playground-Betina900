@@ -2,8 +2,48 @@
     "patches": [
         {
             "label": "2026-06-25_22-42-33",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,329 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    valores := make(%5B%5Dfloat64, n)%0A    chutes := make(%5B%5Dfloat64, n)%0A    escolhas := make(%5B%5Dfloat64, n)%0A%0A    for i := 0; i %3C n; i++%7B%0A        fmt.Scan(&valores%5Bi%5D)%0A    %7D%0A    for i := 0; i %3C n; i++%7B%0A        fmt.Scan(&chutes%5Bi%5D)%0A    %7D%0A    for i := 0; i %3C n; i++%7B%0A        fmt.Scan(&escolhas%5Bi%5D)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-30_01-08-37",
+            "content": "@@ -363,26 +363,7 @@\n    %7D\n-%0A%0A    primeiro := 0\n %0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-30_01-08-55",
+            "content": "@@ -383,23 +383,6 @@\n = 0%0A\n-    segundo := 0%0A\n %7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-30_01-09-08",
+            "content": "@@ -399,111 +399,7 @@\n := 0\n-%0A%0A    for i := 0; i %3C n; i++%7B%0A        if valores%5Bi%5D == chutes%5Bi%5D%7B%0A            primeiro++%0A        %7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-30_01-10-26",
+            "content": "@@ -159,14 +159,15 @@\n e(%5B%5D\n-string\n+float64\n , n)\n@@ -488,125 +488,8 @@\n o++%0A\n-        %7D else if escolhas%5Bi%5D == %22M%22%7B%0A            if valores%5Bi%5D %3E chutes%5Bi%5D%7B%0A                segundo++%0A            %7D%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-30_01-12-38",
+            "content": "@@ -590,55 +590,8 @@\n o++%0A\n-            %7D else%7B%0A                primeiro++%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-30_01-13-30",
+            "content": "@@ -666,180 +666,7 @@\n    %7D\n-%0A%0A    if primeiro %3E segundo%7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else if segundo %3E primeiro%7B%0A        fmt.Println(%22segundo%22)%0A    %7D else%7B%0A        fmt.Println(%22empate%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-30_01-15-16",
+            "content": "@@ -651,150 +651,8 @@\n   %7D%0A\n-        %7D else%7B%0A            if valores%5Bi%5D %3C chutes%5Bi%5D%7B%0A                segundo++%0A            %7D else%7B%0A                primeiro++%0A            %7D%0A\n     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-30_01-17-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    valores := make([]float64, n)\n    chutes := make([]float64, n)\n    escolhas := make([]string, n)\n\n    for i := 0; i < n; i++{\n        fmt.Scan(&valores[i])\n    }\n    for i := 0; i < n; i++{\n        fmt.Scan(&chutes[i])\n    }\n    for i := 0; i < n; i++{\n        fmt.Scan(&escolhas[i])\n    }\n\n    primeiro := 0\n    segundo := 0\n\n    for i := 0; i < n; i++{\n        if valores[i] == chutes[i]{\n            primeiro++\n        } else if escolhas[i] == \"M\"{\n            if valores[i] > chutes[i]{\n                segundo++\n            } else{\n                primeiro++\n            }\n        } else{\n            if valores[i] < chutes[i]{\n                segundo++\n            } else{\n                primeiro++\n            }\n        }\n    }\n\n    if primeiro > segundo{\n        fmt.Println(\"primeiro\")\n    } else if segundo > primeiro{\n        fmt.Println(\"segundo\")\n    } else{\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "49"
         }
     ]
 }
