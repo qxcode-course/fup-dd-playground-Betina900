@@ -1,0 +1,48 @@
+2026-07-01 18:29:08, MOVE, v:1, k:fup@blackjack, mode:PICK
+2026-07-01 18:29:56, MOVE, v:1, k:fup@blackjack, mode:PICK
+2026-07-01 18:29:57, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:0
+2026-07-01 18:33:38, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:0, size:13
+2026-07-01 18:33:38, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-07-01 18:33:47, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-07-01 18:39:15, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-07-01 18:44:23, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-07-01 18:48:39, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:0, size:25
+2026-07-01 18:48:40, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:0
+2026-07-01 18:49:35, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-07-01 18:48:40, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-07-01 18:49:54, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:0, size:23
+2026-07-01 18:54:40, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-07-01 18:49:53, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-07-01 18:56:40, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:0, size:29
+2026-07-01 18:58:01, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:100, size:31
+2026-07-01 18:58:04, MOVE, v:1, k:fup@blackjack, mode:BACK
+2026-07-01 18:58:16, SELF, v:1, k:fup@blackjack, self:1, rate:100, study:36
+2026-07-01 18:57:56, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-07-01 18:58:01, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-07-01 18:59:42, MOVE, v:1, k:fup@tetris, mode:DOWN
+2026-07-01 18:59:43, MOVE, v:1, k:fup@tetris, mode:PICK
+2026-07-01 18:59:44, EXEC, v:1, k:fup@tetris, mode:FULL, rate:0, size:5
+2026-07-01 18:59:42, MOVE, v:1, k:fup@tetris, mode:EDIT
+2026-07-01 19:04:23, MOVE, v:1, k:fup@tetris, mode:EDIT
+2026-07-01 18:59:44, MOVE, v:1, k:fup@tetris, mode:EDIT
+2026-07-01 19:08:27, EXEC, v:1, k:fup@tetris, mode:FULL, size:17, fail:COMP
+2026-07-01 19:09:10, MOVE, v:1, k:fup@tetris, mode:EDIT
+2026-07-01 19:11:05, EXEC, v:1, k:fup@tetris, mode:FULL, rate:0, size:19
+2026-07-01 19:14:40, MOVE, v:1, k:fup@tetris, mode:EDIT
+2026-07-01 19:11:05, MOVE, v:1, k:fup@tetris, mode:EDIT
+2026-07-01 19:14:57, EXEC, v:1, k:fup@tetris, mode:FULL, rate:0, size:23
+2026-07-01 19:17:14, EXEC, v:1, k:fup@tetris, mode:FULL, rate:20, size:32
+2026-07-01 19:19:14, EXEC, v:1, k:fup@tetris, mode:FULL, rate:20, size:38
+2026-07-01 19:19:41, MOVE, v:1, k:fup@tetris, mode:EDIT
+2026-07-01 19:19:14, MOVE, v:1, k:fup@tetris, mode:EDIT
+2026-07-01 19:22:22, EXEC, v:1, k:fup@tetris, mode:FULL, rate:20, size:49
+2026-07-01 19:24:03, EXEC, v:1, k:fup@tetris, mode:FULL, rate:40, size:53
+2026-07-01 19:24:02, MOVE, v:1, k:fup@tetris, mode:EDIT
+2026-07-01 19:24:03, MOVE, v:1, k:fup@tetris, mode:EDIT
+2026-07-01 19:25:14, EXEC, v:1, k:fup@tetris, mode:FULL, rate:40, size:53
+2026-07-01 19:26:46, EXEC, v:1, k:fup@tetris, mode:FULL, rate:40, size:53
+2026-07-01 19:27:36, EXEC, v:1, k:fup@tetris, mode:FULL, rate:100, size:53
+2026-07-01 19:27:37, MOVE, v:1, k:fup@tetris, mode:BACK
+2026-07-01 19:28:23, SELF, v:1, k:fup@tetris, self:1, rate:100, study:27
+2026-07-01 19:28:24, MOVE, v:1, k:fup@tetris, mode:PICK
+2026-07-01 19:28:25, MOVE, v:1, k:fup@tetris, mode:BACK

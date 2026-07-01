@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2026-05-26_16-49-37",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,157 +41,35 @@\n     \n-var q int%0A    fmt.Scan(&q)%0A%0A    vetor := make(%5B%5Dint, q)%0A    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A%0A    fmt.Println(vetor\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-07-01_18-33-38",
+            "content": "@@ -173,290 +173,25 @@\n     \n-soma := 0%0A    ases := 0%0A%0A    for i := 0; i %3C len(vetor); i++%7B%0A        if vetor%5Bi%5D == 1%7B%0A            soma += 11%0A            ases++%0A        %7D else if vetor%5Bi%5D == 11 %7C%7C vetor%5Bi%5D == 12 %7C%7C vetor%5Bi%5D == 13%7B%0A            soma += 10%0A        %7D else%7B%0A            soma += vetor%5Bi%5D%0A        %7D%0A    %7D\n+fmt.Println(vetor)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-07-01_18-48-39",
+            "content": "@@ -92,16 +92,87 @@\n %5Dint, q)\n+%0A    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D\n %0A%0A    so\n@@ -189,24 +189,25 @@\n   ases := 0%0A\n+%0A\n     for i :=\n@@ -235,37 +235,8 @@\n ++%7B%0A\n-        fmt.Scan(&vetor%5Bi%5D)%0A%0A\n     \n@@ -446,24 +446,16 @@\n        %7D\n-        \n %0A    %7D%0A%7D\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-01_18-49-53",
+            "content": "@@ -407,81 +407,16 @@\n    %7D\n-%0A    %7D%0A%0A    for soma %3E 21 && ases %3E 0%7B%0A        soma -= 10%0A        ases--%0A\n+        \n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-01_18-56-40",
+            "content": "@@ -486,30 +486,7 @@\n    %7D\n-%0A%0A    fmt.Println(soma)\n %0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-01_18-58-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var q int\n    fmt.Scan(&q)\n\n    vetor := make([]int, q)\n\n    soma := 0\n    ases := 0\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n\n        if vetor[i] == 1{\n            soma += 11\n            ases++\n        } else if vetor[i] == 11 || vetor[i] == 12 || vetor[i] == 13{\n            soma += 10\n        } else{\n            soma += vetor[i]\n        }\n    }\n\n    for soma > 21 && ases > 0{\n        soma -= 10\n        ases--\n\n    }\n\n    fmt.Println(soma)\n}\n",
+            "lines": "31"
         }
     ]
 }

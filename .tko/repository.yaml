@@ -19,15 +19,15 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@list
+- fup@mat
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   task_graph_mode: time
   show_time: 'true'
 audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@unhas
-selected_index: 34
+selected: fup@tetris
+selected_index: 23

@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_18-59-44",
+            "content": "@@ -41,220 +41,35 @@\n     \n-var L, C int%0A    fmt.Scan(&L, &C)%0A%0A    tabuleiro := make(%5B%5Dstring, L,)%0A    for i := 0; i %3C L; i++%7B%0A        fmt.Scan(&tabuleiro%5Bi%5D)%0A    %7D%0A%0A    for i := 0; i %3C L; i++%7B%0A        for j := 0 j %3C C; j++%7B%0A%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-01_19-08-27",
+            "content": "@@ -221,17 +221,16 @@\n r j := 0\n-;\n  j %3C C; \n@@ -238,77 +238,8 @@\n ++%7B%0A\n-            if tabuleiro%5Bi%5D%5Bj%5D == 'o'%7B%0A                %0A            %7D\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-07-01_19-11-05",
+            "content": "@@ -294,135 +294,8 @@\n     \n-if i + 1 %3C L%7B%0A                    if tabuleiro%5Bi+1%5D%5Bj%5D == '#'%7B%0A                        %0A                    %7D%0A                %7D\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-07-01_19-14-57",
+            "content": "@@ -179,30 +179,8 @@\n  %7D%0A%0A\n-    colidiu := false%0A%0A\n     \n@@ -195,32 +195,32 @@\n  0; i %3C L; i++%7B%0A\n+\n         for j :=\n@@ -381,22 +381,8 @@\n     \n-colidiu = true\n %0A   \n@@ -424,32 +424,32 @@\n %7D%0A            %7D%0A\n+\n         %7D%0A    %7D%0A\n@@ -451,125 +451,7 @@\n    %7D\n-%0A%0A    if colidiu%7B%0A        for i := 0; i %3C L; i++%7B%0A            fmt.Println(tabuleiro%5Bi%5D)%0A        %7D%0A        return%0A    %7D\n %0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-01_19-17-14",
+            "content": "@@ -605,113 +605,7 @@\n    %7D\n-%0A%0A    novo := make(%5B%5D%5B%5Dbyte, L)%0A%0A    for  i := 0; i %3C L; i++%7B%0A        novo%5Bi%5D = %5B%5Dbyte(tabuleiro%5Bi%5D)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-01_19-19-14",
+            "content": "@@ -711,264 +711,7 @@\n    %7D\n-%0A%0A    for i := L; i %3C L; i++%7B%0A        for j := 0; j %3C C; j++%7B%0A            if novo%5Bi%5D%5Bj%5D == 'o'%7B%0A                if novo%5Bi%5D%5Bj%5D == '.'%7B%0A                    novo%5Bi%5D%5Bj%5D = '.'%0A                    novo%5Bi+1%5D%5Bj%5D = 'o'%0A                %7D%0A            %7D%0A        %7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-01_19-22-22",
+            "content": "@@ -968,79 +968,7 @@\n    %7D\n-%0A%0A    for i := 0; i %3C L; i++%7B%0A        fmt.Println(string(novo%5Bi%5D))%0A    %7D\n %0A%7D%0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-07-01_19-24-03",
+            "content": "@@ -726,16 +726,16 @@\n  := \n-4\n+L\n ; i %3C \n-4\n+L\n ; i+\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-07-01_19-25-14",
+            "content": "@@ -726,26 +726,21 @@\n  := \n-L - 2; i %3E= 0; i--\n+4; i %3C 4; i++\n %7B%0A  \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-07-01_19-26-46",
+            "content": "@@ -833,20 +833,16 @@\n f novo%5Bi\n- + 1\n %5D%5Bj%5D == \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-07-01_19-27-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var L, C int\n    fmt.Scan(&L, &C)\n\n    tabuleiro := make([]string, L,)\n    for i := 0; i < L; i++{\n        fmt.Scan(&tabuleiro[i])\n    }\n\n    colidiu := false\n\n    for i := 0; i < L; i++{\n        for j := 0; j < C; j++{\n            if tabuleiro[i][j] == 'o'{\n                if i + 1 < L{\n                    if tabuleiro[i+1][j] == '#'{\n                        colidiu = true\n                    }\n                }\n            }\n        }\n    }\n\n    if colidiu{\n        for i := 0; i < L; i++{\n            fmt.Println(tabuleiro[i])\n        }\n        return\n    }\n\n    novo := make([][]byte, L)\n\n    for  i := 0; i < L; i++{\n        novo[i] = []byte(tabuleiro[i])\n    }\n\n    for i := L - 2; i >= 0; i--{\n        for j := 0; j < C; j++{\n            if novo[i][j] == 'o'{\n                if novo[i + 1][j] == '.'{\n                    novo[i][j] = '.'\n                    novo[i+1][j] = 'o'\n                }\n            }\n        }\n    }\n\n    for i := 0; i < L; i++{\n        fmt.Println(string(novo[i]))\n    }\n}\n",
+            "lines": "53"
+        }
+    ]
+}
